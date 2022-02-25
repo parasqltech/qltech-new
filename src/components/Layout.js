@@ -4,10 +4,10 @@ import {withPrefix} from "gatsby"
 
 import Header from './Common/Header'
 import Footer from './Common/Footer'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "../styles/style.css";
+import "../styles/bootstrap.min.css";
 import $ from "jquery";
 import favicon from "../img/fevicon.png";
 const TemplateWrapper = ({ children }) => (
