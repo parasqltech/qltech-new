@@ -43,7 +43,7 @@ render() {
             </div>
 
             <div className="row justify-content-end">
-			<div class="col-md-5 col-lg-6 col-sm-12 text-center">
+			<div className="col-md-5 col-lg-6 col-sm-12 text-center">
 				 <img data-src={img} className="img-fluid d-inline lazyload" alt="" />
 			</div>
                 <div className="col-md-7 col-lg-6 col-sm-12 ">

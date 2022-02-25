@@ -126,8 +126,8 @@ class Singleservice extends Component {
 														propd => {
 															return (
 																<>
-																{(propd.slider_title != null) ? (<>
-																{(propd.sliderImage != null) ? (<Link to={"/services/"+propd.sliderUrl+"/"}  title={propd.slider_title}><img src={propd.sliderImage.sourceUrl} className="img-fluid" alt="" /></Link>) : ('')}
+																{(propd.sliderTitle != null) ? (<>
+																{(propd.sliderImage != null) ? (<Link to={"/services/"+propd.sliderUrl+"/"}  title={propd.sliderTitle}><img src={propd.sliderImage.sourceUrl} className="img-fluid" alt="" /></Link>) : ('')}
 																</>) : ('')}
 																
 																</>
@@ -137,13 +137,13 @@ class Singleservice extends Component {
 															}
 														)}
 												</Slider>) : (<div className="trusted-by-slider-1">{
-														prop.node.acf.serviceSlider &&
-														prop.node.acf.serviceSlider.map(
+														prop.node.sd.serviceSlider &&
+														prop.node.sd.serviceSlider.map(
 														propd => {
 															return (
 																<>
-																{(propd.slider_title != null) ? (<>
-																{(propd.sliderImage != null) ? (<Link to={"/services/"+propd.sliderUrl+"/"}  title={propd.slider_title}><img src={propd.sliderImage.sourceUrl} className="img-fluid" alt="" /></Link>) : ('')}
+																{(propd.sliderTitle != null) ? (<>
+																{(propd.sliderImage != null) ? (<Link to={"/services/"+propd.sliderUrl+"/"}  title={propd.sliderTitle}><img src={propd.sliderImage.sourceUrl} className="img-fluid" alt="" /></Link>) : ('')}
 																</>) : ('')}
 																
 																</>
