@@ -89,15 +89,15 @@ class Singleguide extends Component {
 				blog.edges[0].node.whatThisGuideHasToOfffer.map(
                 propd => {
 					return (
-						<Tilt options={{ max : 10,scale:1 }} className="Tilt col-lg-4 col-md-6 customer-benifil">
-						<div className="thumbnial text-center Tilt-inner"  data-wow-delay="0.4s" >
+						<div className=" col-lg-4 col-md-6 customer-benifil">
+						<div className="thumbnial text-center"  data-wow-delay="0.4s" >
 							<div className="thumbnial-icon">
 								{(propd.offerIcon != null ) ? (<img src={propd.offerIcon.sourceUrl} className="img-fluid" alt=""/>) : ("") }
 							</div>
 							<h4 className="section-heading-2"> {propd.offerTitle}</h4>
 							<p className="label-text">{propd.offerDesc} </p>
 						</div>
-					</Tilt>
+					</div>
 					)
                 }
                 )}
