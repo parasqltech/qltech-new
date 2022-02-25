@@ -26,7 +26,7 @@ const settings = {
 
 class Singleprocess extends Component {
   render() {
-    const service = this.props.data.allWordpressWpProcess
+    const service = this.props.data.allWpProcess
    
 	
     return (
