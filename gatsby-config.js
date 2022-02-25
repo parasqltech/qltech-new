@@ -46,17 +46,26 @@ module.exports = {
         maxCacheDurationSeconds: 60 * 60 * 24
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+  {
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Roboto`,
-			variants: [`100`, `100i`, `300`, `300i`, `400`, `400i`, `500`, `500i`, `700`, `700i`, `900`, `900i`],
-          }
+          `Roboto`,
+          `source sans pro\:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i` // you can also specify font weights and styles
         ],
+        display: 'swap'
       }
     },
+    {
+      // Removes unused css rules
+      resolve:'gatsby-plugin-purgecss',
+      options: {
+        // Activates purging in gatsby develop
+        develop: true,
+        // Purge only the main css file
+        purgeOnly: ['/all.sass'],
+      },
+    }, // must be after other CSS plugin
 	'gatsby-plugin-react-helmet',
 	{
 		resolve: 'gatsby-plugin-react-helmet-canonical-urls',
