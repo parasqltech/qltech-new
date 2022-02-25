@@ -10,7 +10,7 @@ import quote from  "../img/quote.png"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Tilt from 'react-parallax-tilt';
 
 import Helmet from 'react-helmet'
 const settings = {
@@ -93,7 +93,7 @@ class Singleguide extends Component {
 				blog.edges[0].node.whatThisGuideHasToOfffer.map(
                 propd => {
 					return (
-						<div className=" col-lg-4 col-md-6 customer-benifil">
+						<Tilt className=" col-lg-4 col-md-6 customer-benifil">
 						<div className="thumbnial text-center"  data-wow-delay="0.4s" >
 							<div className="thumbnial-icon">
 								{(propd.offerIcon != null ) ? (<img src={propd.offerIcon.sourceUrl} className="img-fluid" alt=""/>) : ("") }
@@ -101,7 +101,7 @@ class Singleguide extends Component {
 							<h4 className="section-heading-2"> {propd.offerTitle}</h4>
 							<p className="label-text">{propd.offerDesc} </p>
 						</div>
-					</div>
+					</Tilt>
 					)
                 }
                 )}

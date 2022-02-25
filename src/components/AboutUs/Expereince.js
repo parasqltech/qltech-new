@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
-
+import Tilt from 'react-parallax-tilt';
 import AboutPopup from './AboutPopup';
 
 
@@ -72,11 +72,11 @@ const Expereince = () => (
                                     prop => {
                                     return (  
                                         <> 
-                                    <div className="about-us-data-show-single wow fadeInUp Tilt" >
+                                    <Tilt className="about-us-data-show-single wow fadeInUp Tilt" >
                                        <div className="client-logo">
                                             <img src={prop.node.partners.icon.sourceUrl} className="img-fluid Tilt-inner" alt=""/>
                                         </div>
-                                    </div>
+                                    </Tilt>
                                     </>
                                         )
                                     }
