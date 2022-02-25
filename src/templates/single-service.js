@@ -189,7 +189,7 @@ class Singleservice extends Component {
            
             <div className="row justify-content-end">
 			<div className="col-md-5 col-lg-6 col-sm-12 text-center">
-				<img src={(service.edges[0].node.ServicesAboutus.aboutImage != null) ? service.edges[0].node.acf.aboutImage.sourceUrl : ''} className="img-fluid d-inline" alt=""/>
+				<img src={(service.edges[0].node.ServicesAboutus.aboutImage != null) ? service.edges[0].node.ServicesAboutus.aboutImage.sourceUrl : ''} className="img-fluid d-inline" alt=""/>
 			</div>
                 <div className="col-md-7 col-lg-6 col-sm-12 ">
                     <div className="about-content xs-center sm-center wow fadeInUp">
