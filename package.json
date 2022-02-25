@@ -63,6 +63,7 @@
     "react-lazyload": "^3.2.0",
     "react-modal": "^3.14.4",
     "react-moment": "^1.1.1",
+    "react-parallax-tilt": "^1.6.1",
     "react-slick": "^0.28.1",
     "react-tsparticles": "^1.41.5",
     "react-wow": "^1.0.0",

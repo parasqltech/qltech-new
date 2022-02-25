@@ -3,7 +3,7 @@ import { withPrefix, Link } from "gatsby"
 import Helmet from 'react-helmet'
 
 import Typewriter from 'typewriter-effect';
-
+import Tilt from 'react-parallax-tilt';
 import $ from "jquery";
 import Layout from '../components/Layout'
 import Particles from "react-tsparticles";
@@ -67,9 +67,9 @@ const IndexPage = () => (
             <div className="row justify-content-center mt-4 mb-4">
                 <div className="col-lg-8 col-md-10 col-md-offset-1 col-xs-12">
                     <div className="home-parallax-layers" id="home-parallax-layers">
-                        <div  className="welcome-mockup text-center wow fadInUp Tilt"  >
+                        <Tilt  className="welcome-mockup text-center wow fadInUp Tilt"  >
                             <img data-src={home_section} className="img-fluid d-inline Tilt-inner lazyload" alt="" />
-                        </div>
+                        </Tilt>
                         <div className="welcome-mockup-bg wow fadeInUp"  data-wow-delay="0.1s" 
                             data-wow-delay="0.9s">
                             <img data-src={home_section_bg}  className="img-fluid d-inline lazyload" alt="" />
