@@ -6,7 +6,6 @@ import Lightbox from '../components/Lightbox'
 import Randomevent from '../components/Event/Randomevent'
 import Particles from "react-tsparticles";
 import Helmet from 'react-helmet'
-import Particles from "react-tsparticles";
 class SingleProject extends Component {
   render() {
     const event = this.props.data.allWpEvent
