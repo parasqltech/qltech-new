@@ -1,7 +1,7 @@
 import React from "react"
 import { withPrefix, Link } from "gatsby"
 import Helmet from 'react-helmet'
-
+import ReactWOW from 'react-wow'
 import Typewriter from 'typewriter-effect';
 import Tilt from 'react-parallax-tilt';
 import $ from "jquery";
