@@ -11,9 +11,12 @@ class Singlecategory extends Component {
   render() {
     const category = this.props.data.allWpCategory
     const posts = this.props.data.allWpPost
-	
+	console.log(posts);
+	console.log(posts.edges.length);
+	console.log(this.props);
     return (
       <Layout>
+	  
 			<Helmet>
 				<title>{posts.edges[0].node.categories.nodes[0].name} Articles - QL Tech</title>
 			</Helmet>

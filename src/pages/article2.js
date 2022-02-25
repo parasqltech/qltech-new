@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import Helmet from 'react-helmet'
 import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
 import author from '../img/fevicon.png';
-
+import Particles from "react-tsparticles";
 
 const article = () => (
   <StaticQuery
