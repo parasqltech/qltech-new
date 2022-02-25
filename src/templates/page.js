@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-
+import Particles from "react-tsparticles";
 import Helmet from 'react-helmet'
 
 export const PageTemplate = ({ title, content }) => {
