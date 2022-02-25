@@ -50,8 +50,8 @@ const IndexPage = () => (
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-xl-8 col-lg-10">
-                    
-                    <h1 className="wow fadeInUp heading-main text-center" data-wow-delay="0.3s">
+                    <ReactWOW  delay='0.3s' animation='fadeInUp'>
+                    <h1 className="heading-main text-center">
                         <span className="d-block">Expert Caretakers to help </span> 
                        <Typewriter
 						  options={{
@@ -61,19 +61,24 @@ const IndexPage = () => (
 						  }}
 						/>
                     </h1>
+                    </ReactWOW>
                     
                 </div>
             </div>
             <div className="row justify-content-center mt-4 mb-4">
                 <div className="col-lg-8 col-md-10 col-md-offset-1 col-xs-12">
                     <div className="home-parallax-layers" id="home-parallax-layers">
-                        <Tilt  className="welcome-mockup text-center wow fadInUp Tilt"  >
+					<ReactWOW  delay='0.3s' animation='fadInUp'>
+                        <Tilt  className="welcome-mockup text-center   Tilt"  >
                             <img data-src={home_section} className="img-fluid d-inline Tilt-inner lazyload" alt="" />
                         </Tilt>
-                        <div className="welcome-mockup-bg wow fadeInUp"  data-wow-delay="0.1s" 
+					</ReactWOW>	
+						<ReactWOW  delay='0.9s' animation='fadeInUp'>
+                        <div className="welcome-mockup-bg" 
                             data-wow-delay="0.9s">
                             <img data-src={home_section_bg}  className="img-fluid d-inline lazyload" alt="" />
                         </div>
+						</ReactWOW>	
                     </div>
                 </div>
             </div>
@@ -104,18 +109,20 @@ const IndexPage = () => (
 	<HomeAboutUs />
 	</LazyLoad>
 	<LazyLoad height={200} >
-	 <section className="home-process-section wow fadeIn">
+	<ReactWOW   animation='fadeIn'>
+	 <section className="home-process-section">
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-8 mb-4">
                         <span className="sub-heading d-block text-center mb-0">Our Processes</span>
-                    <h2 className="section-heading text-center wow fadeIn">
+                   <ReactWOW   animation='fadeIn'>
+				   <h2 className="section-heading text-center  ">
                         Pillars of our Success</h2>
-                        
+                    </ReactWOW>    
                 </div>
             </div>
-
-            <div className="row clearfix wow fadeIn">
+			<ReactWOW   animation='fadeIn'>	
+            <div className="row clearfix">
                 <div className="process-block one col-lg-3 col-md-6 col-sm-6 text-center">
                     <div className="inner-box  d-inline-block">
                     <div className="inner-box  d-inline-block">
@@ -162,8 +169,10 @@ const IndexPage = () => (
                     </div>
                 </div>
                 
+        </ReactWOW>
         </div>
     </section>
+    </ReactWOW>
 	</LazyLoad>
 	<LazyLoad height={200} >
 	<HomeWork />
