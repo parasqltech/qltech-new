@@ -68,7 +68,7 @@ const CareerPage = () => (
                                     <li className="r10"><span className="fa fa-star "></span></li>
                                     <li className="r10"><span className="fa fa-star "></span></li>
                                     <li className="r10"><span className="fa fa-star"></span></li>
-                                    <li className="r10 r2"><span className="fa fa-star"></span></li>
+                                    <li className="r10 r6"><span className="fa fa-star"></span></li>
                                 </ul>
                             </div>
                             <a href="https://www.glassdoor.co.in/Reviews/QL-Tech-Reviews-E1394850.htm" target="_blank" className=" mb-4 d-block">
