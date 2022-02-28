@@ -11,7 +11,7 @@ import Randomwork from '../components/Work/Randomwork'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import ReactWOW from 'react-wow'
 const settings = {
       dots: false,
       arrows : false,
@@ -182,9 +182,11 @@ class SingleWork extends Component {
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
                     <span className="section-subheading-heading">Testimonial</span> 
-                    <h2 className="section-heading text-center wow fadeIn">
+                    <ReactWOW   animation='fadeIn'>
+					<h2 className="section-heading text-center">
                         Our customers loves us
                     </h2>
+                    </ReactWOW>
                 </div>
             </div>
         </div>

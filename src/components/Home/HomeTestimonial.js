@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { Link, StaticQuery, graphql } from 'gatsby'
 import quote from '../../img/quote.png';
 import ReactModal from 'react-modal'
-
+import ReactWOW from 'react-wow'
 const settings = {
       dots: true,
       infinite: true,
@@ -48,8 +48,10 @@ render() {
               <div className="col-md-8 ">
                 
                   <span className="sub-heading d-block mb-0 text-center">Testimonials</span>
-                  <h2 className="section-heading text-center wow fadeIn">
+				  <ReactWOW animation='fadeIn' >
+                  <h2 className="section-heading text-center">
                       Hear from our loved customers</h2>
+					</ReactWOW>  
               </div>
           </div>
       </div>

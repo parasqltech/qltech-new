@@ -8,7 +8,7 @@ import Particles from "react-tsparticles";
 import Helmet from 'react-helmet'
 import quote from  "../img/quote.png"
 import ReactModal from 'react-modal'
-
+import ReactWOW from 'react-wow'
 class Singleindustries extends Component {
 	
 	constructor(props) {
@@ -70,9 +70,11 @@ class Singleindustries extends Component {
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
                     <span className="section-subheading-heading">Testimonial</span> 
-                    <h2 className="section-heading text-center wow fadeIn">
+                    <ReactWOW   animation='fadeIn'>
+					<h2 className="section-heading text-center">
                         Our customers loves us
                     </h2>
+					 </ReactWOW>
                 </div>
             </div>
         </div>
@@ -116,11 +118,14 @@ class Singleindustries extends Component {
                 <div className="col-md-12">
                     
                         <span className="section-subheading-heading">Our Success</span> 
-                        <h2 className="section-heading text-center wow fadeIn" >
+                        <ReactWOW   animation='fadeIn'>
+						<h2 className="section-heading text-center  " >
                             See it in Action
                         </h2>
+						 </ReactWOW>
                     <div className=" pt-0">
-                        <div className="home-portfolio-slider-1 wow  animated" >
+                        <ReactWOW   animation='animated'>
+						<div className="home-portfolio-slider-1" >
                             <div className="row">
 							{
 							works &&
@@ -147,6 +152,7 @@ class Singleindustries extends Component {
                             
                             
                         </div>
+						 </ReactWOW>
                     </div>
                 </div>
             </div>
@@ -156,11 +162,13 @@ class Singleindustries extends Component {
             <div className="container  bg-white">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
+					
 					<span className=" sub-heading d-block mb-2 text-center mb-2" >Contact Us</span>
-                        <h2 className="section-heading text-center wow fadeIn mb-2">
+                        <ReactWOW   animation='fadeIn'>
+						<h2 className="section-heading text-center mb-2">
                             Let us know how we can help
                         </h2>
-
+						 </ReactWOW>
                     </div>
                 </div>
                 <div className="main-panel">    

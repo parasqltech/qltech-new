@@ -11,6 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Helmet from 'react-helmet'
 import ContactProcess from '../components/Contact/ContactProcess'
 import Particles from "react-tsparticles";
+import ReactWOW from 'react-wow'
 const settings = {
       dots: false,
 	  prevArrow: false,
@@ -78,10 +79,11 @@ class Singleprocess extends Component {
                 <div className="row justify-content-center">
                     <div className="col-md-10">
 						<span className=" sub-heading d-block mb-2 text-center mb-2">Contact Us</span>
-                        <h2 className="section-heading text-center wow fadeIn mb-2">
+                        <ReactWOW   animation='fadeIn'>
+						<h2 className="section-heading text-center mb-2">
                             Let us know how we can help
                         </h2>
-
+						</ReactWOW>
                     </div>
                 </div>
                 <div className="main-panel">

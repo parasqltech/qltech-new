@@ -6,7 +6,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import work from '../../img/work.png';
 import portfolio from '../../img/portfolio/1.jpg';
 import homeTestimonialimage from '../../img/work.png'
-
+import ReactWOW from 'react-wow'
 const settings = {
       dots: false,
       infinite: true,
@@ -121,12 +121,14 @@ const HomeWork = () => (
 
                
                 <div className="image-column col-lg-6 col-md-6 col-sm-12">
-                    <div className="inner-column wow fadeInLeft animated" data-wow-delay="0ms" data-wow-duration="1500ms"
+                    <ReactWOW delay='0.1s'  animation='fadeInLeft'>
+					<div className="inner-column   animated"
                         >
                         <div className="image">
                             <img data-src={work} className="img-fluid lazyload" alt=""/>
                         </div>
                     </div>
+                    </ReactWOW>
                 </div>
 
                 

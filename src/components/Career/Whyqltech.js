@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Moment from 'react-moment';
 import 'moment-timezone';
-
+import ReactWOW from 'react-wow'
 
 import portfolio from '../../img/portfolio/1.jpg'
 
@@ -60,7 +60,8 @@ const Whyqltech = () => (
 										prop => {
 											return (    
 												<div className="col-lg-4 col-md-6 mb-4  col-sm-6">
-												<div className='grid-item wow fadeInLeft  work-thumbnial ' >
+												<ReactWOW   animation='fadeInLeft'>
+												<div className='grid-item  work-thumbnial ' >
 												<div className="work-thumbnail-image">
 													{(prop.node.events.image != null) ? (<img src={prop.node.events.image.sourceUrl} className="img-fluid" alt=""/>) : ('')}
 													<p className="event-date"><span><Moment format="DD">
@@ -73,6 +74,8 @@ const Whyqltech = () => (
 													<Link to={"/event/"+prop.node.slug+"/"} className="work-title">{prop.node.title}</Link>
 												</div>
 											</div>
+											</ReactWOW>
+											
 										</div>
 												
 												

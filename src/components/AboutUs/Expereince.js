@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import Tilt from 'react-parallax-tilt';
 import AboutPopup from './AboutPopup';
 
-
+import ReactWOW from 'react-wow'
 const Expereince = () => (
   <StaticQuery
     query={graphql`
@@ -72,11 +72,13 @@ const Expereince = () => (
                                     prop => {
                                     return (  
                                         <> 
-                                    <Tilt className="about-us-data-show-single wow fadeInUp Tilt" >
+										<ReactWOW delay='0.1s'  animation='fadeInUp'>
+                                    <Tilt className="about-us-data-show-single"  >
                                        <div className="client-logo">
                                             <img src={prop.node.partners.icon.sourceUrl} className="img-fluid Tilt-inner" alt=""/>
                                         </div>
                                     </Tilt>
+                                    </ReactWOW>
                                     </>
                                         )
                                     }

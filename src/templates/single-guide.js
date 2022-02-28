@@ -94,7 +94,7 @@ class Singleguide extends Component {
                 propd => {
 					return (
 						<Tilt className=" col-lg-4 col-md-6 customer-benifil">
-						<div className="thumbnial text-center"  data-wow-delay="0.4s" >
+						<div className="thumbnial text-center"   >
 							<div className="thumbnial-icon">
 								{(propd.offerIcon != null ) ? (<img src={propd.offerIcon.sourceUrl} className="img-fluid" alt=""/>) : ("") }
 							</div>

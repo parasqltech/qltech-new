@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import {Helmet} from "react-helmet";
 import img from '../../img/about-us.png';
 import ReactModal from 'react-modal'
-
+import ReactWOW from 'react-wow'
 
 
 
@@ -38,16 +38,19 @@ render() {
          
 <section className="home-about-section bg-white">
         <div className="container">
-            <div className="about-mockup-bg  wow fadeIn">
+            <ReactWOW animation='fadeIn' >
+			<div className="about-mockup-bg">
                
             </div>
+            </ReactWOW>
 
             <div className="row justify-content-end">
 			<div className="col-md-5 col-lg-6 col-sm-12 text-center">
 				 <img data-src={img} className="img-fluid d-inline lazyload" alt="" />
 			</div>
                 <div className="col-md-7 col-lg-6 col-sm-12 ">
-                    <div className="about-content xs-center sm-center wow fadeInUp">
+                    <ReactWOW animation='fadeInUp' >
+					<div className="about-content xs-center sm-center">
                         <h4 className="sub-heading ">About us</h4>
                         {AboutUsData && AboutUsData && AboutUsData.edges.map(
      
@@ -70,6 +73,7 @@ render() {
                 }
               )}
                     </div>
+                    </ReactWOW>
                 </div>
             </div>
         </div>

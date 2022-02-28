@@ -15,6 +15,8 @@ import port_6 from '../img/portfolio/6.jpg'
 import port_7 from '../img/portfolio/7.jpg'
 import port_8 from '../img/portfolio/8.jpg'
 import Helmet from 'react-helmet'
+import ReactWOW from 'react-wow'
+
 class FilterGrid extends React.Component {
   constructor(props) {
     super(props);
@@ -122,7 +124,8 @@ class FilterGrid extends React.Component {
                         prop => {
                             return (    
                                     <>
-								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.nodes.map(item => { return ( item.slug ) }) } >
+									<ReactWOW   animation='fadeInLeft'>
+								<div className={ 'grid-item  work-thumbnial '+ prop.node.categories.nodes.map(item => { return ( item.slug ) }) } >
                         <div className="work-thumbnail-image">
                           {(prop.node.events.image != null) ? (<img src={prop.node.events.image.sourceUrl} className="img-fluid" alt=""/>) : ('')}
                             
@@ -138,6 +141,7 @@ class FilterGrid extends React.Component {
                           
                         </div>
                     </div>
+                    </ReactWOW>
                     </>
 								
 								

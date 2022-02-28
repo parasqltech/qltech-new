@@ -7,6 +7,7 @@ import Helmet from 'react-helmet'
 import quote from  "../img/quote.png"
 import BlogAuthor from '../img/fevicon.png';
 import Particles from "react-tsparticles";
+import ReactWOW from 'react-wow'
 class Singlecategory extends Component {
   render() {
     const category = this.props.data.allWpCategory
@@ -86,7 +87,8 @@ class Singlecategory extends Component {
                           posts.edges.map(
                                   prop => {
                             return (
-				                      <div className="col-lg-6 col-md-6 wow fadeInLeft article-block">
+							<ReactWOW   animation='fadeInLeft'>
+				                      <div className="col-lg-6 col-md-6   article-block">
                                          <div className="thumbnial">
                                             <div className="thumbnial-image">
                                                 <Link to={"/hub/"+prop.node.categories.nodes[0].slug+"/"+prop.node.slug+"/"}>
@@ -117,6 +119,7 @@ class Singlecategory extends Component {
                                             </div>
                                         </div>
                                     </div>
+									</ReactWOW>
                                   )
                                           }
                                           )}	

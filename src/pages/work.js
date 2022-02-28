@@ -4,7 +4,7 @@ import Isotope from "isotope-layout/js/isotope";
 import PropTypes from 'prop-types';
 import Particles from "react-tsparticles";
 import Layout from '../components/Layout'
-
+import ReactWOW from 'react-wow'
 import port_1 from '../img/portfolio/1.jpg'
 import port_2 from '../img/portfolio/2.jpg'
 import port_3 from '../img/portfolio/3.jpg'
@@ -125,7 +125,8 @@ class FilterGrid extends React.Component {
                         prop => {
                             return (    
                                     <>
-								<div className={ 'grid-item wow fadeInLeft  work-thumbnial '+ prop.node.categories.nodes.map(item => { return ( item.slug ) }) } >
+									<ReactWOW   animation='fadeInLeft'>
+								<div className={ 'grid-item    work-thumbnial '+ prop.node.categories.nodes.map(item => { return ( item.slug ) }) } >
                         <div className="work-thumbnail-image">
                             
 								{(prop.node.work.mainImage != "") ? (<img src={prop.node.work.mainImage.sourceUrl} className="img-fluid" alt=""/>) : ('')}
@@ -139,6 +140,7 @@ class FilterGrid extends React.Component {
 							
                         </div>
                     </div>
+                    </ReactWOW>
                     </>
 								
 								

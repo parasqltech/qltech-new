@@ -2,7 +2,7 @@ import React from "react"
 import { Link, StaticQuery, graphql } from 'gatsby'
 import Moment from 'react-moment';
 import 'moment-timezone';
-
+import ReactWOW from 'react-wow'
 class Randomevent extends React.Component{
 	
 	constructor(props) {
@@ -45,7 +45,8 @@ class Randomevent extends React.Component{
                         <span className="section-subheading-heading">Check out more Events</span> 
                         
                     <div className=" pt-0 mt-5">
-                        <div className="home-portfolio-slider-1 wow  animated" >
+                        <ReactWOW animation='animated' >
+                        <div className="home-portfolio-slider-1" >
                             <div className="row">
 							{data &&
 							data.allWpEvent &&
@@ -84,6 +85,8 @@ class Randomevent extends React.Component{
                             
                             
                         </div>
+                        </ReactWOW>
+						
                     </div>
                 </div>
             </div>

@@ -6,7 +6,7 @@ import Helmet from 'react-helmet'
 import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
 import author from '../img/fevicon.png';
 import Particles from "react-tsparticles";
-
+import ReactWOW from 'react-wow'
 const article = () => (
   <StaticQuery
     query={graphql`
@@ -123,7 +123,8 @@ node {
 				data.allWpPost.edges.map(
                 prop => {
 					return (
-					<div className="col-lg-6 col-md-6 wow fadeInLeft article-block">
+					<ReactWOW   animation='fadeInLeft'>
+					<div className="col-lg-6 col-md-6   article-block">
                                          <div className="thumbnial">
                                             <div className="thumbnial-image">
                                                 <Link to={"/hub/"+prop.node.categories.nodes[0].slug+"/"+prop.node.slug+"/"}>
@@ -154,6 +155,7 @@ node {
                                             </div>
                                         </div>
                                     </div>
+                                    </ReactWOW>
 				)
                 }
                 )}	

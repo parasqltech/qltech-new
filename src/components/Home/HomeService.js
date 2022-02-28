@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import {Helmet} from "react-helmet";
-
+import ReactWOW from 'react-wow'
 const HomeService = () => (
   <StaticQuery
     query={graphql`
@@ -67,8 +67,8 @@ const HomeService = () => (
                 prop => {
                   return (
                         <div className="service-block-two col-lg-6 col-md-6 col-sm-12">
-                            <div className="inner-box wow fadeInLeft animated" data-wow-delay="0ms"
-                                data-wow-duration="1500ms">
+                            <ReactWOW animation='fadeInLeft'>
+                            <div className="inner-box   animated">
                                 <div className="shape-one"></div>
                                 <div className="shape-two"></div>
                                 <div className="shape-three"></div>
@@ -81,6 +81,7 @@ const HomeService = () => (
                                 <h3><Link to={"/services/"+prop.node.slug+"/"}>{prop.node.HomeServices.title}</Link></h3>
                                 <div className="text">{prop.node.HomeServices.descprition}</div>
                             </div>
+                            </ReactWOW>
                         </div>
                           )
                 }

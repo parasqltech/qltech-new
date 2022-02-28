@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Helmet from 'react-helmet'
 import ReactModal from 'react-modal'
+import ReactWOW from 'react-wow'
 const settings = {
       dots: false,
 	  prevArrow: false,
@@ -196,12 +197,14 @@ class Singleservice extends Component {
 				<img src={(service.edges[0].node.ServicesAboutus.aboutImage != null) ? service.edges[0].node.ServicesAboutus.aboutImage.sourceUrl : ''} className="img-fluid d-inline" alt=""/>
 			</div>
                 <div className="col-md-7 col-lg-6 col-sm-12 ">
-                    <div className="about-content xs-center sm-center wow fadeInUp">
+                    <ReactWOW  animation='fadeInUp'>
+					<div className="about-content xs-center sm-center">
                        
                         <h3 className="section-heading" dangerouslySetInnerHTML={{ __html: service.edges[0].node.ServicesAboutus.title}} ></h3>
                         <div className="label-text" dangerouslySetInnerHTML={{ __html: service.edges[0].node.ServicesAboutus.description}} ></div>
                         
                     </div>
+					</ReactWOW>
                 </div>
             </div>
         </div>
@@ -214,9 +217,11 @@ class Singleservice extends Component {
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
                     <span className="section-subheading-heading">Testimonial</span> 
-                    <h2 className="section-heading text-center wow fadeIn">
+                    <ReactWOW  animation='fadeIn'>
+					<h2 className="section-heading text-center  ">
                         Our customers loves us
                     </h2>
+					</ReactWOW>
                 </div>
             </div>
         </div>
@@ -261,11 +266,14 @@ class Singleservice extends Component {
                 <div className="col-md-12">
                     
                         <span className="section-subheading-heading">Our Success</span> 
-                        <h2 className="section-heading text-center wow fadeIn" >
+                        <ReactWOW  animation='fadeIn'>
+						<h2 className="section-heading text-center  " >
                             See it in Action
                         </h2>
+						</ReactWOW>
                     <div className=" pt-0">
-                        <div className="home-portfolio-slider-1 wow  animated" >
+                        <ReactWOW  animation='animated'>
+						<div className="home-portfolio-slider-1   " >
                             <div className="row">
 							{
 							works &&
@@ -292,6 +300,7 @@ class Singleservice extends Component {
                             
                             
                         </div>
+						</ReactWOW>
                     </div>
                 </div>
             </div>
@@ -302,7 +311,8 @@ class Singleservice extends Component {
            
             <div className="row justify-content-start">
                 <div className="col-md-12">
-                    <div className="about-content xs-center sm-center wow fadeInUp">
+                    <ReactWOW  animation='fadeInUp'>
+					<div className="about-content xs-center sm-center  ">
                         <span className="sub-heading text-center d-block mb-0">FAQs</span>
                        
                         <div id="accordion" className="faq-section mt-4">
@@ -335,6 +345,7 @@ class Singleservice extends Component {
 								
                         </div>
                     </div>
+					</ReactWOW>
                 </div>
             </div>
             
@@ -348,10 +359,11 @@ class Singleservice extends Component {
                 <div className="row justify-content-center">
                     <div className="col-md-10">
 					<span className=" sub-heading d-block mb-2 text-center mb-2" >Contact Us</span>
-                        <h2 className="section-heading text-center wow fadeIn mb-2">
+                        <ReactWOW  animation='fadeIn'>
+						<h2 className="section-heading text-center   mb-2">
                             Let us know how we can help
                         </h2>
-
+						</ReactWOW>
                     </div>
                 </div>
                 <div className="main-panel">

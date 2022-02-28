@@ -6,7 +6,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 import BlogAuthor from '../../img/fevicon.png';
 import qlimg from '../../img/Thumbnail-4.png';
 import other from '../../img/Thumbnail-3-01.png';
-
+import ReactWOW from 'react-wow'
 
 
 const settings = {
@@ -106,15 +106,18 @@ const HomeBlog = () => (
         }
     `}
     render={data => (
-		<section className="home-blog-section wow fadeIn bg-white">
+		 <ReactWOW animation='fadeIn' >
+		<section className="home-blog-section   bg-white">
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-8 ">
                   
                 <span className="sub-heading d-block text-center mb-2">Latest Articles</span>
-                    <h2 className="section-heading text-center wow fadeIn">
+                    <ReactWOW animation='fadeIn' >
+					<h2 className="section-heading text-center">
                         Knowledge Hub
                     </h2>
+                    </ReactWOW>
                 </div>
             </div>
             
@@ -178,6 +181,7 @@ const HomeBlog = () => (
         </div>
        
     </section>                    	
+    </ReactWOW>                    	
     )}
 	/>
 )

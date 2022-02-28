@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import blog_thumb from '../img/blog/blog-thubnial-1.jpg';
 import Helmet from 'react-helmet'
 import author from '../img/fevicon.png';
-
+import ReactWOW from 'react-wow'
 
 class Grid extends React.Component {
 	constructor(props) {
@@ -88,7 +88,8 @@ class Grid extends React.Component {
 				category.edges.map(
                 (prop,i) => {
 					return (
-                       <div className="col-lg-4 col-md-6 wow fadeInLeft" >
+					<ReactWOW   animation='fadeInLeft'>
+                       <div className="col-lg-4 col-md-6" >
                         <div className="thumbnail">
                             <div className="thumbnial-image">
                                 {(prop.node.BlogExtra.featureImage) ? (<img src={prop.node.BlogExtra.featureImage.sourceUrl} className="img-fluid w-100" alt=""/>) : ('')}
@@ -99,6 +100,7 @@ class Grid extends React.Component {
                             </Link>
                         </div>
                     </div>
+                    </ReactWOW>
 					
 					)
                 }

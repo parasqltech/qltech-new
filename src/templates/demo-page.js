@@ -16,6 +16,7 @@ import author from '../img/fevicon.png';
 import Particles from "react-tsparticles";
 import qlimg from '../img/Thumbnail-4.png';
 import other from '../img/Thumbnail-3-01.png';
+import ReactWOW from 'react-wow'
 const settings = {
       dots: false,
 	  prevArrow: false,
@@ -106,7 +107,8 @@ class demopage extends Component {
 				blog.edges.map(
                 prop => {
 					return (
-					<div className="col-lg-6 col-md-6 wow fadeInLeft article-block">
+					<ReactWOW  animation='fadeInLeft'>
+					<div className="col-lg-6 col-md-6   article-block">
                                          <div className="thumbnial">
                                             <div className="thumbnial-image">
                                                 <Link to={"/hub/"+prop.node.categories.nodes[0].slug+"/"+prop.node.slug+"/"}>
@@ -139,6 +141,7 @@ class demopage extends Component {
                                             </div>
                                         </div>
                                     </div>
+									</ReactWOW>
 				)
                 }
                 )}	

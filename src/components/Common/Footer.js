@@ -6,6 +6,7 @@ import FooterM3 from './FooterMenu_3'
 import FooterM4 from './FooterMenu_4'
 import FooterSocial from './FooterSocial'
 import ContactSubscribe from '../Contact/ContactSubscribe'
+import ReactWOW from 'react-wow'
 
 const Footer = () => (
 		<>
@@ -36,36 +37,46 @@ const Footer = () => (
                     <div className="col-xl-12">
                         <div className="row ">
                             <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
+                                <ReactWOW   animation='fadeIn'>
+								<div className="footer-widget  ">
                                     <p className="footer-widget-title">
                                         About
                                     </p>
                                     <FooterM1 />
                                 </div>
+                                </ReactWOW>
+								
                             </div>
                             <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
+                                <ReactWOW   animation='fadeIn'>
+								<div className="footer-widget  ">
                                     <p className="footer-widget-title">
                                         Services
                                     </p>
                                     <FooterM2 />
                                 </div>
+                                </ReactWOW>
                             </div>
                             <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
+                                <ReactWOW   animation='fadeIn'>
+								<div className="footer-widget">
                                     <p className="footer-widget-title">
                                         Industries
                                     </p>
                                     <FooterM3 />
                                 </div>
+                                </ReactWOW>
+								
                             </div>
                             <div className="col-lg-3 col-md-6  col-sm-6 mb-4">
-                                <div className="footer-widget wow fadeIn">
+                                <ReactWOW   animation='fadeIn'>
+								<div className="footer-widget">
                                     <p className="footer-widget-title">
                                         Platforms
                                     </p>
                                     <FooterM4 />
                                 </div>
+								</ReactWOW>
                             </div>
                             
                         </div>

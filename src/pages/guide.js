@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import Particles from "react-tsparticles";
 import event_thumb from '../img/events/event-thumbnial.jpg';
 import Helmet from 'react-helmet'
-
+import ReactWOW from 'react-wow'
 const guide = () => (
   <StaticQuery
     query={graphql`
@@ -102,8 +102,8 @@ const guide = () => (
 				data.allWpGuide.edges.map(
                 prop => {
 					return (
-						
-						<div className="col-md-6 col-sm-6 wow fadeInLeft">
+						<ReactWOW   animation='fadeInLeft'>
+						<div className="col-md-6 col-sm-6">
                             <div className="grid">
                                 <div className=" guide-thumbnial">
                                     <div className="guide-image" style={{"background-image":"url("+  prop.node.BlogExtra.featureImage.sourceUrl +")"}}>
@@ -116,6 +116,7 @@ const guide = () => (
                                 </div>
                             </div>
                         </div>
+                        </ReactWOW>
 						
 						)
                 }

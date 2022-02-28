@@ -8,7 +8,7 @@ import Particles from "react-tsparticles";
 import Whyqltech from '../components/Career/Whyqltech'
 
 import $ from 'jquery';
-
+import ReactWOW from 'react-wow'
 import glassdoor from '../img/glassdoor-logo.png'
 import Ambitious from '../img/career/Ambitious.png'
 import SkillTuning from '../img/career/Skill-Tuning.png'
@@ -62,7 +62,7 @@ const CareerPage = () => (
                             </p>
                             
                             <div className="rating-block mb-4">
-                                <span className="rating-number">4.2</span>
+                                <span className="rating-number">4.6</span>
                                 <ul className="rating">
                                     <li className="r10"><span className="fa fa-star "></span></li>
                                     <li className="r10"><span className="fa fa-star "></span></li>
@@ -96,7 +96,8 @@ const CareerPage = () => (
                            
                             <div className="row ">
                                 <div className="col-xl-4 col-lg-4 col-md-6">
-                                    <div className="thumbnail wow fadeInLeft bg-white">
+                                    <ReactWOW   animation='fadeInLeft'>
+									<div className="thumbnail   bg-white">
                                         <span className="benifits-icon">
                                             <img src={WorkCulture} className="img-fluid" alt=""/>
                                         </span>
@@ -106,44 +107,52 @@ const CareerPage = () => (
                                         <p className="h4">Work Culture</p>
 										<p className="label-text">An open &amp; transparent work environment</p>
                                     </div>
+									</ReactWOW>
                                 </div>
                                 <div className="col-xl-4 col-lg-8 col-md-6">
-                                    <div className="thumbnail wow fadeInUp bg-white">
+                                    <ReactWOW   animation='fadeInUp'>
+									<div className="thumbnail   bg-white">
                                         <span className="benifits-icon">
                                             <img src={SkillTuning} className="img-fluid" alt=""/>
                                         </span>
                                         <p className="h4">Skill Tuning</p>
 										<p className="label-text">Continuous learning and development opportunities.</p>
                                     </div>
+									</ReactWOW>
                                 </div>
                                 <div className="col-xl-4 col-lg-6 col-md-6">
-                                    
-                                     <div className="thumbnail wow fadeInLeft bg-white">
+                                    <ReactWOW   animation='fadeInLeft'>
+                                     <div className="thumbnail   bg-white">
                                         <span className="benifits-icon">
                                         <img src={Vision} className="img-fluid" alt=""/>
                                         </span>
                                          <p className="h4">Vision</p>
 										 <p className="label-text">A place where everyone is inspired to innovate.</p>
                                     </div>
+									</ReactWOW>
                                 </div>
                                 <div className="col-xl-5 col-lg-6 col-md-6">
-                                <div className="thumbnail wow fadeInRight bg-white">
+                                 <ReactWOW   animation='fadeInRight'>
+								<div className="thumbnail   bg-white">
                                         <span className="benifits-icon">
                                             <img src={Values} className="img-fluid" alt=""/>
                                         </span>
                                          <p className="h4">Values</p>
 										 <p className="label-text">Our core values drive everything we do.</p>
                                     </div>
+									</ReactWOW>
                                 </div>
                                       
                                 <div className="col-xl-7 col-lg-12 col-md-12">
-                                    <div className="thumbnail wow fadeInDown bg-white ">
+                                    <ReactWOW   animation='fadeInDown'>
+									<div className="thumbnail   bg-white ">
                                         <span className="benifits-icon">
                                             <img src={Ambitious} className="img-fluid" alt=""/>
                                         </span>
                                           <p className="h4">Ambitious</p>
 										  <p className="label-text">Each day brings new &amp; exciting challenges.</p>
                                     </div>
+									</ReactWOW>
                                 </div>
                                 
                             </div>
