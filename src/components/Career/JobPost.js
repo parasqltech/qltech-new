@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import ContactCareer from '../Contact/ContactCareer'
-
+import Accordion from 'react-bootstrap/Accordion'
 
 const JobPost = () => (
   <StaticQuery
@@ -48,7 +48,10 @@ const JobPost = () => (
                                             </div>
                                         </div>
                                        
-                                        <div id="accordion">
+									  
+									 
+									
+                                        <Accordion defaultActiveKey="0">
                                             
                                         {data &&
                                             data.allWpPosition &&
@@ -58,37 +61,26 @@ const JobPost = () => (
                                         
 										(prop,i) => {
                                             return (   
-                                            <div className="card">
-                                                <div className="card-header bg-white row justify-content-between m-0" role="tab" >
-                                                    <a className="nav-link mb-0 collapsed" data-toggle="collapse" href={"#opt"+i}>
+                                            <Accordion.Item className="card" eventKey={i}>
+												<Accordion.Header className="card-header bg-white row justify-content-between m-0" ><a className="nav-link mb-0 collapsed" data-toggle="collapse" href={"#opt"+i}>
                                                     <span className="toggle-icon"></span>           {prop.node.positions.jobTitle}
                                                     </a>
-                                                    <div class="d-inline m-0">
+                                                    <div class="d-inline floatend m-0">
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.positions.exp} </p>
                                                         <p className="label-text  exp-loc-text d-inline">{prop.node.positions.location} </p>
                                                         <a href="javascript:;" data-name={prop.node.positions.jobTitle} className="apply apply-btn">{prop.node.positions.buttonName} </a>
-                                                    </div>
-                                                   
-                                                
-                                                </div>
-
-                                                <div id={"opt"+i} className="collapse " role="tabpanel" data-parent="#accordion">
-                                                <div className="card-body">
-                                                <p className="label-text   d-md-none d-block">Experience : {prop.node.positions.exp} </p>
+                                                    </div></Accordion.Header>
+												<Accordion.Body className="card-body" >
+												  <p className="label-text   d-md-none d-block">Experience : {prop.node.positions.exp} </p>
                                                 <p className="label-text   d-md-none d-block">Location : {prop.node.positions.location} </p>
                                                    <div dangerouslySetInnerHTML={{ __html: prop.node.positions.descprition }}  className="JobDescription blank-section" />
-                                                        
-                                                    
-													
-													
-                                                </div>
-                                                </div>
-                                            </div>
+												</Accordion.Body>
+											  </Accordion.Item>
                                                 )
                                             }
                                         )}  
                                         
-                                        </div>
+                                        </Accordion>
                                     
                                 </div>
                                     
