@@ -13,6 +13,12 @@ module.exports = {
    * Gatsby has a rich ecosystem of plugins.
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
+   siteMetadata: {
+    title: 'QL Tech',
+	siteUrl: 'https://www.qltech.com.au',
+	description: `Web Development & Digital Marketing Services In Perth, Australia - QL Tech`,
+    author: `@qltechau`,
+  },
   plugins: [
     {
       /**
@@ -126,13 +132,13 @@ module.exports = {
       // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter WordPress Blog`,
-        short_name: `GatsbyJS & WP`,
+        name: `Web Development & Digital Marketing Services In Perth, Australia - QL Tech`,
+        short_name: `QL Tech`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/fevicon.png`,
       },
     },
 
