@@ -43,6 +43,19 @@ module.exports = {
       },
     },
 	{
+    resolve: `gatsby-plugin-sitemap`,
+    options: {
+      output: `/sitemap.xml`,
+    }
+  },
+  {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+		sitemap: 'https://www.qltech.com.au/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: ['/404/','/cgi-bin/'] }]
+      }
+    },
+	{
       resolve: "gatsby-source-wordpress-menus",
       options: {
         wordpressUrl: "https://steamlinedesign.com/qltech/new",
@@ -79,6 +92,21 @@ module.exports = {
 		  siteUrl: 'https://www.qltech.com.au',
 		},
 	},
+	{
+    resolve: "gatsby-plugin-google-tagmanager",
+    options: {
+      id: "GTM-WKD5LWX",
+
+      // Include GTM in development.
+      // Defaults to false meaning GTM will only be loaded in production.
+      includeInDevelopment: false,
+
+      // datalayer to be set before GTM is loaded
+      // should be an object or a function that is executed in the browser
+      // Defaults to null
+      defaultDataLayer: { platform: "gatsby" },
+    },
+  },
 	'gatsby-plugin-sass',
 	{
     resolve: `gatsby-plugin-nprogress`,
