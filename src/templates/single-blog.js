@@ -175,7 +175,9 @@ export const pageQuery = graphql`
 				metadesc
 				metakeywords
 				opengraphdescription
-				opengraphimage
+				opengraphimage {
+            sourceUrl
+          }
 				opengraphtitle
 				twitterdescription
 				twittertitle
