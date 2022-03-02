@@ -37,7 +37,16 @@ class Singleplatform extends Component {
     return (
       <Layout>
 			<Helmet>
-		
+			<title>{platform.edges[0].node.yoastseo.title} - QL Tech</title>
+			<meta name="title" content={platform.edges[0].node.yoastseo.title}></meta>
+			<meta name="description" content={platform.edges[0].node.yoastseo.metadesc}></meta>
+			 <meta name="keywords" content={platform.edges[0].node.yoastseo.metakeywords}></meta>
+			<meta property="og:type" content="website"></meta>
+			<meta property="og:title" content={platform.edges[0].node.yoastseo.opengraphtitle}></meta>
+			<meta property="og:description" content={platform.edges[0].node.yoastseo.opengraphdescription}></meta>
+			<meta property="twitter:card" content="summary_large_image"></meta>
+			<meta property="twitter:title" content={platform.edges[0].node.yoastseo.title}></meta>
+			<meta property="twitter:description" content={platform.edges[0].node.yoastseo.twitterdescription}></meta>
 			</Helmet>
 			<div className="bg">
         <div className="area-bg">
@@ -305,7 +314,20 @@ export const pageQuery = graphql`
 						sourceUrl
 					}
 				}
-				
+				 yoastseo {
+				focuskw
+				title
+				metarobotsnofollow
+				metarobotsnoindex
+				metadesc
+				metakeywords
+				opengraphdescription
+				opengraphimage
+				opengraphtitle
+				twitterdescription
+				twittertitle
+				twitterimage
+			  }
 				
 				
 		}}

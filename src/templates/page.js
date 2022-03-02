@@ -51,7 +51,16 @@ const Page = ({ data }) => {
   return (
     <Layout>
 		<Helmet>
-		
+		<title>{page.yoastseo.title} - QL Tech</title>
+		<meta name="title" content={page.yoastseo.title}></meta>
+		<meta name="description" content={page.yoastseo.metadesc}></meta>
+		 <meta name="keywords" content={page.yoastseo.metakeywords}></meta>
+		<meta property="og:type" content="website"></meta>
+		<meta property="og:title" content={page.yoastseo.opengraphtitle}></meta>
+		<meta property="og:description" content={page.yoastseo.opengraphdescription}></meta>
+		<meta property="twitter:card" content="summary_large_image"></meta>
+		<meta property="twitter:title" content={page.yoastseo.title}></meta>
+		<meta property="twitter:description" content={page.yoastseo.twitterdescription}></meta>
 		</Helmet>
       <PageTemplate title={page.title} content={page.content} />
     </Layout>
@@ -69,6 +78,20 @@ export const pageQuery = graphql`
     wpPage(id: { eq: $id }) {
       title
       content
+	  yoastseo {
+				focuskw
+				title
+				metarobotsnofollow
+				metarobotsnoindex
+				metadesc
+				metakeywords
+				opengraphdescription
+				opengraphimage
+				opengraphtitle
+				twitterdescription
+				twittertitle
+				twitterimage
+			  }
 	 
     }
   }
