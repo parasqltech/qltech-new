@@ -182,6 +182,7 @@ exports.createPages = ({ actions, graphql }) => {
     edges {
       node {
         id
+		slug
         Casestudy {
           fieldGroupName
           caseStudy {
