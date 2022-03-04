@@ -9,7 +9,7 @@ import Helmet from 'react-helmet'
 class SingleProject extends Component {
   render() {
     const event = this.props.data.allWpEvent
-	
+	console.log(event);
     return (
       <Layout>
 			<Helmet>
@@ -94,7 +94,7 @@ export const pageQuery = graphql`
 				title
 				slug
 				events{
-					date(formatString: "D MMMM,Y")
+					date
 					image{
 						sourceUrl
 					}

@@ -55,7 +55,7 @@ class Singleservice extends Component {
 	const faq = service.edges[0].node.ServicesFAQ.faq;
 	var flag = 0;
 	faq.map(function(item){
-		if(item.question == ""){
+		if(item.question == null){
 			flag = 1;
 		}
 	}, this)
@@ -330,7 +330,7 @@ class Singleservice extends Component {
 									(prop,i) => {
 									return (
 										<>
-										{(prop.question != "") ? (<div key={i} className="card">
+										{(prop.question != null) ? (<div key={i} className="card">
 										<div className="card-header collapsed bg-white row  m-0" data-toggle="collapse" href={"#faq"+i} role="tab">
 											<span className="toggle-icon"></span> {prop.question}
 										</div>
@@ -459,6 +459,9 @@ export const pageQuery = graphql`
           designationcompany
           fieldGroupName
           testimonial
+		  image {
+            sourceUrl
+          }
         }
 		ServicesFAQ {
           faq {
