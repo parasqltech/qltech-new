@@ -85,15 +85,19 @@ const Footer = () => (
             </div>
             <div className="container">
                     <div className="row">
-                        <div className="col-md-12 text-center">
+						<div className="col-md-4 text-center"> </div>
+                        <div className="col-md-4 text-center">
                              <h6 className="text-white h4 mb-3">Follow us on</h6>
                                 <FooterSocial />
 								
-								<a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
-									<img src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"/>
-								</a>
+								
 								
                         </div>
+						<div className="col-md-4 text-left">
+							<a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
+								<img class="glogo" src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"/>
+							</a>
+						</div>
                     </div>
             </div>
            
