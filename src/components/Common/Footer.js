@@ -88,6 +88,11 @@ const Footer = () => (
                         <div className="col-md-12 text-center">
                              <h6 className="text-white h4 mb-3">Follow us on</h6>
                                 <FooterSocial />
+								
+								<a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
+									<img src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"/>
+								</a>
+								
                         </div>
                     </div>
             </div>
