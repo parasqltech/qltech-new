@@ -19,7 +19,7 @@ ul li, ol li {
 }
 
 .glogo{
-	width:60px;
+	width:60px !important;
 }
 
 .accordion-button{
