@@ -2,13 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     background: #fff;
 }
@@ -549,7 +549,7 @@ h2.title {
     transition-duration: 1000ms;
 }
 .list_title {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 700;
     padding: 10px 0;
     margin-bottom: 0;
@@ -674,7 +674,7 @@ border-radius: 30px;
     background: #DDE0E4;
 }
 .ftd {
-    min-height: 260px;
+    min-height: 275px;
     margin-bottom: 0;
     text-align: justify; 
     /*min-height: 80px;*/
@@ -1285,14 +1285,14 @@ footer{
 }
 .list_cont .img_ex {
     margin-bottom: 0;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 50px;
 }
 .main_title .list_cont .img_ex .span_tag {
     margin-bottom: 0;
     display: inline-block;
-    font-size: 17px;
+    font-size: 15px;
     color: #21A6DF;
     line-height: normal;
 }
@@ -1374,6 +1374,10 @@ footer{
 }
 .btn3:hover::before{
   height: 380%;
+}
+.btn a{
+    color: #21a6df;
+    font-weight: 600;
 }
 .btn:hover a {
     color: #fff;

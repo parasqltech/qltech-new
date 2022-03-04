@@ -242,6 +242,10 @@
     margin: auto;
     box-sizing: border-box;
 }
+.ftd {
+    min-height: 360px;
+}
+
 .img4 {
     right: -15px;
     top: 180px;
@@ -337,10 +341,10 @@
   min-height: 415px;
 }
 .main_title .list_cont .img_ex .span_tag {
-    font-size: 13px;
+    font-size: 12px;
 }
 .list_cont .img_ex {
-    font-size: 13px;
+    font-size: 12px;
 }
 }
 @media(max-width: 1023px){
