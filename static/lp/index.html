@@ -1806,16 +1806,16 @@
 						<div class="form_contacrt fade-down" data-aos="fade-down" data-aos-duration="1000">
 							<form>
 							  <div class="mb-3">
-							    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
+							    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Full Name">
 							   
 							  </div>
 							  <div class="mb-3">
 							   
-							    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+							    <input type="text" class="form-control" id="phone" placeholder="Phone Number">
 							  </div>
 							  <div class="mb-3">
 							   
-							    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="E-mail Address">
+							    <input type="text" class="form-control" id="email" placeholder="E-mail Address">
 							  </div>
 							  <!-- <div class="mb-3">
 								  <textarea class="form-control" placeholder="Write us a messege..." id="floatingTextarea2"></textarea>
@@ -1823,7 +1823,7 @@
 								</div> -->
 							  
 							  <div class="btn_wrap btn btn3">
-	                        	<a href="#sec_09">Book A Session</a>
+	                        	<a class="btn-click" href="javascript:;">Book A Session</a>
 	                        </div>
 							</form>
 						</div>
@@ -1923,6 +1923,16 @@
     <script src="js/aos.js"></script>
 <script>
             $(document).ready(function() {
+			
+				
+			$( ".btn-click" ).click(function() {
+				var name = $("#name").val();
+				var email = $("#email").val();
+				var phone = $("#phone").val();
+				var url = "https://calendly.com/qltechau/discovery-meeting/?name="+name+"location="+phone+"email="+email;
+				window.location.replace(url);
+			});
+			
               $('#testi0').owlCarousel({
                 loop: true,
                 margin: 10,
