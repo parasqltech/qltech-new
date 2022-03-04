@@ -1,0 +1,195 @@
+.mina_g {
+    width: 100%;
+}
+.mina_g svg {
+    width: 100%;
+}
+#Mobileonxe {
+    animation: d_datalthd 3s infinite linear;
+    transform: translate(-88px, -95px);
+}
+@keyframes d_datalthd {
+    0%   {transform: translate(-88px, -95px);}
+    5%   {transform: translate(-66px, -92px);}
+    10%  {transform: translate(-49px, -82px);}
+    15%  {transform: translate(-49px, -82px);}
+    20%  {transform: translate(-41px, -74px);}
+    25%  {transform: translate(-30px, -62px);}
+    30%  {transform: translate(-16px, -35px);}
+    35%  {transform: translate(-8px, -20px);}
+    40%  {transform: translate(12px, 33px);}
+    45%  {transform: translate(40px, 90px);}
+    50%  {transform: translate(58px, 112px);}
+    55%  {transform: translate(83px, 130px);}
+    60%  {transform: translate(105px, 138px);}
+    65%  {transform: translate(127px, 143px);}
+    100%  {transform: translate(145px, 145px);}
+}
+ 
+#second_icon{
+animation: second_anim 3s infinite linear;
+    transform: translate(145px, 0px);
+}
+
+@keyframes second_anim {
+    0%   {transform: translate(-85px, 0px);}
+    100%   {transform: translate(145px, 0px); display: none;}
+    
+}
+#third_icon{
+animation: third_anim 3s infinite linear;
+        transform: translate(145px, -145px);
+}
+
+
+@keyframes third_anim {
+    0% {transform: translate(-87px, 96px);}
+    5%   {transform: translate(-66px, 92px);}
+    10%  {transform: translate(-49px, 82px);}
+    15%  {transform: translate(-41px, 74px);}
+    20%  {transform: translate(-30px, 62px);}
+    25%  {transform: translate(-16px, 35px);}
+    30%  {transform: translate(-8px, 20px);}
+    35%  {transform: translate(12px, -33px);}
+    40%  {transform: translate(40px, -90px);}
+    45%  {transform: translate(58px, -112px);}
+    50%  {transform: translate(83px, -130px);}
+    55%  {transform: translate(105px, -138px);}
+    60%  {transform: translate(127px, -143px);}
+    65%  {transform: translate(145px, -144px);}
+    100%  {transform: translate(145px, -145px);display: none;}
+}
+
+#Group_1952{
+       animation: strat_anim 3s infinite linear;
+       transform: translate(382px, 0px);
+       animation-delay: 3s;
+}
+@keyframes strat_anim {
+    0%   {transform: translate(0px, 0px);}
+    5%   {transform: translate(47px, 0px); opacity: 0;}
+    95%   {transform: translate(374px, 0px); opacity: 0;}
+    100%   {transform: translate(382px, 0px);}
+    
+}
+
+#Group_1953{
+       animation: righttop_anim 3s infinite linear;
+       transform: translate(83px, -44px);
+       animation-delay: 3s;
+}
+@keyframes righttop_anim {
+    0%   {transform: translate(-194px, 351px);}
+    5%   {transform: translate(-127px, 351px);}
+    10%   {transform: translate(-110px, 341px);}
+    15%   {transform: translate(-100px, 334px);}
+    20%   {transform: translate(-90px, 325px);}
+    25%   {transform: translate(-82px, 315px);}
+    30%   {transform: translate(-75px, 300px);}
+    35%   {transform: translate(-65px, 280px);}
+    40%   {transform: translate(-57px, 250px);}
+    45%   {transform: translate(-50px, 230px);}
+    50%   {transform: translate(-45px, 200px);}
+    55%   {transform: translate(-35px, 150px);}
+    60%   {transform: translate(-32px, 130px);}
+    65%   {transform: translate(-27px, 100px);}
+    70%   {transform: translate(-18px, 60px);}
+    75%   {transform: translate(-13px, 36px);}
+    80%   {transform: translate(-5px, 15px);}
+    85%   {transform: translate(10px, -15px);}
+    95%   {transform: translate(35px, -37px);}
+    100%   {transform: translate(83px, -44px);}
+}
+#Sales_dot{
+       animation: rightbtm_anim 3s infinite linear;
+       transform: translate(83px, 44px);
+       animation-delay: 3s;
+}
+@keyframes rightbtm_anim {
+    0%   {transform: translate(-194px, -351px);}
+    5%   {transform: translate(-127px, -351px);}
+    10%   {transform: translate(-110px, -341px);}
+    15%   {transform: translate(-100px, -334px);}
+    20%   {transform: translate(-90px, -325px);}
+    25%   {transform: translate(-82px, -315px);}
+    30%   {transform: translate(-75px, -300px);}
+    35%   {transform: translate(-65px, -280px);}
+    40%   {transform: translate(-57px, -250px);}
+    45%   {transform: translate(-50px, -230px);}
+    50%   {transform: translate(-45px, -200px);}
+    55%   {transform: translate(-35px, -150px);}
+    60%   {transform: translate(-32px, -130px);}
+    65%   {transform: translate(-27px, -100px);}
+    70%   {transform: translate(-18px, -60px);}
+    75%   {transform: translate(-13px, -36px);}
+    80%   {transform: translate(-5px, -15px);}
+    85%   {transform: translate(10px, 15px);}
+    95%   {transform: translate(35px, 37px);}
+    100%   {transform: translate(83px, 44px);}
+}
+#Messaging_dot{
+       animation: Messaging_dot 3s infinite linear;
+       transform: translate(93px, -62px);
+       animation-delay: 3s;
+}
+@keyframes Messaging_dot {
+    0%    {transform: translate(-184px, 136px);}
+    5%    {transform: translate(-150px, 136px);}
+    10%   {transform: translate(-111px, 134px);}
+    15%   {transform: translate(-89px, 130px);}
+    20%   {transform: translate(-80px, 127px);}
+    25%   {transform: translate(-70px, 122px);}
+    30%   {transform: translate(-50px, 104px);}
+    35%   {transform: translate(-40px, 90px);}
+    40%   {transform: translate(-35px, 80px);}
+    45%   {transform: translate(-25px, 60px);}
+    50%   {transform: translate(-18px, 45px);}
+    55%   {transform: translate(-5px, 15px);}
+    60%   {transform: translate(0px, 0px);}
+    65%   {transform: translate(15px, -28px);}
+    70%   {transform: translate(30px, -43px);}
+    75%   {transform: translate(38px, -50px);}
+    80%   {transform: translate(50px, -56px);}
+    85%   {transform: translate(60px, -60px);}
+    95%   {transform: translate(70px, -62px);}
+    100%  {transform: translate(93px, -62px)}
+}
+
+#Group_1953_2{
+       animation: Group_adver 3s infinite linear;
+       transform: translate(93px, -62px);
+       animation-delay: 3s;
+}
+@keyframes Group_adver {
+    0%    {transform: translate(-184px, -136px);}
+    5%    {transform: translate(-150px, -136px);}
+    10%   {transform: translate(-111px, -134px);}
+    15%   {transform: translate(-89px, -130px);}
+    20%   {transform: translate(-80px, -127px);}
+    25%   {transform: translate(-70px, -122px);}
+    30%   {transform: translate(-50px, -104px);}
+    35%   {transform: translate(-40px, -90px);}
+    40%   {transform: translate(-35px, -80px);}
+    45%   {transform: translate(-25px, -60px);}
+    50%   {transform: translate(-18px, -45px);}
+    55%   {transform: translate(-5px, -15px);}
+    60%   {transform: translate(0px, 0px);}
+    65%   {transform: translate(15px, 28px);}
+    70%   {transform: translate(30px, 43px);}
+    75%   {transform: translate(38px, 50px);}
+    80%   {transform: translate(50px, 56px);}
+    85%   {transform: translate(60px, 60px);}
+    95%   {transform: translate(70px, 62px);}
+    100%  {transform: translate(93px, 62px)}
+}
+#Warehouse_R_dot{
+       animation: Warehouse_R 3s infinite linear;
+       transform: translate(88px, 0px);
+       animation-delay: 3s;
+}
+@keyframes Warehouse_R {
+    0%   {transform: translate(-186px, 0px);}
+    5%   {transform: translate(-115px, 0px);}
+    100% {transform: translate(88px, 0px);}
+    
+}
