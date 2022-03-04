@@ -93,7 +93,7 @@ const Footer = () => (
 								
 								
                         </div>
-						<div className="col-md-4 text-left">
+						<div className="col-md-4 text-end ">
 							<a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
 								<img class="glogo" src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"/>
 							</a>

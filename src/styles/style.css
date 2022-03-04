@@ -17,7 +17,9 @@ body {
 ul li, ol li {
 	margin-bottom: 0px !important;
 }
-
+.text-end {
+  text-align: end;
+}
 .glogo{
 	width:60px !important;
 }
