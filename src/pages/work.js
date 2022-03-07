@@ -42,6 +42,7 @@ class FilterGrid extends React.Component {
 
   // Click Function
   onFilterChange = (newFilter,id) => {
+	  console.log(newFilter);
 	  
 	document.querySelectorAll('.flt').forEach(function(button) {	
 		button.classList.remove('menu-active');
