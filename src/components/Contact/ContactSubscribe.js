@@ -1,6 +1,8 @@
 import React,{Component} from "react"
 import SimpleReactValidator from 'simple-react-validator';
 import PropTypes from "prop-types"
+import ReCAPTCHA from "react-google-recaptcha";
+const recaptchaRef = React.createRef();
 class ContactSubscribe extends Component{
 	
 	constructor(props) {
@@ -31,6 +33,9 @@ class ContactSubscribe extends Component{
 	
 	submitForm() {
 	  if (this.validator.allValid()) {
+		  
+		  
+		  
 		var request = new XMLHttpRequest();
 		request.open('POST', 'https://script.google.com/macros/s/AKfycbycfOFmDih98LQhuWITY_JhLYmM_PXpARj0enCNY9cPaCL3xLs/exec', true);
 		

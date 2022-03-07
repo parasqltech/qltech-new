@@ -1,6 +1,7 @@
 import React from "react"
 import SimpleReactValidator from 'simple-react-validator';
-
+import ReCAPTCHA from "react-google-recaptcha";
+const recaptchaRef = React.createRef();
 class ContactCareer extends React.Component{
 	
 	constructor(props) {
@@ -17,6 +18,7 @@ class ContactCareer extends React.Component{
           cctc: '',
           ectc: '',
           resume: '',
+		   shown_captcha: "d-none"
         
 		}
 	  this.submitForm = this.submitForm.bind(this);
@@ -94,7 +96,22 @@ class ContactCareer extends React.Component{
 	
 	submitForm() {
 	  if (this.validator.allValid()) {
+		const recaptchaValue = recaptchaRef.current.getValue();
 		
+		if(recaptchaValue == ''){
+			
+			this.setState({shown_captcha: "d-block"});
+			setTimeout(
+				function() {
+					this.setState({shown_captcha: "d-none"});
+				}
+			.bind(this),
+				2000
+			);
+			
+			
+			return false;
+		}
 		document.getElementById('form').submit()
 	  } else {
 		this.validator.showMessages();
@@ -177,6 +194,15 @@ class ContactCareer extends React.Component{
                                                         </label>
                                                     </div>
                                                 </div>
+												<div className="col-md-12 mt-3">
+											<ReCAPTCHA
+												ref={recaptchaRef}
+												sitekey=" 6Lc5jjEUAAAAAI1yf3CfFogxqiok5pt7wcF7_SKJ"
+											/>
+										</div>
+										
+										
+										<p className={"text-danger er-msg "+this.state.shown_captcha} >Please Verify Captcha.</p>
                                                 <input type="hidden" className="form-control" placeholder="Enter your name" name="url" value="/career" />
                                         <input type="hidden" className="form-control" name="form_name" value="Career" />
                                                 <div className="col-md-12  mb-3 ">

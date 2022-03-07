@@ -1,6 +1,7 @@
 import React from "react"
 import SimpleReactValidator from 'simple-react-validator';
-
+import ReCAPTCHA from "react-google-recaptcha";
+const recaptchaRef = React.createRef();
 class ContactWork extends React.Component{
 	
 	constructor(props) {
@@ -15,6 +16,7 @@ class ContactWork extends React.Component{
           goal: '',
 		  shown: "d-none",
 		  shown_new: "d-none",
+		   shown_captcha: "d-none"
         
 		}
 	  this.submitForm = this.submitForm.bind(this);
@@ -70,7 +72,22 @@ class ContactWork extends React.Component{
 			);
 			return false;
 		}  
+		const recaptchaValue = recaptchaRef.current.getValue();
 		
+		if(recaptchaValue == ''){
+			
+			this.setState({shown_captcha: "d-block"});
+			setTimeout(
+				function() {
+					this.setState({shown_captcha: "d-none"});
+				}
+			.bind(this),
+				2000
+			);
+			
+			
+			return false;
+		}
 		var myarr = ["free", "downloads", "offers", "DA", "PA", "affordable price", "clients", "Some example", "services", "giveaways", "goal", "example", "test", "Marketing", "traffic", "offers","Bitcoin", "ervaringen", "review", "Capsules", "Amoxicillin", "blogger", "supplier", "SEO", "backlinks", "Digital", "Marketing", "link builder", "domain authority", "Off–Page",  "Title Tag Optimization", "Meta Tag Optimization", "keyword", "SERPs"];
 		
 		var flag = 0;
@@ -131,6 +148,15 @@ class ContactWork extends React.Component{
 											<label className="label-text">Your Goal</label>
 											<textarea rows="3" onChange={this.goal} className="form-control" placeholder="" name="message" required>{this.state.goal}</textarea>
 										</div>
+										<div className="col-md-12 mt-3">
+											<ReCAPTCHA
+												ref={recaptchaRef}
+												sitekey=" 6Lc5jjEUAAAAAI1yf3CfFogxqiok5pt7wcF7_SKJ"
+											/>
+										</div>
+										
+										
+										<p className={"text-danger er-msg "+this.state.shown_captcha} >Please Verify Captcha.</p>
 										<input type="hidden" required className="form-control" name="url" value={this.props.url} />
 										<input type="hidden" required className="form-control" name="form_name" value="Contact-us" />
 										<p  className={"text-danger er-msg "+this.state.shown} >Invalid Message.</p>
