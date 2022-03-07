@@ -24,6 +24,10 @@ ul li, ol li {
 	width:60px !important;
 }
 
+footer{
+	padding-bottom: 0px !important;
+}
+
 .accordion-button{
 	width: 100%;
 background: transparent;
