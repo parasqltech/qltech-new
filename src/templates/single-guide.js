@@ -30,7 +30,7 @@ class Singleguide extends Component {
   render() {
     const blog = this.props.data.allWpGuide
 	
-   
+   console.log(blog);
    
     return (
       <Layout>
