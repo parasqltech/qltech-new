@@ -127,7 +127,7 @@ class FilterGrid extends React.Component {
                             return (    
                                     <>
 									<ReactWOW   animation='fadeInLeft'>
-								<div className={ 'grid-item    work-thumbnial '+ prop.node.categories.nodes.map(item => { return ( item.slug ) }) } >
+								<div className={ 'grid-item    work-thumbnial '+ prop.node.categories.nodes.map(item => { return ( " "+item.slug ) }) } >
                         <div className="work-thumbnail-image">
                             
 								{(prop.node.work.mainImage != "") ? (<img src={prop.node.work.mainImage.sourceUrl} className="img-fluid" alt=""/>) : ('')}
