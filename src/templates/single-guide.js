@@ -98,8 +98,8 @@ class Singleguide extends Component {
             <p className="sub-heading text-center pb-4" >{blog.edges[0].node.GuideWorksheetextra.guideOfferSubtitle}</p>
             <div className="row">
                 {
-				blog.edges[0].node.whatThisGuideHasToOfffer &&
-				blog.edges[0].node.whatThisGuideHasToOfffer.map(
+				blog.edges[0].node.GuideWorksheetextra.whatThisGuideHasToOfffer &&
+				blog.edges[0].node.GuideWorksheetextra.whatThisGuideHasToOfffer.map(
                 propd => {
 					return (
 						<Tilt className=" col-lg-4 col-md-6 customer-benifil">
