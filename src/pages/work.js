@@ -42,7 +42,7 @@ class FilterGrid extends React.Component {
 
   // Click Function
   onFilterChange = (newFilter,id) => {
-	  console.log(newFilter);
+	 
 	  
 	document.querySelectorAll('.flt').forEach(function(button) {	
 		button.classList.remove('menu-active');
@@ -124,10 +124,12 @@ class FilterGrid extends React.Component {
 					<div className="gutter-sizer"></div>
                      {posts && posts && posts.edges.map(
                         prop => {
-                            return (    
+							var str = "";
+                          prop.node.categories.nodes.map(item => { str+= " "+item.slug+" "; })
+							return (    
                                     <>
 									<ReactWOW   animation='fadeInLeft'>
-								<div className={ 'grid-item    work-thumbnial '+ prop.node.categories.nodes.map(item => { return ( " "+item.slug ) }) } >
+								<div className={ 'grid-item    work-thumbnial '+str } >
                         <div className="work-thumbnail-image">
                             
 								{(prop.node.work.mainImage != "") ? (<img src={prop.node.work.mainImage.sourceUrl} className="img-fluid" alt=""/>) : ('')}
