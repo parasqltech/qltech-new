@@ -1815,7 +1815,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<div class="col-md-6">
 						<div class="form_contacrt fade-down" data-aos="fade-down" data-aos-duration="1000">
-							<form>
+							<form id="form">
 							  <div class="mb-3">
 							    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Full Name">
 							   
@@ -1949,6 +1949,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							window.dataLayer = window.dataLayer || [];
 							window.dataLayer.push({'event': 'LPFormFilled'});
 							console.log(data);
+							$("#form").trigger('reset');
 							var url = "https://calendly.com/qltechau/discovery-meeting/?name="+name+"&location="+phone+"&email="+email;
 							//window.location.replace(url);
 						},
