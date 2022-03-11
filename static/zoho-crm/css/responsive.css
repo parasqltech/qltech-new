@@ -347,6 +347,7 @@ display: block;
 }
 .main_form {
     margin-top: 20px;
+     margin-bottom: 20px;
 }
 #navbarTogglerDemo02 {
     background: #fff;
@@ -388,5 +389,10 @@ display: block;
 }
 .cont_icon_o{
     padding: 25px;
+}
+.link_wr li{
+    display: block;
+    width: 100%;
+    float: none;
 }
 }

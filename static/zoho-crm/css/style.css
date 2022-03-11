@@ -125,7 +125,7 @@ span{
 .sec02{
     position: relative;
     background:#F8F9FD;
-    padding: 50px 0;
+    padding: 100px 0;
     box-sizing: border-box;
     background-image: url(../img/Maskgroup.png);
     background-repeat: no-repeat;
@@ -482,18 +482,18 @@ min-height: 120px;
 
 /*footer*/
 .main_footer {
-    background: #21A6DF;
-    padding: 50px 0;
+    background: #F4FCFF;
+    padding: 50px 0 0;
     box-sizing: border-box;
 }
 .main_footer .title_1 {
     padding-bottom: 50px;
     box-sizing: border-box;
-    color: #fff;
+    color: #000;
 }
 .main_form input {
     background: #3EB2E3;
-    height: 50px;
+    height: 40px;
     border-radius: 15px;
 }
 .main_form input:focus {
@@ -662,9 +662,9 @@ button.our_chen.cont_us.btn.btn3 {
     display: block;
     border-radius: 15px;
 }
-footer .col-md-6 {
+/*footer .col-md-6 {
     padding-right: 0;
-}
+}*/
 .main_toolip a{
     font-size: 10px;
 }
@@ -715,4 +715,86 @@ footer .col-md-6 {
 }
 .cust_name b {
     color: #21A6DF;
+}
+.bottome_footer .text-center p {
+    margin-bottom: 0;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    color: #fff;
+    margin-top: 20px;
+    font-size: 14px;
+}
+/*UPDATE fOOTER*/
+    footer {
+    background-color: #21A6DF;
+    padding-top: 50px;
+}
+.top_footer {
+    color: #fff;
+}
+.logo_footer {
+    max-width: 100px;
+}
+.cont_footer {
+    padding: 20px 0px;
+}
+.cont_footer p {
+    margin-bottom: 0;
+}
+.sosial_g ul {
+    padding: 0;
+}
+.sosial_g ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.sosial_g ul li a {
+    width: 30px;
+    height: 30px;
+    background: #ffff;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    color: #21A6DF;
+    border-radius: 100%;
+    font-size: 16px;
+}
+.sosial_g ul li a {
+    width: 30px;
+    height: 30px;
+    background: #ffff;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    color: #21A6DF;
+    border-radius: 100%;
+    font-size: 16px;
+}
+.link_wr h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.link_wr ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.link_wr li {
+    width: 50%;
+    float: left;
+}
+.link_wr ul li a {
+    color: #fff;
+    line-height: 32px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .main {
+  padding-top: 102px;
+}
+header{
+    z-index: 999;
 }
