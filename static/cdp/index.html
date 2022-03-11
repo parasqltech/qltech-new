@@ -1951,7 +1951,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							console.log(data);
 							$("#form").trigger('reset');
 							var url = "https://calendly.com/qltechau/discovery-meeting/?name="+name+"&location="+phone+"&email="+email;
-							//window.location.replace(url);
+							window.location.replace(url);
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
 							console.log("Error"+errorThrown);
