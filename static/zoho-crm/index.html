@@ -1043,12 +1043,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <script src="js/aos.js"></script>
 <script>
             $(document).ready(function() {
-              $( ".btn-click" ).click(function() {
+              
+			  function validateEmail($email) {
+			  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			  return emailReg.test( $email );
+			}
+			  
+			  $( ".btn-click" ).click(function() {
 				var name = $("#name").val();
 				var email = $("#email").val();
 				var phone = $("#phone").val();
 				var form  = "Zoho CRM Form";
 				var url_page = "/zoho-crm";
+				
+				if(name == ""){
+					alert("Please enter name.");
+					return false;
+				}
+				if(email == ""){
+					alert("Please enter email address.");
+					return false;
+				}
+				if(phone == ""){
+					alert("Please enter phone number.");
+					return false;
+				}
+				if( !validateEmail(email)) { 
+					alert("Enter valid email address.");
+					return false;
+				}
 				
 				if(name != "" && email != "" && phone != ""){
 					$.ajax({
