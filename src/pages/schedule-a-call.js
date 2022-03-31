@@ -25,7 +25,7 @@ class Calendly extends React.Component {
     script.setAttribute('src',  'https://assets.calendly.com/assets/external/widget.js');
     head.appendChild(script);
 	const windowUrl = window.location.search;
-	const params = new URLSearchParams(windowUrl);
+	const params = new URLSearchParams(this.props.location.search);
 	const name ="";
 	const email ="";
 	const phone ="";
