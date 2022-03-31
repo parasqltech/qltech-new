@@ -1962,6 +1962,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					alert("Enter valid email address.");
 					return false;
 				}
+				if(!/^[0-9]+$/.test(phone)){
+					alert("Enter valid phone number.");
+					return false;
+				}
 				if(name != "" && email != "" && phone != ""){
 					$.ajax({
 						url: "https://steamlinedesign.com/qltech/new/zoho_api/index.php",

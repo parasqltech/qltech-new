@@ -86,8 +86,9 @@ section.section05 .row.text-center::after{
 
 @media(max-width: 767px){
 .our_dev {
-    padding-top: 50px;
+    padding-top: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 .our_dev p br {
     display: none;
@@ -244,5 +245,9 @@ padding-top: 25px;
 }
 .section11 .ix_icon{
     min-height: unset;
+}
+.section05 h2.title_f.text-center {
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 }

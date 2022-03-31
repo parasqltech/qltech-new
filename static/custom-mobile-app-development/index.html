@@ -2,10 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="keywords" content="App Lander">
-	<meta name="description" content="App Lander">
-	<title>App Lander</title>
-    <meta name="author" content="App Lander">
+	<meta name="keywords" content="Custom Mobile App Development | Mobile Apps Development Services Perth - QL Tech">
+	<meta name="description" content="QL Tech IT Solution is an custom mobile App Development Company providing expert iOS and android developers for custom mobile app development & mobile apps design.">
+	<title>Custom Mobile App Development | Mobile Apps Development Services Perth - QL Tech</title>
+    <meta name="author" content="QL Tech">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"
     >
     <link rel="icon" type="image/x-icon" href="img/Logo05.png">
@@ -19,9 +19,19 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WKD5LWX');</script>
+<!-- End Google Tag Manager -->
 </head>
 <body> 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WKD5LWX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 	<header id="myHeader">
 		<div class="main_header">
 			 <nav class="navbar navbar-expand-lg navbar-light">
@@ -792,7 +802,8 @@
 				</div>
 			</div>
 		</section>
-		<section id="main_footer" class="section013 pb pt">
+
+		<section class="section013 pb pt" id="main_footer">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-md-6">
@@ -961,8 +972,7 @@
 <!--     <script src="js/aos.js"></script> -->
 <script>
             $(document).ready(function() {
-              
-			  function validateEmail($email) {
+				function validateEmail($email) {
 			  var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 			  return emailReg.test( $email );
 			}
@@ -971,7 +981,7 @@
 				var email = $("#email").val();
 				var phone = $("#phone").val();
 				var form  = "Zoho CRM Form";
-				var url_page = "/custom-mobile-app-development";
+				var url_page = "/zoho-crm";
 				
 				if(name == ""){
 					alert("Please enter name.");
@@ -989,6 +999,11 @@
 					alert("Enter valid email address.");
 					return false;
 				}
+				if(!/^[0-9]+$/.test(phone)){
+					alert("Enter valid phone number.");
+					return false;
+				}
+				
 				
 				if(name != "" && email != "" && phone != ""){
 					$.ajax({
@@ -1013,9 +1028,9 @@
 				
 				
 				
-			});  
-			  
-			  $('#testi1').owlCarousel({
+			});	
+			
+              $('#testi1').owlCarousel({
                 loop: true,
                 margin: 10,
                 autoplay:true,
@@ -1045,6 +1060,7 @@
             })
           </script>	
           <script>
+          	 $(document).ready(function() {
             $('#testi2').owlCarousel({
 			    loop:true,
 			    margin:10,
@@ -1063,6 +1079,7 @@
 			        }
 			    }
 			})
+			})
           </script>	
           <script>
 				window.onscroll = function() {myFunction()};
@@ -1078,17 +1095,7 @@
 				  }
 				}
 				</script>	
-           <!-- <script>
-		      AOS.init({
-		        once: true,
-		      });
-		    </script> -->
-		  <!--   <script>
-			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-			  return new bootstrap.Tooltip(tooltipTriggerEl)
-			})
-			</script> -->
+       
 			<script type="text/javascript">
 				// select all accordion items
 					const accItems = document.querySelectorAll(".accordion__item");
@@ -1126,6 +1133,18 @@
 			        $("#youtube3").fancybox();
 			    });
 			</script>
+			<script>
+			    $(document).ready(function(){
+				  $(function(){ 
+				     var navMain = $(".navbar-collapse");
+
+				     navMain.on("click", "a", null, function () {
+				         navMain.collapse('hide');
+				     });
+				 });
+				});
+			</script>
+			
 
 </body>
 </html>
