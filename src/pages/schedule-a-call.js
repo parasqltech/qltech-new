@@ -51,7 +51,7 @@ class Calendly extends React.Component {
         <div id="schedule_form">
           <div 
             className="calendly-inline-widget"
-            data-url={this.url}
+            data-url={this.state.url}
             style={{ minWidth: '320px', height: '650px' }} />
         </div>
       </Layout>
