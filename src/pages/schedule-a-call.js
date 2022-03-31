@@ -24,11 +24,8 @@ class Calendly extends React.Component {
     const script = document.createElement('script');
     script.setAttribute('src',  'https://assets.calendly.com/assets/external/widget.js');
     head.appendChild(script);
-	const windowUrl = window.location.search;
-	const params = new URLSearchParams(this.props.location.search);
-	const name ="";
-	const email ="";
-	const phone ="";
+	
+	
 	if(this.props.location.search != ""){
 		var p = this.props.location.search.replace('?','');
 		const myArray = p.split("&");
