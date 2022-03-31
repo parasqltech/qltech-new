@@ -35,8 +35,8 @@ class Calendly extends React.Component {
 		name = param['name'];
 		phone = param['location'];
 		email = param['email'];
-		curl ="https://calendly.com/qltechau/discovery-meeting/?name="+name+"&location="+phone+"&email="+email;
-		this.setState({url: curl});
+		var url ="https://calendly.com/qltechau/discovery-meeting/?name="+name+"&location="+phone+"&email="+email;
+		this.setState({url: url});
 	}
 	
   }
