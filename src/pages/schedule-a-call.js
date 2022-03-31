@@ -29,8 +29,6 @@ class Calendly extends React.Component {
 	const name ="";
 	const email ="";
 	const phone ="";
-	console.log(param);
-	console.log(windowUrl);
 	const curl ="https://calendly.com/qltechau/discovery-meeting";
 	if(params.length > 0){
 		console.log(param);
