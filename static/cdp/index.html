@@ -1962,7 +1962,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					alert("Enter valid email address.");
 					return false;
 				}
-				if(!/^[0-9]+$/.test(phone)){
+				if(!/^[0-9\+]+$/.test(phone)){
 					alert("Enter valid phone number.");
 					return false;
 				}

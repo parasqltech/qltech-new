@@ -980,8 +980,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				var name = $("#name").val();
 				var email = $("#email").val();
 				var phone = $("#phone").val();
-				var form  = "Zoho CRM Form";
-				var url_page = "/zoho-crm";
+				var form  = "App Development Form";
+				var url_page = "/custom-mobile-app-development";
 				
 				if(name == ""){
 					alert("Please enter name.");
@@ -999,7 +999,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					alert("Enter valid email address.");
 					return false;
 				}
-				if(!/^[0-9]+$/.test(phone)){
+				if(!/^[0-9\+]+$/.test(phone)){
 					alert("Enter valid phone number.");
 					return false;
 				}
