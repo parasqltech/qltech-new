@@ -1003,7 +1003,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					alert("Enter valid phone number.");
 					return false;
 				}
-				
+				if(phone.length < 9){
+					alert("Enter valid phone number.");
+					return false;
+				}
 				
 				if(name != "" && email != "" && phone != ""){
 					$.ajax({
@@ -1016,7 +1019,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							window.dataLayer.push({'event': 'LPFormFilled'});
 							console.log(data);
 							$("#form").trigger('reset');
-							var url = "https://www.qltech.com.au/schedule-a-call/?name="+name+"&location="+phone+"&email="+email;
+							var url = "https://www.qltech.com.au/schedule-a-meeting/?name="+name+"&location="+phone+"&email="+email;
 							window.location.replace(url);
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
