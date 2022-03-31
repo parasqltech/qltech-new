@@ -29,16 +29,21 @@ class Calendly extends React.Component {
 	const name ="";
 	const email ="";
 	const phone ="";
-	console.log(params);
-	const curl ="https://calendly.com/qltechau/discovery-meeting";
-	if(params.length > 0){
-		console.log(params);
-		name = param['name'];
-		phone = param['location'];
-		email = param['email'];
+	if(this.props.location.search != ""){
+		var p = this.props.location.search.replace('?','');
+		const myArray = p.split("&");
+		var n = myArray[0].split("=");
+		var name = n[1];
+		var p = myArray[1].split("=");
+		var phone = p[1];
+		var e = myArray[2].split("=");
+		var email = e[1];
 		var url ="https://calendly.com/qltechau/discovery-meeting/?name="+name+"&location="+phone+"&email="+email;
 		this.setState({url: url});
 	}
+	
+	
+	
 	
   }
 
