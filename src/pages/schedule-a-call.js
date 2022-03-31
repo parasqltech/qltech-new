@@ -17,7 +17,7 @@ class Calendly extends React.Component {
 		name = param['name'];
 		phone = param['location'];
 		email = param['email'];
-		const curl ="https://calendly.com/qltechau/discovery-meeting/?name="+name+"&location="+phone+"&email="+email;
+		 curl ="https://calendly.com/qltechau/discovery-meeting/?name="+name+"&location="+phone+"&email="+email;
 	}
 	
   }
@@ -32,7 +32,7 @@ class Calendly extends React.Component {
         <div id="schedule_form">
           <div 
             className="calendly-inline-widget"
-            data-url=curl
+            data-url={curl}
             style={{ minWidth: '320px', height: '650px' }} />
         </div>
       </Layout>
