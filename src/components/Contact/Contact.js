@@ -127,7 +127,7 @@ class Contact extends React.Component{
   render (){
     return(
       <>
-      <form method="POST" id="form" action="https://script.google.com/macros/s/AKfycbxf0GA3utFOHN58ZRVGfQl8TvC3L-4arcZEplqdPmsKuXmQiByySe6UEqeFHkwsHFOmYg/exec"  >
+      <form method="POST" id="form" action="https://script.google.com/macros/s/AKfycbzteG10RHf7D6zzRQeJJHjBXRE6q4No1v96sBL3oYNI63P80DNHLjLZsEH20IicRNGAYA/exec"  >
 	  
 	  
 							<div className="row justify-content-center">
