@@ -82,6 +82,12 @@ section.section05 .row.text-center::after{
 .section11 .ix_icon{
      min-height: 200px;   
 }
+.section03 p {
+    font-size: 12px;
+}
+.section03 h6{
+    font-size: 14px;
+}
 }
 
 @media(max-width: 767px){
@@ -249,5 +255,11 @@ padding-top: 25px;
 .section05 h2.title_f.text-center {
     padding-bottom: 20px;
     box-sizing: border-box;
+}
+.imgt_d.fon_mobile {
+    display: none;
+}
+.section08{
+    margin-bottom: 0;
 }
 }
