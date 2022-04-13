@@ -1017,6 +1017,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 						success: function (data, textStatus, jqXHR) {
 							window.dataLayer = window.dataLayer || [];
 							window.dataLayer.push({'event': 'LPFormFilled'});
+							window.dataLayer.push({'Label Name': 'applandingpage'});
 							console.log(data);
 							$("#form").trigger('reset');
 							var url = "https://www.qltech.com.au/schedule-a-meeting/?name="+name+"&location="+phone+"&email="+email;
