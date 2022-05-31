@@ -10,10 +10,38 @@
 		}
 		
 	}
+.label-text ul {
+    padding-left: 20px;
+    box-sizing: border-box;
+}
 
+@media (min-width: 768px) and (max-width: 991px){
+.label-text ul {
+    padding-left: 17px;
+}
+}
+@media (min-width: 577px) and (max-width: 767px){
+.label-text ul {
+    padding-left: 20px;
+}
+}
+@media(max-width: 576px){
+.label-text ul {
+    padding-left: 3px;
+}
+}
 .thumbnial-details strong{
   font-weight: normal;
 }
+
+section.resource-section-1 .thumbnial-content h2 {
+    font-size: 20px;
+    min-height: 50px;
+    vertical-align: middle;
+    display: block;
+    width: 100%;
+}
+
 @charset "UTF-8";
 
 body {
