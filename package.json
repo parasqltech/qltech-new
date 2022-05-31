@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "amplitude-js": "^8.18.3",
     "bootstrap": "^5.1.3",
     "gatsby": "^4.0.0",
     "gatsby-awesome-pagination": "^0.3.8",
