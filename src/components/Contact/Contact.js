@@ -2,7 +2,7 @@ import React from "react"
 import SimpleReactValidator from 'simple-react-validator';
 import ReCAPTCHA from "react-google-recaptcha";
 const recaptchaRef = React.createRef();
-
+import axios from 'axios';
 class Contact extends React.Component{
 	
 	constructor(props) {
@@ -112,7 +112,28 @@ class Contact extends React.Component{
 			);
 		}
 		else{
-			document.getElementById('form').submit();	
+			
+			const payload = {
+			  first_name: this.state.first_name,
+			  last_name: this.state.last_name,
+			  email: this.state.email,	
+				number: this.state.number,
+				goal: this.state.goal,
+			  form_name: 'Contact-us',
+			 
+			}
+
+			axios({
+			  method: 'post',
+			  url: 'https://steamlinedesign.com/qltech/formbucket/',
+			  data: payload, // you are sending body instead
+			  headers: {
+			   // 'Authorization': `bearer ${token}`,
+			  //'Content-Type': 'application/json'
+			  }, 
+			}).then(function(response) {
+			console.log(response);
+		    });	
 		}	
 		
 		//document.getElementById('form').submit()
