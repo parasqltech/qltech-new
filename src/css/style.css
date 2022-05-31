@@ -64,6 +64,9 @@
 
 /* HTML elements */
 
+.thumbnial-details strong{
+  font-weight: normal;
+}
 *,
 :after,
 :before {
