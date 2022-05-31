@@ -129,7 +129,7 @@ class Contact extends React.Component{
 			  data: payload, // you are sending body instead
 			  headers: {
 			   // 'Authorization': `bearer ${token}`,
-			  //'Content-Type': 'application/json'
+			  'Content-Type': 'multipart/form-data'
 			  }, 
 			}).then(function(response) {
 			console.log(response);
