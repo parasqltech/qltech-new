@@ -35,21 +35,25 @@ class ContactSubscribe extends Component{
 	submitForm() {
 	  if (this.validator.allValid()) {
 		  
-		  
-		  
-		var request = new XMLHttpRequest();
-		request.open('POST', 'https://script.google.com/macros/s/AKfycbycfOFmDih98LQhuWITY_JhLYmM_PXpARj0enCNY9cPaCL3xLs/exec', true);
-		
-		var formData = new FormData();
-		
-		formData.append("first_name", "Friend");
-		formData.append("last_name", "Friend");
-		formData.append("form_name", "Email");
-		formData.append("email", this.state.email);
-		formData.append("url",  "footer"+window.location.pathname);
-		request.send(formData);
-		
-		this.setState({shown: "d-block"});
+		  const payload = {
+			  first_name: "Friend",
+			  last_name: "Friend",
+			  email: this.state.email,	
+				url: "footer"+window.location.pathname,
+			  	form_name: 'Email',
+			 
+			}
+
+			axios({
+			  method: 'post',
+			  url: 'https://steamlinedesign.com/qltech/formbucket/',
+			  data: payload, // you are sending body instead
+			  headers: {
+			   // 'Authorization': `bearer ${token}`,
+			  'Content-Type': 'multipart/form-data'
+			  }, 
+			}).then(function(response) {
+			this.setState({shown: "d-block"});
 		
 		this.setState({email: " "});
 		setTimeout(
@@ -60,7 +64,7 @@ class ContactSubscribe extends Component{
 			.bind(this),
 			3000
 		);
-		
+		    });	
 		
 	  } else {
 		this.validator.showMessages();
