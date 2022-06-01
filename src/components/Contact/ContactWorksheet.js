@@ -115,7 +115,29 @@ class ContactWorksheet extends React.Component{
 			);
 		}
 		else{
-			document.getElementById('form').submit();	
+			const payload = {
+			  first_name: this.state.first_name,
+			  last_name: this.state.last_name,
+			  email: this.state.email,	
+				number: this.state.number,
+				goal: this.state.goal,
+				crm: this.state.crm,
+				form_name: "Resource",
+			}
+			
+			
+
+			axios({
+			  method: 'post',
+			  url: 'https://steamlinedesign.com/qltech/formbucket/',
+			  data: payload, // you are sending body instead
+			  headers: {
+			   // 'Authorization': `bearer ${token}`,
+			  'Content-Type': 'multipart/form-data'
+			  }, 
+			}).then(function(response) {
+			console.log(response);
+		    });		
 		}
 	  } else {
 		this.validator.showMessages();
