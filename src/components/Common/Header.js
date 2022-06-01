@@ -8,7 +8,7 @@ import ProcessHeader from './ProcessHeader'
 
 
 
-lass Header extends Component {
+class Header extends Component {
 	
 	
 	
