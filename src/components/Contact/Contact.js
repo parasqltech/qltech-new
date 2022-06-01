@@ -119,7 +119,8 @@ class Contact extends React.Component{
 			  email: this.state.email,	
 				number: this.state.number,
 				goal: this.state.goal,
-			  form_name: 'Contact-us',
+				url: window.location.href,
+			  	form_name: 'Contact-us',
 			 
 			}
 
