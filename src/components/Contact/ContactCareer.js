@@ -113,7 +113,29 @@ class ContactCareer extends React.Component{
 			
 			return false;
 		}
-		document.getElementById('form').submit()
+		  const payload = {
+			  first_name: this.state.first_name,
+			  last_name: this.state.last_name,
+			  email: this.state.email,	
+				Position: this.state.Position,
+				CCTC: this.state.cctc,
+				ECTC: this.state.ectc,
+			  form_name: 'Career',
+			 
+			}
+
+			axios({
+			  method: 'post',
+			  url: 'https://steamlinedesign.com/qltech/formbucket/',
+			  data: payload, // you are sending body instead
+			  headers: {
+			   // 'Authorization': `bearer ${token}`,
+			  'Content-Type': 'multipart/form-data'
+			  }, 
+			}).then(function(response) {
+			console.log(response);
+		    });
+		//document.getElementById('form').submit()
 	  } else {
 		this.validator.showMessages();
 		// rerender to show messages for the first time
