@@ -6,8 +6,27 @@ import IndustriesHeader from './IndustriesHeader'
 import PlatformHeader from './PlatformHeader'
 import ProcessHeader from './ProcessHeader'
 
-const Navbar = () => (
-  <StaticQuery
+
+
+lass Header extends Component {
+	
+	
+	
+	
+	componentDidMount() {
+		
+		
+		
+		
+    }
+	
+	render() {
+		
+		
+
+		return (
+			
+				<StaticQuery
     query={graphql`
       query {
         allWordpressMenuLocation(filter: {menu: {slug: {eq: "main-menu"}}}) {
@@ -167,6 +186,16 @@ const Navbar = () => (
 	</div>
     )}
   />
-)
+			
+		)
+	}
+}
 
-export default Navbar
+
+
+export default Header
+
+
+
+
+
