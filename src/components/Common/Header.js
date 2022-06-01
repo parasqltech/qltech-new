@@ -25,7 +25,7 @@ lass Header extends Component {
 		
 
 		return (
-			
+			<>
 				<StaticQuery
     query={graphql`
       query {
@@ -186,7 +186,7 @@ lass Header extends Component {
 	</div>
     )}
   />
-			
+		</>	
 		)
 	}
 }
