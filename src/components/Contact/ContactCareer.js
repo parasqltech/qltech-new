@@ -3,6 +3,8 @@ import SimpleReactValidator from 'simple-react-validator';
 import ReCAPTCHA from "react-google-recaptcha";
 const recaptchaRef = React.createRef();
 import axios from 'axios';
+import { init } from '@amplitude/analytics-browser';
+import { track } from '@amplitude/analytics-browser';
 class ContactCareer extends React.Component{
 	
 	constructor(props) {
@@ -113,6 +115,25 @@ class ContactCareer extends React.Component{
 			
 			return false;
 		}
+		  init("30c4c799e1eda5b6cfe2d675f3b9e12e");
+		  const ru = false;
+		  if(this.state.resume != ""){
+		  	ru = true;
+		  }
+			const eventProperties = {
+			  firstName: this.state.first_name,
+			lastName: this.state.last_name,
+				email: this.state.email,
+				contactNumber: this.state.number,
+				jobRole: this.state.Position,
+				currentCTC: this.state.cctc,
+				expectedCTC: this.state.ectc,
+				resumeUploaded: ru,
+
+			};
+			console.log(eventProperties);
+		track('Opportunities Form Filled', eventProperties);
+		  
 		  const payload = {
 			  first_name: this.state.first_name,
 			  last_name: this.state.last_name,
