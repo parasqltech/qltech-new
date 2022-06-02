@@ -51,6 +51,7 @@ console.log(url_action); // "playlist"
 		anonymoudId: anid,	
 			
 		};
+		console.log(eventProperties);
 		track('Page Viewed', eventProperties);
 		
     }
