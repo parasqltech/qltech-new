@@ -1971,18 +1971,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					return false;
 				}
 				if(name != "" && email != "" && phone != ""){
-					var url = "https://www.qltech.com.au/schedule-a-meeting/?name="+name+"&location="+phone+"&email="+email;
+					var urls = "https://www.qltech.com.au/schedule-a-meeting/?name="+name+"&location="+phone+"&email="+email;
 					$.ajax({
 						url: "https://steamlinedesign.com/qltech/new/zoho_api/index.php",
 						dataType: "json",
 						type: "post",
-						data: {name:name,email:email,phone:phone,form:form,url:url_page,actual_url:url},
+						data: {name:name,email:email,phone:phone,form:form,url:url_page,actual_url:urls},
 						success: function (data, textStatus, jqXHR) {
 							window.dataLayer = window.dataLayer || [];
 							window.dataLayer.push({'event': 'LPFormFilled'});
 							console.log(data);
 							$("#form").trigger('reset');
-							
+							var url = "https://www.qltech.com.au/schedule-a-meeting/?name="+name+"&location="+phone+"&email="+email;
 							window.location.replace(url);
 						},
 						error: function (jqXHR, textStatus, errorThrown) {
