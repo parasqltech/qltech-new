@@ -6,7 +6,7 @@ import axios from 'axios';
 import Cookies from 'universal-cookie';
 import { init } from '@amplitude/analytics-browser';
 import { track } from '@amplitude/analytics-browser';
-
+import { Identify, identify } from '@amplitude/analytics-browser';
 class Contact extends React.Component{
 	
 	constructor(props) {
@@ -117,6 +117,16 @@ class Contact extends React.Component{
 		}
 		else{
 			init("30c4c799e1eda5b6cfe2d675f3b9e12e");
+			
+			const identifyObj = new Identify();
+identifyObj.set('firstName', this.state.first_name);
+			identifyObj.set('lastName', this.state.last_name);
+			identifyObj.set('email', this.state.email);
+			identifyObj.set('contactNumber', this.state.number);
+			identifyObj.set('goal', this.state.goal);
+identify(identifyObj);
+			
+			
 			const eventProperties = {
 			  firstName: this.state.first_name,
 			lastName: this.state.last_name,
@@ -126,7 +136,7 @@ class Contact extends React.Component{
 
 			};
 			console.log(eventProperties);
-		track('Contact Us Form Filled', eventProperties);
+			track('Contact Us Form Filled', eventProperties);
 			const payload = {
 			  first_name: this.state.first_name,
 			  last_name: this.state.last_name,
