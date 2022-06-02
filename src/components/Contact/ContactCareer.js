@@ -5,6 +5,7 @@ const recaptchaRef = React.createRef();
 import axios from 'axios';
 import { init } from '@amplitude/analytics-browser';
 import { track } from '@amplitude/analytics-browser';
+import { Identify, identify } from '@amplitude/analytics-browser';
 class ContactCareer extends React.Component{
 	
 	constructor(props) {
@@ -120,6 +121,18 @@ class ContactCareer extends React.Component{
 		  if(this.state.resume != ""){
 		  	ru = true;
 		  }
+		  const identifyObj = new Identify();
+identifyObj.set('firstName', this.state.first_name);
+			identifyObj.set('lastName', this.state.last_name);
+			identifyObj.set('email', this.state.email);
+			identifyObj.set('contactNumber', this.state.number);
+			identifyObj.set('jobRole', this.state.Position);
+		  identifyObj.set('currentCTC', this.state.cctc);
+		  identifyObj.set('expectedCTC', this.state.ectc);
+		  identifyObj.set('resumeUploaded', ru);
+identify(identifyObj);
+		  
+		  
 			const eventProperties = {
 			  firstName: this.state.first_name,
 			lastName: this.state.last_name,
