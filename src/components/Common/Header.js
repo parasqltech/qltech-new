@@ -5,18 +5,46 @@ import ServiceHeader from './ServiceHeader'
 import IndustriesHeader from './IndustriesHeader'
 import PlatformHeader from './PlatformHeader'
 import ProcessHeader from './ProcessHeader'
-
-
-
+import Cookies from 'universal-cookie';
+import { init } from '@amplitude/analytics-browser';
+import { track } from '@amplitude/analytics-browser';
 class Header extends Component {
 	
+	    constructor(props) {
+		super(props);
+		
+		
+		
+		
+		
+		
+		this.createUUID = this.createUUID.bind(this);	
+	}
 	
 	
-	
+	 createUUID(){
+    		var dt = new Date().getTime();
+    		var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        		var r = (dt + Math.random()*16)%16 | 0;
+        		dt = Math.floor(dt/16);
+        		return (c=='x' ? r :(r&0x3|0x8)).toString(16);
+    		});
+    		return uuid;
+	}
 	componentDidMount() {
 		
-		
-		
+	cookies = new Cookies();
+		var aid =  cookies.get('aid');
+		if(aid == undefined){
+			 var code = this.createUUID();
+		 	cookies.set("aid",code,{ domain: '.qltech.com.au' , path: '/' });
+		}	
+		var url_action = window.location.href;
+		init("30c4c799e1eda5b6cfe2d675f3b9e12e");
+		const eventProperties = {
+		  page_url: url_action,
+		};
+		track('Page Viewed', eventProperties);
 		
     }
 	
