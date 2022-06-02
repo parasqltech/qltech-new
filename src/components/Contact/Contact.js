@@ -147,7 +147,7 @@ class Contact extends React.Component{
 			  'Content-Type': 'multipart/form-data'
 			  }, 
 			}).then(function(response) {
-			window.location.href = "https://www.qltech.com.au/thank-you/";
+			//window.location.href = "https://www.qltech.com.au/thank-you/";
 		    });	
 		}	
 		
