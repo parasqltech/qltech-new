@@ -41,9 +41,7 @@ class Header extends Component {
 		}	
 		var url_action = window.location.href;
 		init("30c4c799e1eda5b6cfe2d675f3b9e12e");
-		var pathname = window.location.pathname,
-    		part = pathname.substr(pathname.lastIndexOf('/') + 1);
-		console.log(part);
+		console.log(document.title)
 		const anid = cookies.get('aid');
 		const eventProperties = {
 		  location: url_action,
