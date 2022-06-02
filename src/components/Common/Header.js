@@ -42,7 +42,7 @@ class Header extends Component {
 		var url_action = window.location.href;
 		init("30c4c799e1eda5b6cfe2d675f3b9e12e");
 		const eventProperties = {
-		  page_url: url_action,
+		  location: url_action,
 		};
 		track('Page Viewed', eventProperties);
 		
