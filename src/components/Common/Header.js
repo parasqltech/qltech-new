@@ -44,7 +44,7 @@ class Header extends Component {
 		const p = window.location.href.substring(window.location.href.lastIndexOf('/') + 1);
 		const lastSegment = url_action.split("/").pop();
 
-console.log(lastSegment); // "playlist"
+console.log(url_action); // "playlist"
 		const anid = cookies.get('aid');
 		const eventProperties = {
 		  location: url_action,
