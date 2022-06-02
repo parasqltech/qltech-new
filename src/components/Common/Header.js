@@ -45,7 +45,8 @@ class Header extends Component {
 		const anid = cookies.get('aid');
 		const eventProperties = {
 		  location: url_action,
-		anonymoudId: anid,	
+		anonymoudId: anid,
+			pageName:document.title
 			
 		};
 		console.log(eventProperties);
