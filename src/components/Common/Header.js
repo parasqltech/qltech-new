@@ -33,7 +33,7 @@ class Header extends Component {
 	}
 	componentDidMount() {
 		
-	cookies = new Cookies();
+	const cookies = new Cookies();
 		var aid =  cookies.get('aid');
 		if(aid == undefined){
 			 var code = this.createUUID();
