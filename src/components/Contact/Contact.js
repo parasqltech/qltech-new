@@ -3,6 +3,10 @@ import SimpleReactValidator from 'simple-react-validator';
 import ReCAPTCHA from "react-google-recaptcha";
 const recaptchaRef = React.createRef();
 import axios from 'axios';
+import Cookies from 'universal-cookie';
+import { init } from '@amplitude/analytics-browser';
+import { track } from '@amplitude/analytics-browser';
+
 class Contact extends React.Component{
 	
 	constructor(props) {
@@ -112,7 +116,17 @@ class Contact extends React.Component{
 			);
 		}
 		else{
-			
+			init("30c4c799e1eda5b6cfe2d675f3b9e12e");
+			const eventProperties = {
+			  firstName: this.state.first_name,
+			lastName: this.state.last_name,
+				email: this.state.email,
+				contactNumber: this.state.number,
+				goal: this.state.goal,
+
+			};
+			console.log(eventProperties);
+		track('Contact Us Form Filled', eventProperties);
 			const payload = {
 			  first_name: this.state.first_name,
 			  last_name: this.state.last_name,
