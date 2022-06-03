@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { Link, StaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby'
 
 const NotFoundPage = () => (
   <Layout>
