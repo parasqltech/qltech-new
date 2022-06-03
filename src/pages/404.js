@@ -1,9 +1,9 @@
 import React from 'react'
-import Layout from '../components/Layout'
+
 import { Link } from 'gatsby'
 
 const NotFoundPage = () => (
-  <Layout>
+  <>
 	<section className="error-page bg-light text-center">
         <div className="container">
             <div className="main-panel">
@@ -19,6 +19,6 @@ const NotFoundPage = () => (
 		</div>
 	</section>
     
-  </Layout>
+  </>
 )
 export default NotFoundPage
