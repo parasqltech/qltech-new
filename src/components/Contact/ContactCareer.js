@@ -117,7 +117,7 @@ class ContactCareer extends React.Component{
 			return false;
 		}
 		  init("30c4c799e1eda5b6cfe2d675f3b9e12e");
-		  const ru = false;
+		  var ru = false;
 		  if(this.state.resume != ""){
 		  	ru = true;
 		  }
