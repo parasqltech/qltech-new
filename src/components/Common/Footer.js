@@ -97,22 +97,24 @@ const Footer = () => (
             </div>
 			<div className="container">
 				<div className="row align-items-center">
-					<div className="col-md-3 text-center"> 
+	<div className="col-md-3 text-center"></div>				
+	<div className="col-md-2 text-center"> 
 					<a href="https://www.facebook.com/business/partner-directory/search?solution_type=campaign_management&id=739384113319180&section=overview" target="_blank">
 							<img class="glogo" src="https://www.foundsm.com/wp-content/uploads/2022/01/Meta-Business-Partner-Logo.jpg.webp"/>
 						</a>
 					
 					</div>
-					<div className="col-md-3 text-center">
+					<div className="col-md-2 text-center">
 						<a href="https://www.credly.com/badges/a89e6d0c-c31f-4f98-88c1-e4ea7239e85d" target="_blank">
-							<img class="glogo" src=" https://images.credly.com/size/680x680/images/a235db07-a757-4575-92ef-1087aaeacc8f/image.png"/>
+							<img class="glog" src=" https://images.credly.com/size/680x680/images/a235db07-a757-4575-92ef-1087aaeacc8f/image.png"/>
 						</a> 									
 					</div>
-					<div className="col-md-3 text-center ">
+					<div className="col-md-2 text-center ">
 						<a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
-							<img class="glogo" src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"/>
+							<img class="glog" src="https://www.gstatic.com/partners/badge/images/2022/PartnerBadgeClickable.svg"/>
 						</a>
 					</div>
+	<div className="col-md-3 text-center"></div>	
 				</div>
             </div>
            
