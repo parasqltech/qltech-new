@@ -59,6 +59,7 @@ ul li, ol li {
 }
 .glogo{
 	width:150px !important;
+	border-radius: 7px;
 }
 .glog{
 	width:90px !important;
