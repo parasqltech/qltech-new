@@ -510,7 +510,7 @@ min-height: 120px;
     border-radius: 15px;
 }
 .main_form input:focus {
-    background: transparent;
+    background: #fff !important;
     height: 50px;
     box-shadow: unset;
 
