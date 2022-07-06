@@ -72,13 +72,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</div>
 	</header>
 	<main>
-		<!-- <section class="sec01" id="about">
-			
-			<div class="img_top_main">
+		<section class="sec01" id="about">
+			 <div class="img_top fade-up " data-aos="fade-up" data-aos-duration="1000">
+				<div class="img_top_main">
 					<div class="main_gtf">
-						<img src="img/bannermailimg.jpg" alt="bannermailimg">
+						<div class="main_img our_1">
+							<img src="img/ibm.svg">
+						</div>
+						<div class="main_img our_2">
+							<img src="img/google.svg">
+						</div>
+						<div class="main_img our_3">
+							<img src="img/sheet.svg">
+						</div>
+						<div class="main_img our_4">
+							<img src="img/linkdin.svg">
+						</div>
+						<div class="main_img our_5">
+							<img src="img/mailcimp.svg">
+						</div>
+						<div class="main_img our_6">
+							<img src="img/facebook.svg">
+						</div>
+						<div class="our_hg">
+							<img src="img/zoho.svg">
+						</div>
 					</div>
-			</div>
+					<img src="img/top_img.svg">
+				</div>
+			</div> 
 			<div class="top_mobile_img fade-up " data-aos="fade-up" data-aos-duration="1000" >
 				<img src="img/mobile_top.png" align="mobile_top">
 			</div>
@@ -96,87 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="col-md-6"></div>
 				</div>
 			</div>
-		</section> -->
-
-		 <!-- <section class="sec01" id="about" >
-			 <div class="img_top fade-up " data-aos="fade-up" data-aos-duration="1000">
-				<div class="img_top_main">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-12">
-								<div class="main_title fade-down " data-aos="fade-down" data-aos-duration="1000">
-								<h1>Amplify your conversion<br> rates, web traffic and<br> customer engagement <br>with marketing <br>automation</h1>
-								<p>Helping your business to automate, accelerate and grow <br>with Zoho CRM</p>
-								<div class="cont_us btn btn3">
-						         	<a href="#main_footer">Book Your Session</a>
-						         </div>
-							</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> --> 
-		<section class="banner_main" id="main_head" style="background:url(img/bannermailimg.jpg);">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-12 col-sm-12">
-						<div class="main_title fade-down " data-aos="fade-down" data-aos-duration="1000">
-							<div class="img_our_zoho">
-								<div class="zoho_img"><img src="img/zoho.svg" alt="zoho"></div>
-								<div class="authorized"> 
-									<p class="inmg_jhg">Authorized Partner </p>
-								</div>
-								
-							</div>
-							<h1>Amplify your conversion<br> rates, web traffic and<br> <span class="inh_y">Customer</span> engagement <br>with marketing <span class="inh_y"> Automation</span></h1>
-							<!-- <p>Helping your business to automate, accelerate and grow <br>with Zoho CRM</p> -->
-							<div class="btn_listg">
-								<div class="cont_us btn btn3">
-					         	<a href="#main_footer">Book Your Session</a>
-					         </div>
-					         <div class="list_socil">
-					         	<ul>
-					         		<li>
-					         			<a href="javascript(0);">
-					         				<img src="img/ibm.svg" alt="ibm">
-					         			</a>
-					         		</li>
-					         		<li>
-					         			<a href="javascript(0);">
-					         				<img src="img/google.svg" alt="google">
-					         			</a>
-					         		</li>
-					         		<li>
-					         			<a href="javascript(0);">
-					         				<img src="img/sheet.svg" alt="sheet">
-					         			</a>
-					         		</li>
-					         		<li>
-					         			<a href="javascript(0);">
-					         				<img src="img/linkdin.svg" alt="linkdin">
-					         			</a>
-					         		</li>
-					         		<li>
-					         			<a href="javascript(0);">
-					         				<img src="img/mailcimp.svg" alt="mailcimp">
-					         			</a>
-					         		</li>
-					         		<li>
-					         			<a href="javascript(0);">
-					         				<img src="img/facebook.svg" alt="facebook">
-					         			</a>
-					         		</li>
-					         	</ul>
-					         </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6"></div>
-				</div>
-			</div>
 		</section>
-
 		<section class="sec02 fade-down " data-aos="fade-down" data-aos-duration="1000" id="why_us">
 			<div class="img_mobile fade-down " data-aos="fade-down" data-aos-duration="1000">
 							<img src="img/Maskgroup.png" align="Maskgroup">
@@ -323,101 +265,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12">
-						<div class="slider_business">
-							<div class="large-12 columns slider_gtf">
-				            <div class="owl-carousel owl-theme" id="testi4">
-						        <div class="item">
-					                <div class="our_sedvtf">
-					                	<div class="cont_icon_o">
-											 <div class="our_imag">
-											 	<img src="img/b1.svg">
-											 </div>
-											 <div class="heding_con">
-												<h6>Cost-effective</h6>
-												<p class="cont_limi">No need to spend heavy amounts on custom development</p>
-											</div>
-											
-										</div>
-					                </div>
-						       </div>
-						       <div class="item">
-					                <div class="our_sedvtf">
-					                	<div class="cont_icon_o">
-											 <div class="our_imag">
-											 	<img src="img/b2.svg">
-											 </div>
-											 <div class="heding_con">
-												<h6>Increased ROI</h6>
-												<p class="cont_limi">Manage and control your entire sales cycle with the help of standardized REST APIs.</p>
-											</div>
-											
-										</div>
-					                </div>
-						       </div>
-						       <div class="item">
-					                <div class="our_sedvtf">
-					                	<div class="cont_icon_o">
-											 <div class="our_imag">
-											 	<img src="img/b3.svg">
-											 </div>
-											 <div class="heding_con">
-												<h6>Easy to Use</h6>
-												<p class="cont_limi">Effortlessly connect Zoho with Finance & Help Desk Services through its pre-built and regular APIs.</p>
-											</div>
-											
-										</div>
-					                </div>
-						       </div>
-						       <div class="item">
-					                <div class="our_sedvtf">
-					                	<div class="cont_icon_o">
-											 <div class="our_imag">
-											 	<img src="img/b4.svg">
-											 </div>
-											 <div class="heding_con">
-												<h6>Enhanced Efficiency</h6>
-												<p class="cont_limi">Save a huge number of development hours</p>
-											</div>
-							
-					                </div>
-						       </div>
-						   </div>
-						       <div class="item">
-					                <div class="our_sedvtf">
-					                	<div class="cont_icon_o">
-											 <div class="our_imag">
-											 	<img src="img/b5.svg">
-											 </div>
-											 <div class="heding_con">
-												<h6>Business Intelligence</h6>
-												<p class="cont_limi">Share contacts, email lists, leads, companies, inventory and other details across all of the cloud services you use.</p>
-											</div>
-											
-										</div>
-					                </div>
-						       </div>
-						       <div class="item">
-					                <div class="our_sedvtf">
-					                	<div class="cont_icon_o">
-											 <div class="our_imag">
-											 	<img src="img/b6.svg">
-											 </div>
-											 <div class="heding_con">
-												<h6>Innovations</h6>
-												<p class="cont_limi">Identifying the pain points and challenges to create inventive solutions that result in an efficient and winning approach.</p>
-											</div>
-											
-										</div>
-					                </div>
-						       </div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-				<!-- <div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="cont_icon_o">
 							 <div class="our_imag">
@@ -493,7 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					
 				
-				</div> -->
+				</div>
 			</div>
 		</section>
 		<section class="sec05 fade-down " data-aos="fade-down" data-aos-duration="1000" id="why_crm">
@@ -701,7 +548,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 					</div>
 				</div>
-				<!-- <div class="row">
+				<div class="row">
 					<div class="col-md-12 col-lg-3">
 						<div class="cont_icon_o list_type_d">
 							 <div class="heding_con">
@@ -803,106 +650,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					
 					
 				
-				</div> -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="slider_expertis">
-							<div class="large-12 columns slider_gtf">
-				            <div class="owl-carousel owl-theme" id="testi3">
-						        <div class="item">
-					                <div class="cont_icon_o list_type_d">
-							 <div class="heding_con">
-								
-								<div class="our_imgi">
-									<img src="img/imag1.png">
-								</div>
-								<div class="post">
-								<h6>Zoho Workflow Automation</h6>
-								Your business might already be equipped with automated tasks and workflows. With Zoho CRM plus environment,your processes get empowered with highly customised modules and button coding to increase the efficiency of your sales organization and ensure that no leads, tasks, alerts, follow-ups or invoices fall through the cracks.
-								
-							</div>
-				                </div> 
-						    </div> 
-						</div>
-						<div class="item">
-					                <div class="cont_icon_o list_type_d">
-							 <div class="heding_con">
-								<div class="our_imgi">
-									<img src="img/imag2.png">
-								</div>
-								<div class="post">
-								<h6> API Development</h6>
-								Create custom fields you need to segment your business, set up the custom modules to track any non-standard items. The CRM adds workflows to automate your business and create reports and dashboards to help monitor your business. We can set up your users and define an effective system of security to control who sees what or who can do what.
-								
-							</div>
-				                </div> 
-						    </div> 
-						</div>
-						<div class="item">
-					                <div class="cont_icon_o list_type_d">
-							 <div class="heding_con">
-								<div class="our_imgi">
-									<img src="img/imag3.png">
-								</div>
-								<div class="post">
-								<h6>Sales Funnel </h6>
-								The most common scenario is, due to the lack of a stable funnel, most of the customers do not get converted into loyal consumers of the product or the brand. Zoho CRM plus automates your sales funnel by incorporating the entire customer’s life cycle with the CRM itself so that customers are nurtured through each step of your marketing process
-								
-							</div>
-				                </div> 
-						    </div> 
-						</div>
-						<div class="item">
-					                <div class="cont_icon_o list_type_d">
-							 <div class="heding_con">
-								<div class="our_imgi">
-									<img src="img/imag4.png">
-								</div>
-								<div class="post">
-								<h6>Marketing Campaign </h6>
-								By using Zoho, create personalised and completely customizable marketing campaigns, complete with approach tactics as well as customer feedback loops. We can personalise your communications with your customer base, and increase your chances to capture leads by scheduling and completely automating your messages, triggers, and notifications.
-
-								
-							</div>
-				                </div> 
-						    </div> 
-						</div>
-						<div class="item">
-					                <div class="cont_icon_o list_type_d">
-							 <div class="heding_con">
-								<div class="our_imgi">
-									<img src="img/imag5.png">
-								</div>
-								<div class="post">
-								<h6>Email Marketing </h6>
-								Synchronizing Zoho CRM and Zoho Campaigns lets you manage a single, up-to-date version of contact and lead information. This includes elements ranging from creating a perfect strategy for designing the most attractive email content according to the needs and aspirations of the business.
-
-								
-							</div>
-				                </div> 
-						    </div> 
-						</div>
-						<div class="item">
-					                <div class="cont_icon_o list_type_d">
-							 <div class="heding_con">
-								<div class="our_imgi">
-									<img src="img/imag6.png">
-								</div>
-								<div class="post">
-								<h6>Reporting </h6>
-								We build customised reporting parameters as well as for analytics and reporting tools, that are suit the specific requirements that your business or brand might have. Zoho API integration forms a part of eCommerce Hub, Marketing Hub, and the Cloud Elements CRM. Since API maintenance is managed by Zoho implementation.
-
-								
-							</div>
-				                </div> 
-						    </div> 
-						</div>
-					
-						
-						
-						</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</section>
@@ -1228,69 +975,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 			</div>
 		</section>
-		<!-- <section class="section10a pb">
-			<div class="container">
-				<div class="row align-items-center">
-					<div  class="col-md-4">
-						<h2 class="title_f text-left">Client <br><span>Testimonials</span> </h2>
-					</div>
-					<div  class="col-md-8">
-						<div class="test_on">
-							<div class="large-12 columns slider_gtf">
-							<div class="owl-carousel owl-theme" id="testi02">
-						        <div class="item">
-						        	<div class="ihgrd">
-						        		<div class="our_tstimonial">
-						        			<div class="img_tf">
-						        				<img src="img/grfed.svg" alt="grfed">
-						        			</div>
-						        			<div class="our_gt">
-						        			<h4 class="text-white">Excellents Provide Service in Here</h4>
-						        			<p>The team at QL Tech listened to our pain points carefully and asked all the right questions. They have a very deep understanding of how technology can benefit businesses. After the session, I had a very clear idea about how my business can benefit from CDP. Don’t think twice about giving them a call.</p>
-						        			<div class="img_q">
-						        				<div class="incq">
-						        					<img src="img/client1.jpg" alt="client1" >
-						        				</div>
-						        				<div class="jhg">
-						        					<h6 class="text-white">Scott Taylor </h6>
-						        					<span>-Managing director of Australian Sports </span>
-						        				</div>
-						        			</div>
-						        		</div>
-						        		</div>
-						        	</div>
-				                </div>
-				                <div class="item">
-						        	<div class="ihgrd">
-						        		<div class="our_tstimonial">
-						        			<div class="img_tf">
-						        				<img src="img/grfed.svg" alt="grfed">
-						        			</div>
-						        			<div class="our_gt">
-						        				<h4 class="text-white">Excellents Provide Service in Here</h4>
-						        			<p>My session was a very enlightening experience. Even though I’m someone who isn’t very tech savvy, they took the time and effort to explain how a CDP works, and what a perfect tech stack for my business would look like. Those 30-minutes kick-started a long and successful relationship, and I can't thank them enough.</p>
-						        			<div class="img_q">
-						        				<div class="incq">
-						        					<img src="img/client2.jpg" alt="client2" >
-						        				</div>
-						        				<div class="jhg">
-						        					<h6 class="text-white">Terri Bowman</h6>
-						        					<span>-CEO & Business owner of Brain Wellness</span>
-						        				</div>
-						        			</div>
-						        			</div>
-						        		</div>
-						        	</div>
-				                </div>
-				                
-
-						    </div> 
-						</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
 		<section class="section10 pb">
 			<div class="container">
 				<div class="row align-items-center">
@@ -1419,7 +1103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div class="main_form">
 					<form id="form">
 					  <div class="mb-3">
-					    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Full Name">
+					    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="First Name">
 					   
 					  </div>
 					  <div class="mb-3">
@@ -1696,83 +1380,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			    }
 			})
 			})
-          </script>
-           <script>
-          	 $(document).ready(function() {
-            $('#testi3').owlCarousel({
-			    loop:true,
-			    margin:10,
-			    nav:false,
-			    autoplay:true,
-			    dots: true,
-			    responsive:{
-			        0:{
-			            items:1,
-			            dots: false
-			        },
-			        768:{
-			            items:2,
-			        },
-			        992:{
-			            items:2
-			        }
-			    }
-			})
-			})
           </script>	
-           <script>
-          	 $(document).ready(function() {
-            $('#testi4').owlCarousel({
-			    loop:true,
-			    margin:20,
-			    nav:false,
-			    autoplay:true,
-			    dots: true,
-			    responsive:{
-			        0:{
-			            items:1
-			        },
-			        768:{
-			            items:2
-			        },
-			        992:{
-			            items:3
-			        }
-			    }
-			})
-			})
-          </script>	
-          <script>
-            $(document).ready(function() {
-              $('#testi02').owlCarousel({
-                loop: true,
-                margin: 10,
-                autoplay:true,
-                responsiveClass: true,
-                dots: false,
-                responsive: {
-                  0: {
-                    items: 1,
-                    nav: false,
-                    dots: false
-                  },
-                  450: {
-                    items: 1,
-                    nav: false
-                  },
-                  768: {
-                    items: 1,
-                    nav: false
-                  },
-                  1000: {
-                    items: 1,
-                    nav: false,
-                    loop: false,
-                  }
-                }
-              })
-            })
-          </script>
           <script>
 				window.onscroll = function() {myFunction()};
 
