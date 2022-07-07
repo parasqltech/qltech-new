@@ -245,7 +245,7 @@ console.log(payload);
                                                         <input type="text"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
                                                              <label className="input-group-btn">
                                                             <span className="btn btn-outline-secondary uploadBtn">
-                                                                Browse<input type="file" value={this.state.resume} onChange={this.resume} accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" className="d-none" required name="resume"/>  
+                                                                Browse<input type="file" id="careerfile" value={this.state.resume} onChange={this.resume} accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" className="d-none" required name="resume"/>  
 																{this.validator.message('Resume', this.state.resume, 'required')}		
                                                             </span>
                                                         </label>
