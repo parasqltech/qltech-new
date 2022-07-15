@@ -14,6 +14,8 @@ import "../css_new/owl.theme.default.min.css";
 import "../css_new/reset.min.css";
 import "../css_new/header_menu.css";
 import "../css_new/responsive.css";
+import "../fonts_new/ionicon.min.css";
+import "../fonts_new/font-awesome.min.css";
 import "../styles/bootstrap.min.css";
 import $ from "jquery";
 import favicon from "../img/fevicon.png";
