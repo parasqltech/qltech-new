@@ -31,6 +31,7 @@ import ContactFront from '../components_new/Contact/ContactFront'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+
 if (typeof document !== `undefined`) {
     AOS.init()
   } 

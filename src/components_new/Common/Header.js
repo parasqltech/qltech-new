@@ -86,22 +86,21 @@ class Header extends Component {
     `}
     render={data => (
 		<div>
-		
-    <header class="header" id="myHeader">
-		<div class="container">
-			<section class="wrapper_e">
-				<div class="header-item-left">
-					<a href="index.html" class="brand"><img src={logo} alt="logo" /></a>
+		<header className="header" id="myHeader">
+		<div className="container">
+			<section className="wrapper_e">
+				<div className="header-item-left">
+					<a href="index.html" className="brand"><img src={logo} alt="logo" /></a>
 				</div>
-				<div class="header-item-center">
-					<div class="overlay"></div>
-					<nav class="menu" id="menu">
-						<div class="menu-mobile-header">
-							<button type="button" class="menu-mobile-arrow"><i class="ion ion-ios-arrow-back"></i></button>
-							<div class="menu-mobile-title"></div>
-							<button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
+				<div className="header-item-center">
+					<div className="overlay"></div>
+					<nav className="menu" id="menu">
+						<div className="menu-mobile-header">
+							<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
+							<div className="menu-mobile-title"></div>
+							<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
 						</div>
-						<ul class="menu-section">
+						<ul className="menu-section">
 								{data &&
               data.allWordpressMenuLocation &&
               data.allWordpressMenuLocation.edges &&
@@ -113,53 +112,67 @@ class Header extends Component {
 					
 					return (
 						
-						<li key={i} >
+						<li key={i} className="menu-item-has-children">
 						{(prop.child_items ? (
 						
 							<>
 								{(prop.slug == 'services' ? (
-									<li className="nav-item dropdown position-static">
-									<a className="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+									<li >
+									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
 									   data-toggle="dropdown">
-									   Services
+									   Services <i className="ion ion-ios-arrow-down"></i>
 								   </a>
+								   <div className="menu-subs menu-mega menu-column-4">
+								   	<div className="list-item">
+								   		<div className="con_hed_m">
                            <ul className="dropdown-menu ">
-                               <li className="service-menu">
-                                   <ServiceHeader />
-                               </li>
-                               <li className="other-menu border-right">
-                                   <span className="services-heading ">Industries</span>
-                                   <span className="services-description mb-2">Discover how we're helping transform myriad industries to win tomorrow’s customer</span>
-                                   <IndustriesHeader />
-                               </li>
-                               <li className="other-menu">
-                                   <span className="services-heading ">Platforms</span>
-                                   <span className="services-description mb-2">Explore possibilities and get the most from your technology stack</span>
-									<PlatformHeader />
-                               </li>
-                           </ul>
-                       </li>
+                               <ServiceHeader />
+                            </ul>   
+                           </div>
+                          </div>
+                         </div>
+                         <div className="menu-subs menu-mega menu-column-4">
+								   	<div className="list-item">
+								   		<div className="con_hed_m">
+                           <ul className="dropdown-menu ">
+                               <IndustriesHeader />
+                            </ul>   
+                           </div>
+                          </div>
+                         </div>  
+                         <div className="menu-subs menu-mega menu-column-4">
+								   	<div className="list-item">
+								   		<div className="con_hed_m">
+                           <ul className="dropdown-menu ">
+                               <PlatformHeader />
+                            </ul>   
+                           </div>
+                          </div>
+                         </div>    
+                       </li> 
 								
 								):(
 								<>
-									{(prop.slug == 'process' ? (<li className="nav-item dropdown position-static processMenu">
-                           <a className="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+									{(prop.slug == 'process' ? (
+									<li>                           
+									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
                                data-toggle="dropdown">
-                               Process
+                               Process <i className="ion ion-ios-arrow-down"></i>
                            </a>
-                           <ul className="dropdown-menu ">
-                               <li className="service-menu service-menu-full">
-                                    <ProcessHeader />
-                                </li>
-                              
-                              
-                           </ul>
-                       </li>) : (<li className="nav-item dropdown">
-								<a className="nav-link dropdown-toggle" data-toggle="dropdown" href="jacasvript:;">About</a>
-								<ul className="dropdown-menu row">
+                           <div class="menu-subs menu-mega menu-column-4">
+															<div class="list-item">
+																<div class="con_hed_m">
+																<ProcessHeader />
+																</div>
+															</div>
+														</div></li>) : (
+														<li>
+								<a  data-toggle="dropdown" href="jacasvript:;">About<i class="ion ion-ios-arrow-down"></i></a>
+								<div class="menu-subs menu-column-1">
+									<ul>
 								{prop && prop.child_items && prop.child_items.map((child, i) => {
 								return (<li key={i} ><Link className="dropdown-item"   to={"/"+child.slug+"/"}>{child.title}</Link></li> )
-							  })}</ul></li>))}	
+							  })}</ul></div></li>))}	
 								
 								</>
 								
@@ -185,12 +198,12 @@ class Header extends Component {
 					</nav>
 				</div>
 
-				<div class="header-item-right">
+				<div className="header-item-right">
 					
-					<div class="cont_btn">
-						<a href="#" class="cont_wraod">Contacts Us</a>
+					<div className="cont_btn">
+						<a href="#" className="cont_wraod">Contacts Us</a>
 					</div>
-					<button type="button" class="menu-mobile-toggle">
+					<button type="button" className="menu-mobile-toggle">
 						<span></span>
 						<span></span>
 						<span></span>
