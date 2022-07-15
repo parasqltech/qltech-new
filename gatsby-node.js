@@ -599,6 +599,10 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
 		  {
             test: /react-typing-effect/,
             use: loaders.null(),
+          },
+		 {
+            test: /aos/,
+            use: loaders.null(),
           }	
 		  
 		  
