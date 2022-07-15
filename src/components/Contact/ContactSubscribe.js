@@ -2,8 +2,8 @@ import React,{Component} from "react"
 import SimpleReactValidator from 'simple-react-validator';
 import PropTypes from "prop-types"
 import ReCAPTCHA from "react-google-recaptcha";
-const recaptchaRef = React.createRef();
 import axios from 'axios';
+const recaptchaRef = React.createRef();
 class ContactSubscribe extends Component{
 	
 	constructor(props) {

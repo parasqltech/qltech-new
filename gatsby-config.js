@@ -34,7 +34,7 @@ module.exports = {
         // the only required plugin option for WordPress is the GraphQL url.
         url:
           process.env.WPGRAPHQL_URL ||
-          `https://steamlinedesign.com/qltech/new/graphql`,
+          `https://admin.qltech.com.au/graphql`,
 		type: {
 			MediaItem: {
 				createFileNodes: false,
@@ -83,7 +83,7 @@ module.exports = {
 	{
       resolve: "gatsby-source-wordpress-menus",
       options: {
-        wordpressUrl: "https://steamlinedesign.com/qltech/new",
+        wordpressUrl: "https://admin.qltech.com.au",
         languages: ["en"],
         enableWpml: false,
         allowCache: false,

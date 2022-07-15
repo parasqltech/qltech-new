@@ -1,12 +1,12 @@
 import React from "react"
 import SimpleReactValidator from 'simple-react-validator';
 import ReCAPTCHA from "react-google-recaptcha";
-const recaptchaRef = React.createRef();
 import axios from 'axios';
 import Cookies from 'universal-cookie';
 import { init } from '@amplitude/analytics-browser';
 import { track } from '@amplitude/analytics-browser';
 import { Identify, identify } from '@amplitude/analytics-browser';
+const recaptchaRef = React.createRef();
 class Contact extends React.Component{
 	
 	constructor(props) {
