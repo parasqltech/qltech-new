@@ -33,9 +33,7 @@ import 'aos/dist/aos.css'
 
 if (typeof document !== `undefined`) {
     AOS.init()
-  } else {  
-        AOS.init()
-  }
+  } 
 const IndexPage = () => (
 
 
