@@ -33,7 +33,9 @@
 .thumbnial-details strong{
   font-weight: normal;
 }
-
+.navbar-brand img{
+	width: 65%;
+}
 section.resource-section-1 .thumbnial-content h2 {
     font-size: 20px;
     min-height: 50px;
