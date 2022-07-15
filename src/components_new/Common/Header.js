@@ -117,7 +117,7 @@ class Header extends Component {
 						
 							<>
 								{(prop.slug == 'services' ? (
-									<li className="menu-item-has-children">
+									<>
 									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
 									   data-toggle="dropdown">
 									   Services <i className="ion ion-ios-arrow-down"></i>
@@ -141,8 +141,8 @@ class Header extends Component {
                            </div>
                           </div>
                          </div>
-                         
-                       </li> 
+                         </>
+                    
 								
 								):(
 								<>
