@@ -127,28 +127,21 @@ class Header extends Component {
 								   		<div className="con_hed_m">
                            <ul className="dropdown-menu ">
                                <ServiceHeader />
-                            </ul>   
+                            </ul> 
+                       </div> 
+                       <div className="con_hed_m">    
+                            <ul className="dropdown-menu ">
+                               <IndustriesHeader />
+                            </ul>
+                        </div>   
+                        <div className="con_hed_m"> 
+                            <ul className="dropdown-menu ">
+                               <PlatformHeader />
+                            </ul>  
                            </div>
                           </div>
                          </div>
-                         <div className="menu-subs menu-mega menu-column-4">
-								   	<div className="list-item">
-								   		<div className="con_hed_m">
-                           <ul className="dropdown-menu ">
-                               <IndustriesHeader />
-                            </ul>   
-                           </div>
-                          </div>
-                         </div>  
-                         <div className="menu-subs menu-mega menu-column-4">
-								   	<div className="list-item">
-								   		<div className="con_hed_m">
-                           <ul className="dropdown-menu ">
-                               <PlatformHeader />
-                            </ul>   
-                           </div>
-                          </div>
-                         </div>    
+                         
                        </li> 
 								
 								):(
