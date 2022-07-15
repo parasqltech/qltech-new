@@ -17,25 +17,29 @@ const PlatformHeader = () => (
 		}
     `}
     render={data => (
-			  <ul className="dropdown-menu-ul-list">
-                                     
+			  
+        <>                       
 				{data &&
 				data.allWpPlatform &&
 				data.allWpPlatform.edges &&
 				data.allWpPlatform.edges.map(
                 prop => {
 					return (
+            <Link to={"/platforms/"+prop.node.slug+"/"} className="dropdown-item mt-1">
+                                               
+          <ul className="dropdown-menu-ul-list">  
 					<li>
-                                           <Link to={"/platforms/"+prop.node.slug+"/"} className="dropdown-item mt-1">
-                                               <span className="dropdown-menu-li-list"  dangerouslySetInnerHTML={{ __html: prop.node.title}}></span>
-                                           </Link>
+                                           <h4 className="dropdown-menu-li-list"  dangerouslySetInnerHTML={{ __html: prop.node.title}}></h4>
+                                         
                                        </li>
+                                       </ul>
+                                         </Link>
 					)
                 }
                 )}
 									 
                                       
-                                   </ul>
+                                   </>
     )}
 	/>
 )

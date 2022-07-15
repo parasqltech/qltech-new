@@ -117,7 +117,7 @@ class Header extends Component {
 						
 							<>
 								{(prop.slug == 'services' ? (
-									<li className="menu-item-has-children">
+								<>
 									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
 									   data-toggle="dropdown">
 									   Services <i className="ion ion-ios-arrow-down"></i>
@@ -125,29 +125,22 @@ class Header extends Component {
 								   <div className="menu-subs menu-mega menu-column-4">
 								   	<div className="list-item">
 								   		<div className="con_hed_m">
-                           <ul className="dropdown-menu ">
                                <ServiceHeader />
-                            </ul> 
                        </div> 
                        <div className="con_hed_m">    
-                            <ul className="dropdown-menu ">
-                               <IndustriesHeader />
-                            </ul>
+                            <IndustriesHeader />
                         </div>   
                         <div className="con_hed_m"> 
-                            <ul className="dropdown-menu ">
-                               <PlatformHeader />
-                            </ul>  
+                            <PlatformHeader />  
                            </div>
                           </div>
                          </div>
-                         
-                       </li> 
+                         </>
 								
 								):(
 								<>
 									{(prop.slug == 'process' ? (
-									<li>                           
+									<>                           
 									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
                                data-toggle="dropdown">
                                Process <i className="ion ion-ios-arrow-down"></i>
@@ -158,14 +151,14 @@ class Header extends Component {
 																<ProcessHeader />
 																</div>
 															</div>
-														</div></li>) : (
-														<li>
+														</div></>) : (
+														<>
 								<a  data-toggle="dropdown" href="jacasvript:;">About<i class="ion ion-ios-arrow-down"></i></a>
 								<div class="menu-subs menu-column-1">
 									<ul>
 								{prop && prop.child_items && prop.child_items.map((child, i) => {
 								return (<li key={i} ><Link className="dropdown-item"   to={"/"+child.slug+"/"}>{child.title}</Link></li> )
-							  })}</ul></div></li>))}	
+							  })}</ul></div></>))}	
 								
 								</>
 								
@@ -176,11 +169,11 @@ class Header extends Component {
 								))}
 							</>
 						
-							) : (<li className="nav-item">
+							) : (<>
 							<Link className="nav-link" key={prop.id} to={"/"+prop.slug+"/"}>
 								{prop.title}
 							</Link>
-                        </li>))}
+                        </>))}
 						</li>
 					
 					)

@@ -17,7 +17,7 @@ const IndustriesHeader = () => (
 		}
     `}
     render={data => (
-			  <ul className="dropdown-menu-ul-list">
+			  <>
                                      
 				{data &&
 				data.allWpIndustries &&
@@ -25,17 +25,21 @@ const IndustriesHeader = () => (
 				data.allWpIndustries.edges.map(
                 prop => {
 					return (
+            <Link to={"/industries/"+prop.node.slug+"/"} className="dropdown-item mt-1">
+            <ul className="dropdown-menu-ul-list">
 					<li>
-                                           <Link to={"/industries/"+prop.node.slug+"/"} className="dropdown-item mt-1">
-                                               <span className="dropdown-menu-li-list" dangerouslySetInnerHTML={{ __html: prop.node.title}}></span>
-                                           </Link>
+                                           
+                                               <h4 className="dropdown-menu-li-list" dangerouslySetInnerHTML={{ __html: prop.node.title}}></h4>
+                                           
                                        </li>
+                                       </ul>
+                                       </Link>
 					)
                 }
                 )}
 									 
                                       
-                                   </ul>
+                                   </>
     )}
 	/>
 )
