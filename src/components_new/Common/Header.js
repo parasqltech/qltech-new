@@ -213,7 +213,7 @@ class Header extends Component {
 			</section>
 		</div>
 	</header>
-	<span className="top-space"></span>	
+	
 	</div>
     )}
   />
