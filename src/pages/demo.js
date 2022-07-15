@@ -30,7 +30,12 @@ import HomeWork from '../components_new/Home/HomeWork'
 import ContactFront from '../components_new/Contact/ContactFront'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-AOS.init()
+
+if (typeof document !== `undefined`) {
+    AOS.init()
+  } else {  
+        AOS.init()
+  }
 const IndexPage = () => (
 
 
