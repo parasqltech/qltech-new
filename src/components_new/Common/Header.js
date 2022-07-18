@@ -130,14 +130,22 @@ class Header extends Component {
                      
                     </div> 
                     <div className="list-item">
-                          
+                           <div className="con_hed_m">
+		      <div className="list_newsubmenu">
+												
+											
                             <IndustriesHeader />
+		      </div>
+		       </div>
                         
                     </div>
-                    <div className="list-item">    
+                    <div className="list-item">   
+		      <div className="con_hed_m">
+		      <div className="list_newsubmenu">
                        
                             <PlatformHeader />  
-                    
+                    </div>
+		       </div>
                           </div>
                          </div>
                          </>
