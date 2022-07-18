@@ -12,8 +12,6 @@ class Header extends Component {
 	
 	    constructor(props) {
 		super(props);
-		
-		super(props);
 		this.toggleMenu = this.toggleMenu.bind(this);
 		this.showSubMenu = this.showSubMenu.bind(this);
 		this.hideSubMenu = this.hideSubMenu.bind(this);
