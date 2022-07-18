@@ -53,7 +53,7 @@ const NeedUs = () => (
               
 
             </div>
-            <h4><Link to={"/services/"+prop.node.slug+"/"}>{prop.node.whyDoYouNeedUs.title}</Link></h4>
+            <h4>{prop.node.whyDoYouNeedUs.title}</h4>
             <p>{prop.node.whyDoYouNeedUs.title}</p>
           </div>
         </div>
