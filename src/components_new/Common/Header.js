@@ -132,7 +132,7 @@ class Header extends Component {
                     <div className="list-item">
                            <div className="con_hed_m">
 		      <a href="#" class="pd_15">
-											<h4 class="title">Platforms</h4>
+											<h4 class="title">Industries</h4>
 											<ul>
 												 <li>
 													<p class="our_hed_v"><span class="services-description mb-2">Explore possibilities and get the most from your technology stack</span></p>
