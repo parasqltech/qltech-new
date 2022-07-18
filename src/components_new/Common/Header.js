@@ -309,8 +309,7 @@ state = {
 
 				<div className="header-item-right">
 					
-					<div className="cont_btn">
-						<a href="#" className="cont_wraod">Contacts Us</a>
+					<div className="cont_btn"><Link className="cont_wraod" to="/contact-us/" >Contacts Us</Link>
 					</div>
 					<button type="button" className="menu-mobile-toggle">
 						<span></span>
