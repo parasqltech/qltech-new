@@ -3,14 +3,14 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 
 
 const ServiceHeader = () => (
-  <StaticQuery	
+  <StaticQuery  
     query={graphql`
       query {
         allWpHomeService{
     edges{
       node{
         title
-		slug
+    slug
         HomeServices{
           title
           descprition
@@ -18,37 +18,31 @@ const ServiceHeader = () => (
       }
     }
   }
-		}
+    }
     `}
     render={data => (
-			 <>
+       <ul className="">
                                      
-				{data &&
-				data.allWpHomeService &&
-				data.allWpHomeService.edges &&
-				data.allWpHomeService.edges.map(
+        {data &&
+        data.allWpHomeService &&
+        data.allWpHomeService.edges &&
+        data.allWpHomeService.edges.map(
                 (prop,i) => {
-					return (
-            <div className="con_hed_m">
-            <Link to={"/services/"+prop.node.slug+"/"} className="pd_15">
-            <h4 className="title">{prop.node.HomeServices.title}</h4>
-            <ul>
-					<li key={i}>
-                                           
-                                               <p className="our_hed_v">{prop.node.HomeServices.descprition}</p>
-                                           
+          return (
+          <li key={i} className="">
+                                           <Link to={"/services/"+prop.node.slug+"/"} className="dropdown-item">
+                                               <span className="services-heading">{prop.node.HomeServices.title}</span>
+                                               <span className="services-description">{prop.node.HomeServices.descprition}</span>
+                                           </Link>
                                        </li>
-                                        </ul>
-                                        </Link>
-                                        </div>
-					)
+          )
                 }
                 )}
-									</> 
+                   
                                       
-                                  
+                                   </ul>
     )}
-	/>
+  />
 )
 
 export default ServiceHeader

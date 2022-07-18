@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 
 
 const PlatformHeader = () => (
-  <StaticQuery	
+  <StaticQuery  
     query={graphql`
       query {
         allWpPlatform {
@@ -14,34 +14,30 @@ const PlatformHeader = () => (
       }
     }
   }
-		}
+    }
     `}
     render={data => (
-			  
-        <>            
-	     <ul> 
-				{data &&
-				data.allWpPlatform &&
-				data.allWpPlatform.edges &&
-				data.allWpPlatform.edges.map(
+        <ul className="dropdown-menu-ul-list">
+                                     
+        {data &&
+        data.allWpPlatform &&
+        data.allWpPlatform.edges &&
+        data.allWpPlatform.edges.map(
                 prop => {
-					return (
-                              
-          
-					<li>
-                                           <Link to={"/platforms/"+prop.node.slug+"/"}  dangerouslySetInnerHTML={{ __html: prop.node.title}}></Link>
-                                         
+          return (
+          <li>
+                                           <Link to={"/platforms/"+prop.node.slug+"/"} className="dropdown-item mt-1">
+                                               <span className="dropdown-menu-li-list"  dangerouslySetInnerHTML={{ __html: prop.node.title}}></span>
+                                           </Link>
                                        </li>
-                                      
-                                      
-					)
+          )
                 }
                 )}
-									 
-                                   </ul>    
-                                   </>
+                   
+                                      
+                                   </ul>
     )}
-	/>
+  />
 )
 
 export default PlatformHeader

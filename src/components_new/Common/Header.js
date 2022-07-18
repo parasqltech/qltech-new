@@ -12,9 +12,8 @@ class Header extends Component {
 	
 	    constructor(props) {
 		super(props);
-		this.toggleMenu = this.toggleMenu.bind(this);
-		this.showSubMenu = this.showSubMenu.bind(this);
-		this.hideSubMenu = this.hideSubMenu.bind(this);
+		
+		
 		
 		
 		
@@ -54,97 +53,6 @@ class Header extends Component {
 		track('Page Viewed', eventProperties);
 		
     }
-
-    toggleMenu(){
-		var menu = document.getElementById("menu");
-		var menuOverlay = document.getElementById("overlay");
-		menu.classList.toggle('active');
-		menuOverlay.classList.toggle('active');
-	}
-	showSubMenu(hasChildren) {
-		let subMenu;  
-		var menu = document.getElementById("menu");
-		subMenu = hasChildren.querySelector('.menu-subs');
-		subMenu.classList.add('active');
-		subMenu.style.animation = 'slideLeft 0.5s ease forwards';
-		const menuTitle = hasChildren.querySelector('i').parentNode.childNodes[0].textContent;
-		menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
-		menu.querySelector('.menu-mobile-header').classList.add('active');
-	}
-	hideSubMenu() {
-		var elems = document.querySelectorAll(".menu-subs");
-var menu = document.getElementById("menu");
-		[].forEach.call(elems, function(el) {
-		    el.classList.remove("active");
-		});
-		
-		menu.querySelector('.menu-mobile-title').innerHTML = '';
-		menu.querySelector('.menu-mobile-header').classList.remove('active');
-	}
-
-state = {
-        	isTop: true,
-    	};
-
-    	 componentDidMount() {
-	const cookies = new Cookies();
-	var aid =  cookies.get('aid');
-	if(aid == undefined){
-		 var code = this.createUUID();
-		cookies.set("aid",code,{ domain: '.qlresources.com.au' , path: '/' });
-	}	
-    
-	    
-	const menu = document.querySelector('.menu');
-	const menuSection = menu.querySelector('.menu-section');
-	const menuArrow = menu.querySelector('.menu-mobile-arrow');
-	const menuClosed = menu.querySelector('.menu-mobile-close');
-	const menuToggle = document.querySelector('.menu-mobile-toggle');
-	const menuOverlay = document.querySelector('.overlay');
-	let subMenu;    
-        document.addEventListener('scroll', () => {
-            const isTop = window.scrollY < 100;
-            if (isTop !== this.state.isTop) {
-                this.setState({ isTop })
-            }
-        });
-	document.addEventListener('resize', () => { 
-	if (window.innerWidth > 991) {
-		
-		if (menu.classList.contains('active')) {
-			this.toggleMenu();
-		}
-	}
-	});	
-	 
-	menuSection.addEventListener('click', (e) => {
-		if (!menu.classList.contains('active')) {
-			return;
-		}
-		if (e.target.closest('.menu-item-has-children')) {
-			const hasChildren = e.target.closest('.menu-item-has-children');
-			this.showSubMenu(hasChildren);
-		}
-	});    
-	 menuArrow.addEventListener('click', () => {
-		this.hideSubMenu();
-	});
-
-	menuToggle.addEventListener('click', () => {
-		// alert('1');
-		this.toggleMenu();
-	});
-
-	menuClosed.addEventListener('click', () => {
-		// alert('2');
-		this.toggleMenu();
-	});
-
-	menuOverlay.addEventListener('click', () => {
-		// alert('3');
-		this.toggleMenu();
-	});
-    }
 	
 	render() {
 		
@@ -178,22 +86,22 @@ state = {
     `}
     render={data => (
 		<div>
-		<header className="header" id="myHeader">
-		<div className="container">
-			<section className="wrapper_e">
-				<div className="header-item-left">
-					<a href="index.html" className="brand"><img src={logo} alt="logo" /></a>
-				</div>
-				<div className="header-item-center">
-					<div className="overlay" id="overlay"></div>
-					<nav className="menu" id="menu">
-						<div className="menu-mobile-header">
-							<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
-							<div className="menu-mobile-title"></div>
-							<button type="button" className="menu-mobile-close"><i className="ion ion-ios-close"></i></button>
-						</div>
-						<ul className="menu-section">
-								{data &&
+		
+      <header>
+       
+        <div className="container">
+            <nav className="navbar navbar-expand-md navbar-light bg-none">   
+				<Link className="navbar-brand" to="/" >
+					<img src={logo} className="img-fluid" alt="" width="120px"/>
+				</Link>
+                <button className="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+				
+                <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul className="navbar-nav ">
+						{data &&
               data.allWordpressMenuLocation &&
               data.allWordpressMenuLocation.edges &&
               data.allWordpressMenuLocation.edges[0] &&
@@ -204,84 +112,53 @@ state = {
 					
 					return (
 						
-						<li key={i} className="menu-item-has-children">
+						<div key={i} >
 						{(prop.child_items ? (
 						
 							<>
 								{(prop.slug == 'services' ? (
-
-									<>
-									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
-									   >
-									   Services <i className="ion ion-ios-arrow-down"></i>
+									<li className="nav-item dropdown position-static">
+									<a className="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+									   data-toggle="dropdown">
+									   Services
 								   </a>
-								   <div className="menu-subs menu-mega menu-column-4">
-								   	<div className="list-item">
-								   		
-                               <ServiceHeader />
-                     
-                    </div> 
-                    <div className="list-item">
-                           <div className="con_hed_m">
-		      <a href="#" class="pd_15">
-											<h4 class="title">Industries</h4>
-											<ul>
-												 <li>
-													<p class="our_hed_v"><span class="services-description mb-2">Explore possibilities and get the most from your technology stack</span></p>
-												</li>
-											</ul>
-										</a>
-		      <div className="list_newsubmenu">
-												
-											
-                            <IndustriesHeader />
-		      </div>
-		       </div>
-                        
-                    </div>
-                    <div className="list-item">   
-		      <div className="con_hed_m">
-		      <a href="#" class="pd_15">
-											<h4 class="title">Platforms</h4>
-											<ul>
-												 <li>
-													<p class="our_hed_v"><span class="services-description mb-2">Explore possibilities and get the most from your technology stack</span></p>
-												</li>
-											</ul>
-										</a>
-		      <div className="list_newsubmenu">
-                       
-                            <PlatformHeader />  
-                    </div>
-		       </div>
-                          </div>
-                         </div>
-                         </>
-
+                           <ul className="dropdown-menu ">
+                               <li className="service-menu">
+                                   <ServiceHeader />
+                               </li>
+                               <li className="other-menu border-right">
+                                   <span className="services-heading ">Industries</span>
+                                   <span className="services-description mb-2">Discover how we're helping transform myriad industries to win tomorrow’s customer</span>
+                                   <IndustriesHeader />
+                               </li>
+                               <li className="other-menu">
+                                   <span className="services-heading ">Platforms</span>
+                                   <span className="services-description mb-2">Explore possibilities and get the most from your technology stack</span>
+									<PlatformHeader />
+                               </li>
+                           </ul>
+                       </li>
 								
 								):(
 								<>
-									{(prop.slug == 'process' ? (
-									<>                           
-									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
-                               >
-                               Process <i className="ion ion-ios-arrow-down"></i>
+									{(prop.slug == 'process' ? (<li className="nav-item dropdown position-static processMenu">
+                           <a className="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown" role="button"
+                               data-toggle="dropdown">
+                               Process
                            </a>
-                           <div className="nw_lss">
-                           <div class="menu-subs menu-mega menu-column-4">
-															<div class="list-item sa_p">
-																<div class="con_hed_m">
-																<ProcessHeader />
-																</div>
-															</div>
-														</div></div></>) : (
-														<>
-								<a   href="jacasvript:;">About<i class="ion ion-ios-arrow-down"></i></a>
-								<div class="menu-subs menu-column-1">
-									<ul>
+                           <ul className="dropdown-menu ">
+                               <li className="service-menu service-menu-full">
+                                    <ProcessHeader />
+                                </li>
+                              
+                              
+                           </ul>
+                       </li>) : (<li className="nav-item dropdown">
+								<a className="nav-link dropdown-toggle" data-toggle="dropdown" href="jacasvript:;">About</a>
+								<ul className="dropdown-menu row">
 								{prop && prop.child_items && prop.child_items.map((child, i) => {
 								return (<li key={i} ><Link className="dropdown-item"   to={"/"+child.slug+"/"}>{child.title}</Link></li> )
-							  })}</ul></div></>))}	
+							  })}</ul></li>))}	
 								
 								</>
 								
@@ -292,36 +169,32 @@ state = {
 								))}
 							</>
 						
-							) : (<>
+							) : (<li className="nav-item">
 							<Link className="nav-link" key={prop.id} to={"/"+prop.slug+"/"}>
 								{prop.title}
 							</Link>
-                        </>))}
-						</li>
+                        </li>))}
+						</div>
 					
 					)
                 }
-              )}	
+              )}		<li className="nav-item d-md-none d-inline">
+                            <Link className="nav-link" to="/contact-us" >
+								Contact Us
+							</Link>
+                        </li>
+                        <li className="nav-item d-none  d-md-inline">
+                            <Link className="nav-link btn-default" to="/contact-us/" >
+								Contact Us
+							</Link>
+                        </li>
                         
                     </ul>
-					</nav>
-				</div>
-
-				<div className="header-item-right">
-					
-					<div className="cont_btn"><Link className="cont_wraod" to="/contact-us/" >Contacts Us</Link>
-					</div>
-					<button type="button" className="menu-mobile-toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-				</div>
-			</section>
-		</div>
-	</header>
-	
+                </div>
+            </nav>
+        </div>
+    </header>
+	<span className="top-space"></span>	
 	</div>
     )}
   />

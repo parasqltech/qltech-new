@@ -3,7 +3,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 
 
 const IndustriesHeader = () => (
-  <StaticQuery	
+  <StaticQuery  
     query={graphql`
       query {
          allWpIndustries {
@@ -14,37 +14,30 @@ const IndustriesHeader = () => (
       }
     }
   }
-		}
+    }
     `}
     render={data => (
-			  <>
-	   <ul>
+        <ul className="dropdown-menu-ul-list">
                                      
-				{data &&
-				data.allWpIndustries &&
-				data.allWpIndustries.edges &&
-				data.allWpIndustries.edges.map(
+        {data &&
+        data.allWpIndustries &&
+        data.allWpIndustries.edges &&
+        data.allWpIndustries.edges.map(
                 prop => {
-					return (
-             
-            
-          
-					<li>
-                                           
-                                               <Link  to={"/industries/"+prop.node.slug+"/"}  dangerouslySetInnerHTML={{ __html: prop.node.title}}></Link>
-                                           
+          return (
+          <li>
+                                           <Link to={"/industries/"+prop.node.slug+"/"} className="dropdown-item mt-1">
+                                               <span className="dropdown-menu-li-list" dangerouslySetInnerHTML={{ __html: prop.node.title}}></span>
+                                           </Link>
                                        </li>
-                                     
-                                      
-                                      
-					)
+          )
                 }
                 )}
-				 </ul>					 
+                   
                                       
-                                   </>
+                                   </ul>
     )}
-	/>
+  />
 )
 
 export default IndustriesHeader
