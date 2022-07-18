@@ -18,7 +18,7 @@ const IndustriesHeader = () => (
     `}
     render={data => (
 			  <>
-	    <div className="con_hed_m">
+	   <ul>
                                      
 				{data &&
 				data.allWpIndustries &&
@@ -27,22 +27,20 @@ const IndustriesHeader = () => (
                 prop => {
 					return (
              
-            <Link to={"/industries/"+prop.node.slug+"/"} className="pd_15">
-            <div className="list_newsubmenu">
-            <ul>
+            
+          
 					<li>
                                            
-                                               <h4 className="dropdown-menu-li-list" dangerouslySetInnerHTML={{ __html: prop.node.title}}></h4>
+                                               <Link  dangerouslySetInnerHTML={{ __html: prop.node.title}}></Link>
                                            
                                        </li>
-                                       </ul>
-                                       </div>
-                                       </Link>
+                                     
+                                      
                                       
 					)
                 }
                 )}
-				 </div>					 
+				 </ul>					 
                                       
                                    </>
     )}
