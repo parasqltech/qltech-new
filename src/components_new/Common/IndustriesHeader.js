@@ -31,7 +31,7 @@ const IndustriesHeader = () => (
           
 					<li>
                                            
-                                               <Link  dangerouslySetInnerHTML={{ __html: prop.node.title}}></Link>
+                                               <Link  to={"/industries/"+prop.node.slug+"/"}  dangerouslySetInnerHTML={{ __html: prop.node.title}}></Link>
                                            
                                        </li>
                                      
