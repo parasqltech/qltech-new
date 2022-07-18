@@ -212,7 +212,7 @@ state = {
 
 									<>
 									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
-									   data-toggle="dropdown">
+									   >
 									   Services <i className="ion ion-ios-arrow-down"></i>
 								   </a>
 								   <div className="menu-subs menu-mega menu-column-4">
@@ -264,7 +264,7 @@ state = {
 									{(prop.slug == 'process' ? (
 									<>                           
 									<a  href="javascript:void(0)" id="navbarDropdown" role="button"
-                               data-toggle="dropdown">
+                               >
                                Process <i className="ion ion-ios-arrow-down"></i>
                            </a>
                            <div class="menu-subs menu-mega menu-column-4 nw_lss">
@@ -275,7 +275,7 @@ state = {
 															</div>
 														</div></>) : (
 														<>
-								<a  data-toggle="dropdown" href="jacasvript:;">About<i class="ion ion-ios-arrow-down"></i></a>
+								<a   href="jacasvript:;">About<i class="ion ion-ios-arrow-down"></i></a>
 								<div class="menu-subs menu-column-1">
 									<ul>
 								{prop && prop.child_items && prop.child_items.map((child, i) => {
