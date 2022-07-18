@@ -63,22 +63,23 @@ class Header extends Component {
 	}
 	showSubMenu(hasChildren) {
 		let subMenu;  
+		var menu = document.getElementById("menu");
 		subMenu = hasChildren.querySelector('.menu-subs');
 		subMenu.classList.add('active');
 		subMenu.style.animation = 'slideLeft 0.5s ease forwards';
 		const menuTitle = hasChildren.querySelector('i').parentNode.childNodes[0].textContent;
-		// menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
-		// menu.querySelector('.menu-mobile-header').classList.add('active');
+		menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
+		menu.querySelector('.menu-mobile-header').classList.add('active');
 	}
 	hideSubMenu() {
 		var elems = document.querySelectorAll(".menu-subs");
-
+var menu = document.getElementById("menu");
 		[].forEach.call(elems, function(el) {
 		    el.classList.remove("active");
 		});
 		
-		// menu.querySelector('.menu-mobile-title').innerHTML = '';
-		// menu.querySelector('.menu-mobile-header').classList.remove('active');
+		menu.querySelector('.menu-mobile-title').innerHTML = '';
+		menu.querySelector('.menu-mobile-header').classList.remove('active');
 	}
 
 state = {
