@@ -18,30 +18,27 @@ const PlatformHeader = () => (
     `}
     render={data => (
 			  
-        <>                       
+        <>            
+	     <ul> 
 				{data &&
 				data.allWpPlatform &&
 				data.allWpPlatform.edges &&
 				data.allWpPlatform.edges.map(
                 prop => {
 					return (
-             <div className="con_hed_m"> 
-            <Link to={"/platforms/"+prop.node.slug+"/"} className="pd_15">
-                 <div className="list_newsubmenu">                           
-          <ul>  
+                              
+          
 					<li>
-                                           <h4 className="dropdown-menu-li-list"  dangerouslySetInnerHTML={{ __html: prop.node.title}}></h4>
+                                           <Link to={"/platforms/"+prop.node.slug+"/"}  dangerouslySetInnerHTML={{ __html: prop.node.title}}></Link>
                                          
                                        </li>
-                                       </ul>
-                                       </div>
-                                         </Link>
-                                         </div>
+                                      
+                                      
 					)
                 }
                 )}
 									 
-                                      
+                                   </ul>    
                                    </>
     )}
 	/>
