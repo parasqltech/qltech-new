@@ -267,7 +267,7 @@ state = {
                                >
                                Process <i className="ion ion-ios-arrow-down"></i>
                            </a>
-                           <div class="menu-subs menu-mega menu-column-4 nw_lss">
+                           <div class="nw_lss menu-subs menu-mega menu-column-4">
 															<div class="list-item sa_p">
 																<div class="con_hed_m">
 																<ProcessHeader />
