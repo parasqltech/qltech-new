@@ -18,9 +18,9 @@ import "../css_new/owl.theme.default.min.css";
 import "../css_new/aos.css";
 import "../css_new/reset.min.css";
 import "../css_new/header_menu.css";
+import "../css_new/style.css";
 import "../css_new/responsive.css";
 import "../styles/bootstrap.min.css";
-import "../css_new/style.css";
 import $ from "jquery";
 import favicon from "../img/fevicon.png";
 const TemplateWrapper = ({ children }) => (
