@@ -55,6 +55,58 @@ li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item .con_hed
     text-decoration: none;
 }
 
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p {
+    flex: unset;
+}
+
+.header .menu>ul>li .menu-subs.menu-mega.menu-column-4.nw_lss {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m {
+    width: 100%;
+    display: block;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul {
+    display: block;
+    width: 100%;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul li {
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul li a.dropdown-item {
+    white-space: unset;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul li a.dropdown-item {
+    background: #fff;
+    color: #252525;
+    display: block;
+    padding: 15px;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul li a.dropdown-item span.services-heading {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul li a.dropdown-item span.services-description p {
+    font-size: 14px;
+    line-height: 21px;
+    min-height: 65px;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul li a.dropdown-item:hover {
+    background: #fbfbfb;
+}
+
 
 .list_newsubmenu ul li {
     margin-top: 5px;
