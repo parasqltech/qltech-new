@@ -13,7 +13,10 @@ class Header extends Component {
 	    constructor(props) {
 		super(props);
 		
-		
+		super(props);
+		this.toggleMenu = this.toggleMenu.bind(this);
+		this.showSubMenu = this.showSubMenu.bind(this);
+		this.hideSubMenu = this.hideSubMenu.bind(this);
 		
 		
 		
@@ -52,6 +55,96 @@ class Header extends Component {
 		console.log(eventProperties);
 		track('Page Viewed', eventProperties);
 		
+    }
+
+    toggleMenu(){
+		var menu = document.getElementById("menu");
+		var menuOverlay = document.getElementById("overlay");
+		menu.classList.toggle('active');
+		menuOverlay.classList.toggle('active');
+	}
+	showSubMenu(hasChildren) {
+		let subMenu;  
+		subMenu = hasChildren.querySelector('.menu-subs');
+		subMenu.classList.add('active');
+		subMenu.style.animation = 'slideLeft 0.5s ease forwards';
+		const menuTitle = hasChildren.querySelector('i').parentNode.childNodes[0].textContent;
+		// menu.querySelector('.menu-mobile-title').innerHTML = menuTitle;
+		// menu.querySelector('.menu-mobile-header').classList.add('active');
+	}
+	hideSubMenu() {
+		var elems = document.querySelectorAll(".menu-subs");
+
+		[].forEach.call(elems, function(el) {
+		    el.classList.remove("active");
+		});
+		
+		// menu.querySelector('.menu-mobile-title').innerHTML = '';
+		// menu.querySelector('.menu-mobile-header').classList.remove('active');
+	}
+
+state = {
+        	isTop: true,
+    	};
+
+    	 componentDidMount() {
+	const cookies = new Cookies();
+	var aid =  cookies.get('aid');
+	if(aid == undefined){
+		 var code = this.createUUID();
+		cookies.set("aid",code,{ domain: '.qlresources.com.au' , path: '/' });
+	}	
+    
+	    
+	const menu = document.querySelector('.menu');
+	const menuSection = menu.querySelector('.menu-section');
+	const menuArrow = menu.querySelector('.menu-mobile-arrow');
+	const menuClosed = menu.querySelector('.menu-mobile-close');
+	const menuToggle = document.querySelector('.menu-mobile-toggle');
+	const menuOverlay = document.querySelector('.overlay');
+	let subMenu;    
+        document.addEventListener('scroll', () => {
+            const isTop = window.scrollY < 100;
+            if (isTop !== this.state.isTop) {
+                this.setState({ isTop })
+            }
+        });
+	document.addEventListener('resize', () => { 
+	if (window.innerWidth > 991) {
+		
+		if (menu.classList.contains('active')) {
+			this.toggleMenu();
+		}
+	}
+	});	
+	 
+	menuSection.addEventListener('click', (e) => {
+		if (!menu.classList.contains('active')) {
+			return;
+		}
+		if (e.target.closest('.menu-item-has-children')) {
+			const hasChildren = e.target.closest('.menu-item-has-children');
+			this.showSubMenu(hasChildren);
+		}
+	});    
+	 menuArrow.addEventListener('click', () => {
+		this.hideSubMenu();
+	});
+
+	menuToggle.addEventListener('click', () => {
+		// alert('1');
+		this.toggleMenu();
+	});
+
+	menuClosed.addEventListener('click', () => {
+		// alert('2');
+		this.toggleMenu();
+	});
+
+	menuOverlay.addEventListener('click', () => {
+		// alert('3');
+		this.toggleMenu();
+	});
     }
 	
 	render() {
@@ -93,7 +186,7 @@ class Header extends Component {
 					<a href="index.html" className="brand"><img src={logo} alt="logo" /></a>
 				</div>
 				<div className="header-item-center">
-					<div className="overlay"></div>
+					<div className="overlay" id="overlay"></div>
 					<nav className="menu" id="menu">
 						<div className="menu-mobile-header">
 							<button type="button" className="menu-mobile-arrow"><i className="ion ion-ios-arrow-back"></i></button>
