@@ -8,6 +8,7 @@ import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "../styles/style.css";
 import "../css_new/style.css";
+import "../css_new/ionicon.min.css";
 import "../css_new/bootstrap.min.css";
 import "../css_new/fancybox.css";
 import "../css_new/owl.theme.default.min.css";
