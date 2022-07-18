@@ -107,6 +107,21 @@ li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .co
     background: #fbfbfb;
 }
 
+@media(max-width: 991px){
+  .header .menu>ul>li .menu-subs.menu-mega.menu-column-4.nw_lss{
+   display: none;
+}  
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m, li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item.sa_p .con_hed_m ul li {
+    display: block;
+    width: 100%;
+}
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item:first-child .con_hed_m {
+    width: 100%;
+    display: block;
+}
+}
+
 
 .list_newsubmenu ul li {
     margin-top: 5px;
