@@ -7,15 +7,18 @@ import Footer from './Common/Footer'
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 import "../styles/style.css";
-import "../css_new/style.css";
-import "../css_new/ionicon.min.css";
+
 import "../css_new/bootstrap.min.css";
-import "../css_new/fancybox.css";
+import "../css_new/all.min.css";
+import "../css_new/font-awesome.min.css";
 import "../css_new/owl.theme.default.min.css";
+import "../css_new/ionicon.min.css";
+import "../css_new/fancybox.css";
 import "../css_new/reset.min.css";
 import "../css_new/header_menu.css";
 import "../css_new/responsive.css";
 import "../styles/bootstrap.min.css";
+import "../css_new/style.css";
 import $ from "jquery";
 import favicon from "../img/fevicon.png";
 const TemplateWrapper = ({ children }) => (
