@@ -28,6 +28,25 @@ font-family: 'Inter', sans-serif;
 margin-bottom: 0;
 
 }
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item:first-child {
+    flex: 2;
+}
+
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item:first-child .con_hed_m {
+    display: inline-block;
+    width: 50%;
+}
+.header-item-center ul.menu-section {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-item-left img {
+    max-width: 113px;
+}
+.con_hed_m a {
+    text-decoration: none;
+}
 .mb_10{
     margin-bottom: 10px;
 }
