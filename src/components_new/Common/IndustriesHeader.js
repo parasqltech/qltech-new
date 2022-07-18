@@ -18,6 +18,7 @@ const IndustriesHeader = () => (
     `}
     render={data => (
 			  <>
+	    <div className="con_hed_m">
                                      
 				{data &&
 				data.allWpIndustries &&
@@ -25,7 +26,7 @@ const IndustriesHeader = () => (
 				data.allWpIndustries.edges.map(
                 prop => {
 					return (
-            <div className="con_hed_m"> 
+             
             <Link to={"/industries/"+prop.node.slug+"/"} className="pd_15">
             <div className="list_newsubmenu">
             <ul>
@@ -37,11 +38,11 @@ const IndustriesHeader = () => (
                                        </ul>
                                        </div>
                                        </Link>
-                                       </div>
+                                      
 					)
                 }
                 )}
-									 
+				 </div>					 
                                       
                                    </>
     )}
