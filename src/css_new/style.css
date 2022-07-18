@@ -47,6 +47,18 @@ li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item:first-ch
 .con_hed_m a {
     text-decoration: none;
 }
+li.menu-item-has-children .menu-subs.menu-mega.menu-column-4 .list-item .con_hed_m ul {
+    padding: 0;
+    box-sizing: border-box;
+}
+.header .menu>ul>li .menu-subs.menu-column-4>.list-item .con_hed_m a {
+    text-decoration: none;
+}
+
+
+.list_newsubmenu ul li {
+    margin-top: 5px;
+}
 .mb_10{
     margin-bottom: 10px;
 }
