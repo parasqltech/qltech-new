@@ -125,15 +125,19 @@ class Header extends Component {
 								   </a>
 								   <div className="menu-subs menu-mega menu-column-4">
 								   	<div className="list-item">
-								   		<div className="con_hed_m">
+								   		
                                <ServiceHeader />
-                       </div> 
-                       <div className="con_hed_m">    
+                     
+                    </div> 
+                    <div className="list-item">
+                          
                             <IndustriesHeader />
-                        </div>   
-                        <div className="con_hed_m"> 
+                        
+                    </div>
+                    <div className="list-item">    
+                       
                             <PlatformHeader />  
-                           </div>
+                    
                           </div>
                          </div>
                          </>

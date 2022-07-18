@@ -25,15 +25,18 @@ const PlatformHeader = () => (
 				data.allWpPlatform.edges.map(
                 prop => {
 					return (
-            <Link to={"/platforms/"+prop.node.slug+"/"} className="dropdown-item mt-1">
-                                               
-          <ul className="dropdown-menu-ul-list">  
+             <div className="con_hed_m"> 
+            <Link to={"/platforms/"+prop.node.slug+"/"} className="pd_15">
+                 <div className="list_newsubmenu">                           
+          <ul>  
 					<li>
                                            <h4 className="dropdown-menu-li-list"  dangerouslySetInnerHTML={{ __html: prop.node.title}}></h4>
                                          
                                        </li>
                                        </ul>
+                                       </div>
                                          </Link>
+                                         </div>
 					)
                 }
                 )}

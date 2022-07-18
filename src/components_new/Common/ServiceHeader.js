@@ -29,7 +29,8 @@ const ServiceHeader = () => (
 				data.allWpHomeService.edges.map(
                 (prop,i) => {
 					return (
-            <Link to={"/services/"+prop.node.slug+"/"} className="dropdown-item">
+            <div className="con_hed_m">
+            <Link to={"/services/"+prop.node.slug+"/"} className="pd_15">
             <h4 className="title">{prop.node.HomeServices.title}</h4>
             <ul>
 					<li key={i}>
@@ -39,6 +40,7 @@ const ServiceHeader = () => (
                                        </li>
                                         </ul>
                                         </Link>
+                                        </div>
 					)
                 }
                 )}
