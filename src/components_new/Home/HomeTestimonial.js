@@ -23,8 +23,8 @@ class HomeTestimonialData extends React.Component {
         testimonial_img: ""
       }
     }
-    handleModalOpen = (img) => {
-        this.setState({ isModalOpen: true,testimonial_img:img})
+    handleModalOpen = (img,name,des,desc) => {
+        this.setState({ isModalOpen: true,testimonial_img:img,testimonial_name:name,testimonial_designation:des,testimonial_text:desc})
 		
     }
 
@@ -79,7 +79,7 @@ render() {
                 <div className="cont_client_say">
                   <h4>{prop.node.testimonial.name}</h4>
                   <span>{prop.node.testimonial.desgination}</span>
-                  <p className="sa_j">{(prop.node.testimonial.descprition).substring(0, 500)}</p>                
+                  <p className="sa_j">{(prop.node.testimonial.descprition).substring(0, 400)}</p>{(prop.node.testimonial.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.testimonial.image.sourceUrl,prop.node.testimonial.name,prop.node.testimonial.desgination,prop.node.testimonial.descprition)}>Read More</a></span>):(''))}                
                 </div>
               </div>
             </div>
@@ -99,30 +99,57 @@ render() {
                   )}  
           </Slider>
  <ReactModal  
-        isOpen={this.state.isModalOpen}
-        onRequestClose={this.handleModalClose}
-          className="modal d-block fade testimonial-view show"
-      >
-          <div className="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div className="modal-content ">
-            <button type="button" className="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-      
-          <div className="modal-body p-0">
-          <div className="embed-responsive embed-responsive-16by9">
+          isOpen={this.state.isModalOpen}
+          onRequestClose={this.handleModalClose}
+            className="modal d-block fade testimonial-view show"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg " tabindex="-1" role="dialog">
+          <div class="modal-content " >
+              <button type="button" class="close btn-default" onClick={this.handleModalClose} data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        
+            <div class="modal-body p-0">
+            <div className="embed-responsive embed-responsive-16by9">
                 <iframe className="embed-responsive-item" src={this.state.testimonial_img} allowfullscreen></iframe>
             </div>
-              
+                <div class="row justify-content-center">
+                    
+                    <div class="col-xl-12">
+                        <div class="author-content">
+                            
+                            <p class="label-text testimonialDetail"></p>
+                            <div class="author-info">
+                                <div className="author-content">
+                                         
+                                          <p className="label-text">
+                                              <span>{this.state.testimonial_text}</span>
+                                          </p>
+                      <div className="author-details-block">
+                      
+                       <div className="author-info">
+
+                        
+                                              <h4>{this.state.testimonial_name}</h4>
+                                              <p>{this.state.testimonial_designation}</p>
+                                          </div>
+                      
+                      </div>
+                                         
+                                      </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
           </div>
-        
         </div>
-      </div>
-     
-        
-    
-    
-      </ReactModal>
+       
+          
+      
+      
+        </ReactModal>
      
         
       </div>
