@@ -19,7 +19,7 @@ const FooterSocial = () => (
 		}
     `}
     render={data => (
-			 <ul className="footer-social-links social-bookmark">
+			 <ul className="">
 				{data &&
 				data.allWpSocialLinks &&
 				data.allWpSocialLinks.edges &&

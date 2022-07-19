@@ -991,3 +991,28 @@ header .navbar-light .navbar-nav .nav-link.btn-default:hover {
     color: #fff !important;
     background: #EE6C4D !important;
 }
+
+header {
+    position: relative;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.75rem 0;
+    z-index: 100;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 42px rgb(112 144 176 / 10%);
+}
+
+footer {
+    padding: unset;
+    background: #F5FAFE;
+}
+.footer_about_cont{
+    margin-bottom: 0 !important;    
+}
+.list_social ul {
+    margin-bottom: 0 !important;
+}
