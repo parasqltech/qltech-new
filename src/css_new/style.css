@@ -1016,3 +1016,45 @@ footer {
 .list_social ul {
     margin-bottom: 0 !important;
 }
+
+
+.list_social ul li:hover {
+    background: #fff;
+    border-radius: 100%;
+}
+
+.list_social ul li {
+    display: inline-block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: transparent;
+    border-radius: 100%;
+}
+
+.data_list h4 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #252525;
+    font-family: 'Inter', sans-serif;
+}
+
+ul.footer-link-list li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px !important;
+}
+
+ul.footer-link-list li a {
+    color: #6F6C90;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+ul.footer-link-list li a:hover {
+    color: #6F6C90;
+}
