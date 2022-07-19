@@ -59,7 +59,7 @@ render() {
                           
                       <div className="test_on">
         <div className="large-12 columns slider_gtf">
-        <div className="owl-carousel owl-theme" id="testi2">
+        <div className="owl-theme" id="testi2">
           <div className="item">
             <div className="row align-items-center">
               <div className="col-md-6">

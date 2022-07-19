@@ -39,6 +39,7 @@ class WorkDefineUsData extends React.Component {
 render() {
     //const posts = this.props.data.allMarkdownRemark.node
      const Testimonials = this.props.data.allWpOurworkdefine;
+     console.log('Testimonials',Testimonials);
     return(
         <>
      <section class="sec02 pt_20 pb_20 "  data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400">
@@ -60,7 +61,7 @@ render() {
                       return (
         <div class="our_slider_g">
           <div class="large-12 columns slider_gtf">
-                  <div class="owl-carousel owl-theme" id="testi0">
+                  <div class="owl-theme" id="testi0">
                     <div class="item">
                         <div class="row align-items-center">
                          
