@@ -1183,3 +1183,24 @@ p.sa_j span {
     font-family: Inter,sans-serif;
 }
 
+@media (max-width: 767px){
+.main_heading h1{font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;  
+}
+.btn_form{
+        text-align: center;
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+header .navbar-light .navbar-nav .nav-link.btn-default {
+    font-size: 12px;
+    padding: 10px 7px;
+}
+}
+@media (min-width: 992px) and (max-width:1200px) {
+.navbar-expand-md .navbar-nav li.nav-item a.nav-link {
+    font-size: 15px;
+}
+}
