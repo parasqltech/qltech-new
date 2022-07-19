@@ -1098,3 +1098,16 @@ a{
     color: transparent;
     font-size: 15px;
 }
+
+.slick-dots li button:before {
+    background: #d9d9d9 !important;
+    border-radius: 100% !important;
+    color: transparent !important;
+    height: 12px !important;
+    opacity: 1 !important;
+    vertical-align: top;
+    width: 12px !important;
+}
+ul.slick-dots li.slick-active button::before {
+    background: linear-gradient(227.04deg,#008ac6 -1.69%,#77d6ff 102.13%) !important;
+}
