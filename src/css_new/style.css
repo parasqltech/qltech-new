@@ -1204,11 +1204,7 @@ header .navbar-light .navbar-nav .nav-link.btn-default {
 }
 }
 
-.sec02 {
-    position: relative;
-    z-index: 111111111111;
-    background: #ffff;
-}
+
 
 .sec03 {
     z-index: 999999;
@@ -1235,4 +1231,17 @@ footer {
     z-index: 999999;
     position: relative;
     background: #f5fafe;
+}
+
+.let_se {
+    margin-bottom: 10px !important;
+}
+
+header.sticky{
+    z-index: 999999999999999 !important;
+}
+.sec02 {
+    background: #fff;
+    position: relative;
+    z-index: 999;
 }
