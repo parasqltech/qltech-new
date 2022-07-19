@@ -54,7 +54,8 @@ render() {
 
                          <p class="pb_20">In collaboration with our clients, we’ve successfully managed to help businesses increase productivity, reduce costs, enhance agility & performance.</p>
                          <div class="btn_form ">
-                <a href="#" class="main_btn blue_btn">Read More</a>
+                         <Link to="/about-us" className="main_btn blue_btn">Read More
+                         </Link>
               </div>
           </div>
         </div>
