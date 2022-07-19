@@ -79,8 +79,7 @@ render() {
                 <div className="cont_client_say">
                   <h4>{prop.node.testimonial.name}</h4>
                   <span>{prop.node.testimonial.desgination}</span>
-                  <p className="sa_j">{(prop.node.testimonial.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.testimonial.image.sourceUrl,prop.node.testimonial.name,prop.node.testimonial.desgination,prop.node.testimonial.descprition)}>Read More</a></span>):(''))}
-                                              </p>                
+                  <p className="sa_j">{(prop.node.testimonial.descprition).substring(0, 500)}</p>                
                 </div>
               </div>
             </div>
