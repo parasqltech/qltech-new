@@ -226,7 +226,9 @@ const IndexPage = () => (
                 <div class="col-md-6" data-aos="flip-left" >
                     <div class="servi_gt">
                         <div class="sev_img">
-                            <img src={ser1} alt="ser1" />
+                            <LazyLoad height={200} >
+                                <img src={ser1} alt="ser1" />
+                            </LazyLoad>
                         </div>
                         <div class="sev_cont">
                             <h4>Strategy & Consulting</h4>
@@ -237,7 +239,9 @@ const IndexPage = () => (
                 <div class="col-md-6" data-aos="flip-left"  >
                     <div class="servi_gt">
                         <div class="sev_img">
+                           <LazyLoad height={200} > 
                             <img src={ser2} alt="ser1" />
+                           </LazyLoad> 
                         </div>
                         <div class="sev_cont">
                             <h4>Agile Focussed Development</h4>
@@ -248,7 +252,9 @@ const IndexPage = () => (
                 <div class="col-md-6" data-aos="flip-left"   >
                     <div class="servi_gt">
                         <div class="sev_img">
+                           <LazyLoad height={200} >
                             <img src={ser3} alt="ser1" />
+                        </LazyLoad>
                         </div>
                         <div class="sev_cont">
                             <h4>CRM Consulting and Development</h4>
@@ -259,7 +265,9 @@ const IndexPage = () => (
                 <div class="col-md-6" data-aos="flip-left">
                     <div class="servi_gt">
                         <div class="sev_img">
+                           <LazyLoad height={200} > 
                             <img src={ser4} alt="ser1" />
+                           </LazyLoad> 
                         </div>
                         <div class="sev_cont">
                             <h4>Digital Marketing</h4>
@@ -270,7 +278,9 @@ const IndexPage = () => (
                 <div class="col-md-6"  data-aos="flip-left">
                     <div class="servi_gt">
                         <div class="sev_img">
+                           <LazyLoad height={200} > 
                             <img src={ser5} alt="ser1" />
+                           </LazyLoad> 
                         </div>
                         <div class="sev_cont">
                             <h4>Analytics & Reporting</h4>
@@ -281,7 +291,9 @@ const IndexPage = () => (
                 <div class="col-md-6" data-aos="flip-left">
                     <div class="servi_gt">
                         <div class="sev_img">
+                           <LazyLoad height={200} >
                             <img src={ser6} alt="ser1" />
+                           </LazyLoad> 
                         </div>
                         <div class="sev_cont">
                             <h4>Digital Transformation</h4>
