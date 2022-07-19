@@ -969,3 +969,25 @@ img.dumvmy {
 }.header .menu > ul > li .menu-subs.menu-column-4 > .list-item .con_hed_m a.pd_15:hover {
     background: #fbfbfb;
 }
+
+
+header .navbar-light .navbar-nav .nav-link.btn-default {
+    color: #EE6C4D;
+    background: #FFFFFF !important;
+    border: 1px solid #EE6C4D;
+    border-radius: 8px !important;
+    padding: 10px 20px;
+    box-shadow: unset !important;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+}
+
+header .navbar-light .navbar-nav .nav-link.btn-default:after, header .navbar-light .navbar-nav .nav-link.btn-default:before {
+    background: transparent;
+}
+
+header .navbar-light .navbar-nav .nav-link.btn-default:hover {
+    color: #fff !important;
+    background: #EE6C4D !important;
+}
