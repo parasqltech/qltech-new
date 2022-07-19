@@ -99,7 +99,7 @@ render() {
               </ul>
             </div>
             <div class="btn_form ">
-                <a href="#" class="main_btn blue_btn">How we archived?</a>
+            <Link to={prop.node.ourWorkDefinesData.postUrl}>How we archived?</Link>
               </div>
           </div>
         </div>
