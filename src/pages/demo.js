@@ -75,7 +75,7 @@ const IndexPage = () => (
                         <div className="cont_wrap pt_20 pb_20">
                             <p>Zoho CRM is an automated workhorse, the only effort required is during the implementation phase. Complete your set-up with all the contextual email or messaging sequences.</p>
                             <div className="btn_form ">
-                                <a href="#" className="main_btn">Book Your Session</a>
+                            <Link to={"https://www.qltech.com.au/schedule-a-call/"} className="main_btn">Book Your Session</Link>
                             </div>
                         </div>
                     </div>
