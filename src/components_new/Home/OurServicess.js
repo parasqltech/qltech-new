@@ -39,9 +39,6 @@ const OurServicess = () => (
       {data &&
               data.allWpOurServicess &&
               data.allWpOurServicess.edges.map(
-           
-              
-        
                 prop => {
                   return (
         <div class="col-md-6" data-aos="flip-left" >
