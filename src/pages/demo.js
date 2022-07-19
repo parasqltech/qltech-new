@@ -214,10 +214,10 @@ const IndexPage = () => (
     <WorkDefineUs />
     </LazyLoad>
     <LazyLoad height={200} >
-    <OurServicess />
+    <NeedUs />
     </LazyLoad>
     <LazyLoad height={200} >
-    <NeedUs />
+    <OurServicess />
     </LazyLoad>
     <LazyLoad height={300} >
     <HomeAboutUs />
