@@ -1136,3 +1136,25 @@ button.btn.btn-primary.sb_fr_btn:hover  {
    background: linear-gradient(262.82deg, #008AC6 -4.5%, #77D6FF 110.63%);
     border: solid 1px #008AC6;
 }
+
+.cont_client_say h4 {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: Inter,sans-serif;
+    color: #252525;
+}
+
+p.label-text {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+}
+
+p.label-text span {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+    color: #252525;
+}
