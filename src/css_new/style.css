@@ -1213,3 +1213,30 @@ header .navbar-light .navbar-nav .nav-link.btn-default {
     z-index: 111111111111;
     background: #ffff;
 }
+
+.sec03 {
+    z-index: 999999;
+    position: relative;
+    background: #f6fbff;
+}
+.sec04 {
+    z-index: 999999;
+    position: relative;
+    background: #f6fbff;
+}
+.sec05 {
+    z-index: 999999;
+    position: relative;
+        background: #f6fbff;
+
+}
+.sec06 {
+    z-index: 999999;
+    position: relative;
+    background: #ffffff;
+}
+footer {
+    z-index: 999999;
+    position: relative;
+    background: #f5fafe;
+}
