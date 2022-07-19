@@ -1111,3 +1111,28 @@ a{
 ul.slick-dots li.slick-active button::before {
     background: linear-gradient(227.04deg,#008ac6 -1.69%,#77d6ff 102.13%) !important;
 }
+
+
+h2.had_ti {
+    font-family: 'Inter', sans-serif;
+}
+.form_contact_form input {
+    background: #fafbfb !important;
+    font-family: Inter,sans-serif;
+}
+.form_contact_form textarea {
+    background: #fafbfb !important;
+    font-family: Inter,sans-serif;
+    height: 100px;
+}
+button.btn.btn-primary.sb_fr_btn {
+    background: #EE6C4D;
+    border: solid 1px #EE6C4D;
+    padding: 10px 50px !important;
+    font-family: Inter,sans-serif;
+    color: #fff;
+}
+button.btn.btn-primary.sb_fr_btn:hover  {
+   background: linear-gradient(262.82deg, #008AC6 -4.5%, #77D6FF 110.63%);
+    border: solid 1px #008AC6;
+}
