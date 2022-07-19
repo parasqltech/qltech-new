@@ -88,6 +88,29 @@ class Header extends Component {
 		<div>
 		
       <header>
+      <div className="social-header">
+            <div className="container d-flex justify-content-between">
+                <p className="key-message "> <span className="mr-2 d-none d-sm-inline">Best Practices</span>
+                    <span className="mr-2 d-none  d-sm-inline">Robust Processes</span>
+                    <span className="mr-2 d-none  d-sm-inline">Measurable Results</span>
+                </p>
+                <ul  className="social-list justify-content-end ">
+                    <li>
+                        <a href="tel:+61 8 6262 3559" ><i className="fa fa-phone mr-2"></i><span className="d-inline d-sm-none  d-md-inline">+61 8 6262 3559</span></a>
+                    </li>
+                     <li>
+                        <a target="_blank" href="mailto:support@qltech.com.au"><i className="fa fa-envelope  mr-2"></i><span className="d-none d-md-inline">Send Email</span></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/QLTechAU/" className=""><i className="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/company/qltechau" className=""><i className="fa fa-linkedin"></i></a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
        
         <div className="container">
             <nav className="navbar navbar-expand-md navbar-light bg-none">   
