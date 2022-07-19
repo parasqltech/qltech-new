@@ -19,6 +19,7 @@ import ico_3 from '../img/icon-3.png';
 import ico_2 from '../img/icon-2.png';
 import LazyLoad from 'react-lazyload';
 import ClientSlider from '../components_new/Home/ClientSlider'
+import OurServicess from '../components_new/Home/OurServicess'
 import HomeService from '../components_new/Home/HomeService'
 import NeedUs from '../components_new/Home/NeedUs'
 import HomeTestimonial from '../components_new/Home/HomeTestimonial'
@@ -213,86 +214,7 @@ const IndexPage = () => (
     <WorkDefineUs />
     </LazyLoad>
     <LazyLoad height={200} >
-    <section class="sec04 pt_20 pb_20" data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400" >
-        <div class="container">
-            <div class="row  pb">
-                <div class="col-md-12">
-                    <div class="title_wrap_uh text-center">
-                        <h2 class="had_ti">Our  <span>Service</span> </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row  pb">
-                <div class="col-md-6" data-aos="flip-left" >
-                    <div class="servi_gt">
-                        <div class="sev_img">
-                            <img src={ser1} alt="ser1" />
-                        </div>
-                        <div class="sev_cont">
-                            <h4>Strategy & Consulting</h4>
-                            <p>We collectively bring the thought leadership in strategy, the latest technologies & tools to help you build robust and lasting capabilities. For your brand to constantly adapt market swings.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="flip-left"  >
-                    <div class="servi_gt">
-                        <div class="sev_img">
-                            <img src={ser2} alt="ser1" />
-                        </div>
-                        <div class="sev_cont">
-                            <h4>Agile Focussed Development</h4>
-                            <p>We empower businesses with a competitive edge with our website and custom application development services that focus on Predictable Costs, Schedules and business values.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="flip-left"   >
-                    <div class="servi_gt">
-                        <div class="sev_img">
-                            <img src={ser3} alt="ser1" />
-                        </div>
-                        <div class="sev_cont">
-                            <h4>CRM Consulting and Development</h4>
-                            <p>We focus on automating all your business’s manual processes. By partnering with you to create and orchestrate practical strategies like Improving marketing campaigns, actionable insights and Strengthening customer engagements.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="flip-left">
-                    <div class="servi_gt">
-                        <div class="sev_img">
-                            <img src={ser4} alt="ser1" />
-                        </div>
-                        <div class="sev_cont">
-                            <h4>Digital Marketing</h4>
-                            <p>Being a full-service digital marketing company we help businesses implement solutions that Improves conversion rates, Covers a larger audience and improve the brands digital presence by building trust with social media.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6"  data-aos="flip-left">
-                    <div class="servi_gt">
-                        <div class="sev_img">
-                            <img src={ser5} alt="ser1" />
-                        </div>
-                        <div class="sev_cont">
-                            <h4>Analytics & Reporting</h4>
-                            <p>We can help you get your data in order and identify what’s the most valuable aspect of your business. Empowered with a solid understanding of your business processes with insightful and powerful analytical & reporting metrics.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6" data-aos="flip-left">
-                    <div class="servi_gt">
-                        <div class="sev_img">
-                            <img src={ser6} alt="ser1" />
-                        </div>
-                        <div class="sev_cont">
-                            <h4>Digital Transformation</h4>
-                            <p>From strategy & consulting to agile-focused development, from CRM development to digital marketing and analytics & reporting, platforms for multiple industries, we have the solutions to spur your success.</p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
+    <OurServicess />
     </LazyLoad>
     <LazyLoad height={200} >
     <NeedUs />

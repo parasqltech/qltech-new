@@ -1072,3 +1072,13 @@ font-family: Inter,sans-serif !important;
     font-family: Inter,sans-serif !important;
     color: #252525;
 }
+a{
+    text-decoration: none !important;
+}
+.main_heading h1 {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 57px;
+    font-family: Inter,sans-serif;
+    color: #252525;
+}
