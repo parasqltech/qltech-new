@@ -15,8 +15,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    color: #252525;
+    font-family: 'Inter', sans-serif !important;
+    color: #252525 !important;
 }
 ul, li, p, a {
     font-size: 18px;
@@ -1181,3 +1181,4 @@ p.label-text span {
 .need_wrap h4 {
     font-family: Inter,sans-serif;
 }
+
