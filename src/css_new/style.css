@@ -1158,3 +1158,26 @@ p.label-text span {
     margin-bottom: 0;
     color: #252525;
 }
+
+.sec05 .title_wrap_uh p {
+    margin-bottom: 0;
+}
+
+.sev_cont h4 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #252525;
+    font-family: 'Inter', sans-serif;
+}
+
+.sev_cont p {
+    color: #252525;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+}
+
+.need_wrap h4 {
+    font-family: Inter,sans-serif;
+}
