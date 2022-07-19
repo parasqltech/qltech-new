@@ -1149,6 +1149,7 @@ p.label-text {
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     margin-bottom: 0;
+    color: #252525 !important
 }
 
 p.label-text span {
@@ -1156,7 +1157,7 @@ p.label-text span {
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     margin-bottom: 0;
-    color: #252525;
+    color: #252525 !important
 }
 
 .sec05 .title_wrap_uh p {
