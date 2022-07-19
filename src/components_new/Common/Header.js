@@ -193,8 +193,7 @@ class Header extends Component {
                 </div>
             </nav>
         </div>
-    </header>
-	<span className="top-space"></span>	
+    </header>	
 	</div>
     )}
   />
