@@ -1144,7 +1144,7 @@ button.btn.btn-primary.sb_fr_btn:hover  {
     color: #252525;
 }
 
-p.label-text {
+p.sa_j {
     font-weight: 400;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
@@ -1152,7 +1152,7 @@ p.label-text {
     color: #252525 !important
 }
 
-p.label-text span {
+p.sa_j span {
     font-weight: 400;
     font-size: 18px;
     font-family: 'Inter', sans-serif;

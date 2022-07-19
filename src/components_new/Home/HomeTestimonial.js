@@ -79,7 +79,7 @@ render() {
                 <div className="cont_client_say">
                   <h4>{prop.node.testimonial.name}</h4>
                   <span>{prop.node.testimonial.desgination}</span>
-                  <p className="label-text">{(prop.node.testimonial.descprition).substring(0, 400)}</p>                
+                  <p className="sa_j">{(prop.node.testimonial.descprition).substring(0, 400)}</p>                
                 </div>
               </div>
             </div>
