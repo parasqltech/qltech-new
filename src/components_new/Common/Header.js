@@ -88,7 +88,7 @@ class Header extends Component {
 		<div>
 		
       <header>
-      <div className="social-header">
+        <div className="social-header">
             <div className="container d-flex justify-content-between">
                 <p className="key-message "> <span className="mr-2 d-none d-sm-inline">Best Practices</span>
                     <span className="mr-2 d-none  d-sm-inline">Robust Processes</span>
@@ -111,7 +111,6 @@ class Header extends Component {
                 </ul>
             </div>
         </div>
-       
         <div className="container">
             <nav className="navbar navbar-expand-md navbar-light bg-none">   
 				<Link className="navbar-brand" to="/" >
