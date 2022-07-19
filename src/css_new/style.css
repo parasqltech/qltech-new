@@ -1245,3 +1245,27 @@ header.sticky{
     position: relative;
     z-index: 999;
 }
+
+
+.slick-dots {
+    position: relative;
+}
+
+.let_se {
+    margin-bottom: 10px !important;
+}
+
+.slick-dots {
+    position: relative;
+}
+.cop_right p {
+    margin-bottom: 0;
+}
+
+.list_terms ul li a {
+    font-size: 15px;
+}
+
+.list_terms ul li a::after {
+    display: none;
+}
