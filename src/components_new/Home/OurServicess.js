@@ -47,11 +47,12 @@ const OurServicess = () => (
         <div class="col-md-6" data-aos="flip-left" >
           <div class="servi_gt">
             <div class="sev_img">
-              
+               {(prop.node.ourServicessNewData.serviceImage != null) ? (<img data-src={prop.node.ourServicessNewData.serviceImage.sourceUrl} className="img-fluid lazyload" alt=""/>) : ('')}
+           
             </div>
             <div class="sev_cont">
-              <h4>{prop.node.ourServicessNewData.title}</h4>
-                <p>{prop.node.ourServicessNewData.contentData}</p>
+              <h4>{(prop.node.ourServicessNewData.title != null)?(prop.node.ourServicessNewData.title): ('')}</h4>
+                <p>{(prop.node.ourServicessNewData.contentData != null)?(prop.node.ourServicessNewData.contentData): ('')}</p>
             </div>
           </div>
         </div>
