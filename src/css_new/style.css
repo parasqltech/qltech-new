@@ -1058,3 +1058,17 @@ ul.footer-link-list li a {
 ul.footer-link-list li a:hover {
     color: #6F6C90;
 }
+
+.rat_text{
+font-family: Inter,sans-serif !important;   
+}
+.rating_ .rat_star {
+    color: #fcb002;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    margin-left: 5px;
+}
+.parner_ship_wirh h2 {
+    font-family: Inter,sans-serif !important;
+    color: #252525;
+}
