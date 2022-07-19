@@ -1264,3 +1264,10 @@ footer {
 .list_terms ul li a::after {
     display: none;
 }
+
+
+
+.slick-dots {
+    position: relative !important;
+    margin-bottom: 20px !important;
+}
