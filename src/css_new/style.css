@@ -1334,9 +1334,37 @@ h1.heading-main.fadeInUp {
 }
 
 
-span.Typewriter__wrapper {
-    color: #21A6DF;
+.sec01 h1.heading-main {
+    text-align: left !important;
+    font-size: 36px !important;
+    line-height: 48px !important;
 }
-span.Typewriter__cursor {
-    color: #21A6DF;
+.sec01 .Typewriter {
+    color: #21A6DF !important;
+}
+.sec01 .cont_wrap.pt_20.pb_20 {
+    padding-top: 0 !important;
+}
+@media (min-width: 992px) and (max-width:1199px){
+ .sec01 h1.heading-main{
+  font-size: 30px !important;
+    line-height: 38px !important;
+}  
+}
+@media (min-width: 768px) and (max-width:991px){
+  header .social-header .key-message{
+  font-size: 13px !important;
+}  
+}
+@media (max-width: 767px){
+.sec01 h1.heading-main {
+    font-size: 30px !important;
+    line-height: 33px !important;
+}
+}
+@media (max-width: 473px){
+  .sec01 h1.heading-main {
+    font-size: 34px !important;
+    line-height: 38px !important;
+}  
 }
