@@ -72,7 +72,7 @@ const IndexPage = () => (
                 <div className="col-md-6">
                     <div className="main_heading">
                     <ReactWOW  delay='0.3s' animation='fadeInUp'>
-                    <h1 className="heading-main text-center">
+                    <h1 className="heading-main">
                         <span className="d-block">Expert Caretakers to Help Make</span> 
                        <Typewriter
                           options={{

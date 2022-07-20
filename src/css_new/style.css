@@ -1328,3 +1328,15 @@ header .social-header .social-list li a{
 }
 }
 
+h1.heading-main.fadeInUp {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+
+span.Typewriter__wrapper {
+    color: #21A6DF;
+}
+span.Typewriter__cursor {
+    color: #21A6DF;
+}
