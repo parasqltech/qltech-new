@@ -99,7 +99,7 @@ render() {
               </ul>
             </div>
             <div class="btn_form ">
-            <Link to={prop.node.ourWorkDefinesData.postUrl} class="main_btn blue_btn">How we archived?</Link>
+            <Link to={prop.node.ourWorkDefinesData.postUrl} class="main_btn blue_btn">How we achived?</Link>
               </div>
           </div>
         </div>

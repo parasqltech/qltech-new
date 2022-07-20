@@ -13,6 +13,7 @@ const OurServicess = () => (
         ourServicessNewData {
           contentData
           title
+          linkUrl
           serviceImage {
             id
             sourceUrl
@@ -48,7 +49,7 @@ const OurServicess = () => (
            
             </div>
             <div class="sev_cont">
-              <h4>{(prop.node.ourServicessNewData.title != null)?(prop.node.ourServicessNewData.title): ('')}</h4>
+              <Link to={prop.node.ourServicessNewData.linkUrl}><h4>{(prop.node.ourServicessNewData.title != null)?(prop.node.ourServicessNewData.title): ('')}</h4></Link>
                 <p>{(prop.node.ourServicessNewData.contentData != null)?(prop.node.ourServicessNewData.contentData): ('')}</p>
             </div>
           </div>

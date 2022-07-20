@@ -71,9 +71,9 @@ const IndexPage = () => (
             <div className="row justify-content-between align-items-center">
                 <div className="col-md-6">
                     <div className="main_heading">
-                        <h1>Expert Caretakers to<br/>help Make<br/><span className="color_head">Digital Work</span></h1>
+                        <h1>Expert Caretakers to<br/>Help Make<br/><span className="color_head">Digital Work</span></h1>
                         <div className="cont_wrap pt_20 pb_20">
-                            <p>Zoho CRM is an automated workhorse, the only effort required is during the implementation phase. Complete your set-up with all the contextual email or messaging sequences.</p>
+                            <p>"Boost your customer relationships with the power of highly contextual emails by implementing customised CRM and CDP platforms. Make your product or services easier to sell and enhance your business's outreach with automates utility app, designed as per your requirements."</p>
                             <div className="btn_form ">
                             <Link to={"https://www.qltech.com.au/schedule-a-call/"} className="main_btn">Book Your Session</Link>
                             </div>
