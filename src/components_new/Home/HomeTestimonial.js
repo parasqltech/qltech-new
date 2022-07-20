@@ -20,17 +20,27 @@ class HomeTestimonialData extends React.Component {
       super(props);
       this.state = {
         isModalOpen: false,
+        isModalOpens:false,
         testimonial_img: ""
       }
     }
-    handleModalOpen = (img,name,des,desc) => {
-        this.setState({ isModalOpen: true,testimonial_img:img,testimonial_name:name,testimonial_designation:des,testimonial_text:desc})
+    handleModalOpen = (img) => {
+        this.setState({ isModalOpen: true,testimonial_img:img})
 		
     }
 
     handleModalClose = event => {
     // console.log('handleModalOpen: ', event);
     this.setState({ isModalOpen: false })
+    }
+    handleModalOpens = (img,name,des,desc) => {
+        this.setState({ isModalOpens: true,testimonial_img:img,testimonial_name:name,testimonial_designation:des,testimonial_text:desc})
+    
+    }
+
+    handleModalCloses = event => {
+    // console.log('handleModalOpen: ', event);
+    this.setState({ isModalOpens: false })
     }
 
 render() {
@@ -79,7 +89,7 @@ render() {
                 <div className="cont_client_say">
                   <h4>{prop.node.testimonial.name}</h4>
                   <span>{prop.node.testimonial.desgination}</span>
-                  <p className="sa_j">{(prop.node.testimonial.descprition).substring(0, 400)}</p>{(prop.node.testimonial.descprition.length  > 400 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpen(prop.node.testimonial.image.sourceUrl,prop.node.testimonial.name,prop.node.testimonial.desgination,prop.node.testimonial.descprition)}>Read More</a></span>):(''))}                
+                  <p className="sa_j">{(prop.node.testimonial.descprition).substring(0, 250)}</p>{(prop.node.testimonial.descprition.length  > 250 ? (<span>...<a href="javascript:;" className="readmore" onClick={() => this.handleModalOpens(prop.node.testimonial.image.sourceUrl,prop.node.testimonial.name,prop.node.testimonial.desgination,prop.node.testimonial.descprition)}>Read More</a></span>):(''))}                
                 </div>
               </div>
             </div>
@@ -113,6 +123,29 @@ render() {
             <div className="embed-responsive embed-responsive-16by9">
                 <iframe className="embed-responsive-item" src={this.state.testimonial_img} allowfullscreen></iframe>
             </div>
+                
+                    </div>
+                </div>
+            </div>
+       
+          
+      
+      
+        </ReactModal>
+
+        <ReactModal  
+          isOpen={this.state.isModalOpens}
+          onRequestClose={this.handleModalCloses}
+            className="modal d-block fade testimonial-view show"
+        >
+            <div class="modal-dialog modal-dialog-centered modal-lg " tabindex="-1" role="dialog">
+          <div class="modal-content " >
+              <button type="button" class="close btn-default" onClick={this.handleModalCloses} data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+        
+            <div class="modal-body p-0">
+           
                 <div class="row justify-content-center">
                     
                     <div class="col-xl-12">

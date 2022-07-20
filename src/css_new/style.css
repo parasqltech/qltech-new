@@ -1270,3 +1270,61 @@ footer {
     position: relative !important;
     margin-bottom: 20px !important;
 }
+
+
+
+header .social-header .social-list li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+
+.modal .author-content p.label-text span {
+    color: #252525 !important;
+}
+
+
+.author-details-block .author-info {
+    padding-left: 0 !important;
+}
+
+
+.modal .author-content .author-details-block .author-info h4 {
+    color: #252525;
+    font-family: Inter,sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.modal .author-content .author-details-block .author-info p {
+    box-sizing: border-box;
+    color: #646464;
+    display: block;
+    font-size: 14px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+.cont_client_say span a.readmore {
+    font-size: 18px;
+    font-weight: 600;
+}
+@media(min-width: 576px) and (max-width: 767px){
+header .social-header .key-message{
+font-size: 13px !important; 
+}   
+
+}
+@media(min-width: 768px) and (max-width: 991px){
+header .social-header .social-list li a{
+    font-size: 13px;
+}
+.need_wrap h4, h4 {
+    font-size: 16px;
+}
+.need_wrap p {
+    min-height: 70px;
+}
+}
+
