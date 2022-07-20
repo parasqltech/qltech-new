@@ -71,7 +71,19 @@ const IndexPage = () => (
             <div className="row justify-content-between align-items-center">
                 <div className="col-md-6">
                     <div className="main_heading">
-                        <h1>Expert Caretakers to<br/>Help Make<br/><span className="color_head">Digital Work</span></h1>
+                    <ReactWOW  delay='0.3s' animation='fadeInUp'>
+                    <h1 className="heading-main text-center">
+                        <span className="d-block">Expert Caretakers to Help Make</span> 
+                       <Typewriter
+                          options={{
+                            strings: ['Digital Work'],
+                            autoStart: true,
+                            loop: true,
+                          }}
+                        />
+                    </h1>
+                    </ReactWOW>
+                        
                         <div className="cont_wrap pt_20 pb_20">
                             <p>"Boost your customer relationships with the power of highly contextual emails by implementing customised CRM and CDP platforms. Make your product or services easier to sell and enhance your business's outreach with automates utility app, designed as per your requirements."</p>
                             <div className="btn_form ">
