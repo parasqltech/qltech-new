@@ -76,7 +76,7 @@ const IndexPage = () => (
                         <span className="d-block">Expert Caretakers to Help Make</span> 
                        <Typewriter
                           options={{
-                            strings: ['Digital Work'],
+                            strings: ['Make digital work','Engage and wow customers','Get ready for the next','Embrace analytics'],
                             autoStart: true,
                             loop: true,
                           }}
@@ -85,7 +85,7 @@ const IndexPage = () => (
                     </ReactWOW>
                         
                         <div className="cont_wrap pt_20 pb_20">
-                            <p>"Boost your customer relationships with the power of highly contextual emails by implementing customised CRM and CDP platforms. Make your product or services easier to sell and enhance your business's outreach with automates utility app, designed as per your requirements."</p>
+                            <p>'Boost your customer relationships with the power of highly contextual emails by implementing customised CRM and CDP platforms. Make your products or services easier to sell and enhance your business's outreach with automated utility apps designed as per your requirements.'</p>
                             <div className="btn_form ">
                             <Link to={"https://www.qltech.com.au/schedule-a-call/"} className="main_btn">Book Your Session</Link>
                             </div>
