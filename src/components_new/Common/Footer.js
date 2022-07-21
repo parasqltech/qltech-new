@@ -11,8 +11,24 @@ import google from '../../img/google.png'
 import meta from '../../img/meta.png'
 import certi from '../../img/certi.png'
 import googleicon from '../../img/googleicon.png'
-
-const Footer = () => (
+import axios from 'axios'
+class Footer extends React.Component{
+   componentDidMount() {
+    axios({
+              url: 'https://admin.qltech.com.au/test.php',
+              method: 'get',
+      headers: {
+        "Content-Type": "application/json",
+        // "Authorization": "Bearer " + token,
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Origin": "*",
+      },
+              }).then(function(response) {
+                console.log('shi',response);
+            });
+   }
+            render (){
+    return(
 		<>
        <div>
        <footer data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400">
@@ -123,7 +139,8 @@ const Footer = () => (
 </footer>
     </div>
     </>
+    )}
     
-)
+}
 
 export default Footer
