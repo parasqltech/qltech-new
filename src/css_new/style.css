@@ -1374,10 +1374,10 @@ h1.heading-main.fadeInUp {
     width: 80%;
     float: right;
 }
-@media (max-width: 767px){
-.mina_g {
-    width: 100%;
-    float: none;
+@media (max-width: 767px) {
+.img_loop {
+    width: 100%!important;
+    float: none!important;
 }   
 }
 
