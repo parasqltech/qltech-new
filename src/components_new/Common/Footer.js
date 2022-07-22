@@ -14,14 +14,15 @@ import googleicon from '../../img/googleicon.png'
 import axios from 'axios'
 class Footer extends React.Component{
    componentDidMount() {
+	   
+	   const payload = {
+			  first_name: "",
+			 
+			}
     axios({
-              url: 'https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJR1mA8PyEXjkRuNlaxp48bVo&key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI',
-              method: 'get',
-      mode: "no-cors",
-      headers: {
-        'Accept': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-      },
+              url: 'https://admin.qltech.com.au/test.php',
+              method: 'post',
+	    data: payload, // you are sending body instead
               }).then(function(response) {
                 console.log('shi',response);
             });
