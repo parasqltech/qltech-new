@@ -15,7 +15,7 @@ import axios from 'axios'
 class Footer extends React.Component{
    componentDidMount() {
     axios({
-              url: 'https://admin.qltech.com.au/test.php',
+              url: 'https://maps.googleapis.com/maps/api/place/details/json?&place_id=ChIJR1mA8PyEXjkRuNlaxp48bVo&key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI',
               method: 'get',
       mode: "no-cors",
       headers: {
