@@ -14,7 +14,13 @@ import googleicon from '../../img/googleicon.png'
 import axios from 'axios'
 class Footer extends React.Component{
    componentDidMount() {
-	   
+	    this.submitForm = this.submitForm.bind(this);
+	setTimeout(function(){
+  this.submitForm();
+}, 3000);
+   }
+	
+	submitForm() {
 	   const payload = {
 			  first_name: "",
 			 
@@ -26,7 +32,7 @@ class Footer extends React.Component{
               }).then(function(response) {
                 console.log('shi',response);
             });
-   }
+	}
             render (){
     return(
 		<>
