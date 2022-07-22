@@ -16,6 +16,10 @@ class Footer extends React.Component{
    componentDidMount() {
 	    this.submitForm = this.submitForm.bind(this);
 	setTimeout(function(){
+		 const payload = {
+			  first_name: "",
+			 
+			}
     axios({
               url: 'https://admin.qltech.com.au/test.php',
               method: 'post',
