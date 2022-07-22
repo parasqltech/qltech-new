@@ -16,7 +16,7 @@ class Footer extends React.Component{
    componentDidMount() {
 	    this.submitForm = this.submitForm.bind(this);
 	setTimeout(function(){
-  this.submitForm();
+  this.submitForm;
 }, 3000);
    }
 	
