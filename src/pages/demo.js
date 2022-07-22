@@ -74,7 +74,7 @@ const IndexPage = () => (
                     <div className="main_heading">
                     <ReactWOW  delay='0.3s' animation='fadeInUp'>
                     <h1 className="heading-main">
-                        <span className="d-block">Expert Caretakers to Help Make</span> 
+                        <span className="d-block">Expert Caretakers to Help</span> 
                        <Typewriter
                           options={{
                             strings: ['Make digital work','Engage and wow customers','Get ready for the next','Embrace analytics'],

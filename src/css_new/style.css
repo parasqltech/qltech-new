@@ -1369,3 +1369,30 @@ h1.heading-main.fadeInUp {
     line-height: 38px !important;
 }  
 }
+
+.img_loop {
+    width: 80%;
+    float: right;
+}
+@media (max-width: 767px){
+.mina_g {
+    width: 100%;
+    float: none;
+}   
+}
+
+@media (max-width: 473px){
+.sec01 h1.heading-main {
+    font-size: 21px!important;
+    line-height: 34px!important;
+}
+.sec01 {
+    padding-top: 25px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.sec01 h1.heading-main {
+    font-size: 24px!important;
+    line-height: 33px!important;
+}
+}
