@@ -17,11 +17,10 @@ class Footer extends React.Component{
     axios({
               url: 'https://admin.qltech.com.au/test.php',
               method: 'get',
+      mode: "no-cors",
       headers: {
-        "Content-Type": "application/json",
-        // "Authorization": "Bearer " + token,
-        "Access-Control-Allow-Methods": "GET",
-        "Access-Control-Allow-Origin": "*",
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*',
       },
               }).then(function(response) {
                 console.log('shi',response);
