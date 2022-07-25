@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "@amplitude/analytics-browser": "^0.4.1",
+     "@react-google-maps/api": "^2.12.1",
     "amplitude-js": "^8.18.3",
     "aos": "^2.3.4",
     "axios": "^0.21.1",
