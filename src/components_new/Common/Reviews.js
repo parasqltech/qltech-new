@@ -32,7 +32,7 @@ constructor(props){
    this.handleScriptLoad = this.handleScriptLoad.bind(this);
   }
 
-function handleScriptLoad() {
+ handleScriptLoad() {
  let map = new window.google.maps.Map(document.getElementById("map"), {
     center: {lat:40.7575285, lng: -73.9884469}
   });
