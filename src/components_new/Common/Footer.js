@@ -12,7 +12,7 @@ import meta from '../../img/meta.png'
 import certi from '../../img/certi.png'
 import googleicon from '../../img/googleicon.png'
 import axios from 'axios'
-import "https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI&libraries=places&callback=initMap";
+
 
 
 class Footer extends React.Component{
