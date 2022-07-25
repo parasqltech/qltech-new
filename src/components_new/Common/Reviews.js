@@ -2,9 +2,26 @@ import React, { useState, useEffect, useRef } from "react";
 import { Container,Image,Row,Col,Button,ListGroup,Form } from 'react-bootstrap';
 import $ from "jquery";
 import Cookies from 'universal-cookie';
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 let autoComplete;
 const cookies = new Cookies();
+const loadScript = (url, callback) => {
+  let script = document.createElement("script");
+  script.type = "text/javascript";
+
+  if (script.readyState) {
+    script.onreadystatechange = function() {
+      if (script.readyState === "loaded" || script.readyState === "complete") {
+        script.onreadystatechange = null;
+        callback();
+      }
+    };
+  } else {
+    script.onload = () => callback();
+  }
+
+  script.src = url;
+  document.getElementsByTagName("head")[0].appendChild(script);
+};
 
 export default class Reviews extends React.Component{
 constructor(props){
@@ -16,10 +33,7 @@ constructor(props){
 
 
 componentDidMount(){
- const { isLoaded } = useJsApiLoader({
-    id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI"
-  })
+
 
 
 let map = new window.google.maps.Map(document.getElementById("map"), {
@@ -38,6 +52,9 @@ service.getDetails({
   })
 }
 render(){
+     useEffect(() => {
+    loadScript(`https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI&libraries=places`);
+  }, []);
 const { places } = this.state;
 return(
   <div>
