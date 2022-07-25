@@ -4,7 +4,7 @@ import $ from "jquery";
 import Cookies from 'universal-cookie';
 let autoComplete;
 const cookies = new Cookies();
-const google = window.google;
+
 const loadScript = (url) => {
   let script = document.createElement("script");
   script.type = "text/javascript";
