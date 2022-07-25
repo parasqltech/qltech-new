@@ -21,6 +21,22 @@ function MyComponent() {
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
+    
+     let ma = new window.google.maps.Map(document.getElementById("map"), {
+    center: {lat:40.7575285, lng: -73.9884469}
+  });
+
+  let service = new window.google.maps.places.PlacesService(ma);
+
+service.getDetails({
+    placeId: 'ChIJAUKRDWz2wokRxngAavG2TD8'
+  }, function(place, status) {
+    if (status === google.maps.places.PlacesServiceStatus.OK) {
+      console.log(place.reviews);
+      // Intended behavior is to set this.setState({places.place.reviews})
+    }
+  })
+    
     map.fitBounds(bounds);
     setMap(map)
   }, [])
