@@ -1,10 +1,7 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-const containerStyle = {
-  width: '400px',
-  height: '400px'
-};
+
 
 const center = {lat:40.7575285, lng: -73.9884469};
 
@@ -30,8 +27,11 @@ service.getDetails({
     console.log(place);
   console.log(status);
     if (status === google.maps.places.PlacesServiceStatus.OK) {
-      console.log(place.reviews);
-      // Intended behavior is to set this.setState({places.place.reviews})
+      console.log(place.user_ratings_total);
+       console.log(place.rating);
+      
+      
+      
     }
   })
     
@@ -46,16 +46,7 @@ service.getDetails({
   return isLoaded ? (
      <>
       
-  <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap></>
+      </>
   ) : <></>
 }
 
