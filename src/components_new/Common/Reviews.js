@@ -1,56 +1,46 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Container,Image,Row,Col,Button,ListGroup,Form } from 'react-bootstrap';
-import $ from "jquery";
-import Cookies from 'universal-cookie';
-let autoComplete;
-const cookies = new Cookies();
+import React from 'react'
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
+const containerStyle = {
+  width: '400px',
+  height: '400px'
+};
 
-export default class Reviews extends React.Component{
-constructor(props){
-    super(props);
-    this.state = {
-      places: []
-    }
-   this.handleScriptLoad = this.handleScriptLoad.bind(this);
-  }
+const center = {
+  lat: -3.745,
+  lng: -38.523
+};
 
- handleScriptLoad() {
-	 
-}
-componentDidMount(){
-
-
- let map = new google.maps.Map(document.getElementById("map"), {
-    center: {lat:40.7575285, lng: -73.9884469}
-  });
-
-  let service = new google.maps.places.PlacesService(map);
-
-service.getDetails({
-    placeId: 'ChIJAUKRDWz2wokRxngAavG2TD8'
-  }, function(place, status) {
-    if (status === google.maps.places.PlacesServiceStatus.OK) {
-      console.log(place.reviews);
-      // Intended behavior is to set this.setState({places.place.reviews})
-    }
+function MyComponent() {
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "YOUR_API_KEY"
   })
 
+  const [map, setMap] = React.useState(null)
 
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds(center);
+    map.fitBounds(bounds);
+    setMap(map)
+  }, [])
+
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
+
+  return isLoaded ? (
+      <GoogleMap
+        mapContainerStyle={containerStyle}
+        center={center}
+        zoom={10}
+        onLoad={onLoad}
+        onUnmount={onUnmount}
+      >
+        { /* Child components, such as markers, info windows, etc. */ }
+        <></>
+      </GoogleMap>
+  ) : <></>
 }
-render(){
-     
-const { places } = this.state;
-return(
-  <div>
-    <p>
-      {
-        places.map((place) => {
-          return <p>{place.author_name}{place.rating}{place.text}</p>
-        })
-      }
-    </p>
-  </div>
-  )
- }
-}
+
+export default MyComponent;
