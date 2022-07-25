@@ -4,7 +4,7 @@ import $ from "jquery";
 import Cookies from 'universal-cookie';
 let autoComplete;
 const cookies = new Cookies();
-const loadScript = (url, callback) => {
+const loadScript = (url) => {
   let script = document.createElement("script");
   script.type = "text/javascript";
 
@@ -16,7 +16,7 @@ const loadScript = (url, callback) => {
       }
     };
   } else {
-    script.onload = () => callback();
+   
   }
 
   script.src = url;
@@ -33,13 +33,9 @@ constructor(props){
   }
 
  handleScriptLoad() {
-	  useEffect(() => {
-	  
-    loadScript(
-      `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI=places`,
-      () => handleScriptLoad()
+	 loadScript(
+      `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI=places`
     );
-  }, []);
  let map = new window.google.maps.Map(document.getElementById("map"), {
     center: {lat:40.7575285, lng: -73.9884469}
   });
