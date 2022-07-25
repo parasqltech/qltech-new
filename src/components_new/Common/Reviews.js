@@ -6,10 +6,7 @@ const containerStyle = {
   height: '400px'
 };
 
-const center = {
-  lat: -3.745,
-  lng: -38.523
-};
+const center = {lat:40.7575285, lng: -73.9884469};
 
 function MyComponent() {
   const { isLoaded } = useJsApiLoader({
@@ -22,11 +19,9 @@ function MyComponent() {
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
     
-     let ma = new window.google.maps.Map(document.getElementById("map"), {
-    center: {lat:40.7575285, lng: -73.9884469}
-  });
 
-  let service = new window.google.maps.places.PlacesService(ma);
+
+  let service = new window.google.maps.places.PlacesService(map);
 
 service.getDetails({
     placeId: 'ChIJAUKRDWz2wokRxngAavG2TD8'
@@ -47,16 +42,7 @@ service.getDetails({
 
   return isLoaded ? (
      <>
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center}
-        zoom={10}
-        onLoad={onLoad}
-        onUnmount={onUnmount}
-      >
-        { /* Child components, such as markers, info windows, etc. */ }
-        <></>
-      </GoogleMap>
+      
   <div id="map"></div></>
   ) : <></>
 }
