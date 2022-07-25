@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from "react";
 import { Link, StaticQuery, graphql } from 'gatsby'
 import FooterM1 from './FooterMenu_1'
 import FooterM2 from './FooterMenu_2'
@@ -13,17 +13,28 @@ import certi from '../../img/certi.png'
 import googleicon from '../../img/googleicon.png'
 import axios from 'axios'
 
+const loadScript = (url, callback) => {
+  let script = document.createElement("script");
+  script.type = "text/javascript";
 
-
-class Footer extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      places: []
-    }
+  if (script.readyState) {
+    script.onreadystatechange = function() {
+      if (script.readyState === "loaded" || script.readyState === "complete") {
+        script.onreadystatechange = null;
+        callback();
+      }
+    };
+  } else {
+    script.onload = () => callback();
   }
-	componentDidMount() {
-	    let map = new google.maps.Map(document.getElementById("map"), {
+
+  script.src = url;
+  document.getElementsByTagName("head")[0].appendChild(script);
+};
+
+
+function handleScriptLoad(updateQuery, autoCompleteRef) {
+  let map = new google.maps.Map(document.getElementById("map"), {
 	    center: {lat:23.0444775, lng: 72.5488501}
 	  });
 	   let service = new google.maps.places.PlacesService(map);
@@ -35,11 +46,35 @@ class Footer extends React.Component{
 	      this.setState({places: place.reviews})
 	    }
 	  })
+}
+
+
+class Footer extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      places: []
+    }
+  }
+	componentDidMount() {
+	   
 	   
    }
 	
 	
             render (){
+	const [query, setQuery] = useState("");
+  const autoCompleteRef = useRef(null);
+
+  useEffect(() => {
+	  
+    loadScript(
+      `https://maps.googleapis.com/maps/api/js?key=AIzaSyDUOvYvX04E_SLi54ElrYXuzEzSi-QyCmY&libraries=places`,
+      () => handleScriptLoad(setQuery, autoCompleteRef)
+    );
+  }, []);	    
+		    
+		    
     return(
 		<>
        <div>
