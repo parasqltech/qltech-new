@@ -40,11 +40,11 @@ componentDidMount(){
 loadScript(
       `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI=places`
     );
- let map = new window.google.maps.Map(document.getElementById("map"), {
+ let map = new google.maps.Map(document.getElementById("map"), {
     center: {lat:40.7575285, lng: -73.9884469}
   });
 
-  let service = new window.google.maps.places.PlacesService(map);
+  let service = new google.maps.places.PlacesService(map);
 
 service.getDetails({
     placeId: 'ChIJAUKRDWz2wokRxngAavG2TD8'
