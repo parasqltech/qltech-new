@@ -8,6 +8,24 @@ import ProcessHeader from './ProcessHeader'
 import Cookies from 'universal-cookie';
 import { init } from '@amplitude/analytics-browser';
 import { track } from '@amplitude/analytics-browser';
+const loadScript = (url) => {
+  let script = document.createElement("script");
+  script.type = "text/javascript";
+
+  if (script.readyState) {
+    script.onreadystatechange = function() {
+      if (script.readyState === "loaded" || script.readyState === "complete") {
+        script.onreadystatechange = null;
+        callback();
+      }
+    };
+  } else {
+   
+  }
+
+  script.src = url;
+  document.getElementsByTagName("head")[0].appendChild(script);
+};
 class Header extends Component {
 	
 	    constructor(props) {
@@ -32,7 +50,9 @@ class Header extends Component {
     		return uuid;
 	}
 	componentDidMount() {
-		
+		loadScript(
+      `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI&libraries=places`
+    );
 	const cookies = new Cookies();
 		var aid =  cookies.get('aid');
 		if(aid == undefined){
