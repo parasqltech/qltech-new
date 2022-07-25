@@ -5,24 +5,6 @@ import Cookies from 'universal-cookie';
 let autoComplete;
 const cookies = new Cookies();
 
-const loadScript = (url) => {
-  let script = document.createElement("script");
-  script.type = "text/javascript";
-
-  if (script.readyState) {
-    script.onreadystatechange = function() {
-      if (script.readyState === "loaded" || script.readyState === "complete") {
-        script.onreadystatechange = null;
-        callback();
-      }
-    };
-  } else {
-   
-  }
-
-  script.src = url;
-  document.getElementsByTagName("head")[0].appendChild(script);
-};
 
 export default class Reviews extends React.Component{
 constructor(props){
@@ -38,9 +20,7 @@ constructor(props){
 }
 componentDidMount(){
 
-loadScript(
-      `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI&libraries=places`
-    );
+
  let map = new google.maps.Map(document.getElementById("map"), {
     center: {lat:40.7575285, lng: -73.9884469}
   });
