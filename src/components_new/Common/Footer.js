@@ -13,7 +13,34 @@ import certi from '../../img/certi.png'
 import googleicon from '../../img/googleicon.png'
 import axios from 'axios'
 
-const loadScript = (url, callback) => {
+
+
+
+class Footer extends React.Component{
+  constructor(props){
+    super(props);
+    this.state = {
+      places: []
+    }
+  }
+	componentDidMount() {
+	   
+	   
+   }
+	
+	
+            render (){
+	const [query, setQuery] = useState("");
+  const autoCompleteRef = useRef(null);
+
+  useEffect(() => {
+	  
+    loadScript(
+      `https://maps.googleapis.com/maps/api/js?key=AIzaSyDUOvYvX04E_SLi54ElrYXuzEzSi-QyCmY&libraries=places`,
+      () => handleScriptLoad(setQuery, autoCompleteRef)
+    );
+  }, []);	    
+	const loadScript = (url, callback) => {
   let script = document.createElement("script");
   script.type = "text/javascript";
 
@@ -46,34 +73,7 @@ function handleScriptLoad(updateQuery, autoCompleteRef) {
 	      this.setState({places: place.reviews})
 	    }
 	  })
-}
-
-
-class Footer extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      places: []
-    }
-  }
-	componentDidMount() {
-	   
-	   
-   }
-	
-	
-            render (){
-	const [query, setQuery] = useState("");
-  const autoCompleteRef = useRef(null);
-
-  useEffect(() => {
-	  
-    loadScript(
-      `https://maps.googleapis.com/maps/api/js?key=AIzaSyDUOvYvX04E_SLi54ElrYXuzEzSi-QyCmY&libraries=places`,
-      () => handleScriptLoad(setQuery, autoCompleteRef)
-    );
-  }, []);	    
-		    
+}	    
 		    
     return(
 		<>
