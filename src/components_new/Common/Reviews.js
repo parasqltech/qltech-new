@@ -33,6 +33,13 @@ constructor(props){
   }
 
  handleScriptLoad() {
+	  useEffect(() => {
+	  
+    loadScript(
+      `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI=places`,
+      () => handleScriptLoad()
+    );
+  }, []);
  let map = new window.google.maps.Map(document.getElementById("map"), {
     center: {lat:40.7575285, lng: -73.9884469}
   });
@@ -55,13 +62,7 @@ handleScriptLoad();
 
 }
 render(){
-      useEffect(() => {
-	  
-    loadScript(
-      `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI=places`,
-      () => handleScriptLoad()
-    );
-  }, []);
+     
 const { places } = this.state;
 return(
   <div>
