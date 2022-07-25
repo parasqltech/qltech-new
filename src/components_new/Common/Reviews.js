@@ -46,6 +46,7 @@ service.getDetails({
   }, [])
 
   return isLoaded ? (
+     <>
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
@@ -56,6 +57,7 @@ service.getDetails({
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
+  <div id="map"></div></>
   ) : <></>
 }
 
