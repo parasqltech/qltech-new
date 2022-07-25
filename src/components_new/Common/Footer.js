@@ -12,41 +12,38 @@ import meta from '../../img/meta.png'
 import certi from '../../img/certi.png'
 import googleicon from '../../img/googleicon.png'
 import axios from 'axios'
+import "https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI&libraries=places&callback=initMap";
+
+
 class Footer extends React.Component{
-   componentDidMount() {
-	    this.submitForm = this.submitForm.bind(this);
-	setTimeout(function(){
-		 const payload = {
-			  first_name: "",
-			 
-			}
-    axios({
-              url: 'https://admin.qltech.com.au/test.php',
-              method: 'post',
-	    data: payload, // you are sending body instead
-              }).then(function(response) {
-                console.log('shi',response);
-            });
-}, 3000);
+  constructor(props){
+    super(props);
+    this.state = {
+      places: []
+    }
+  }
+	componentDidMount() {
+	    let map = new google.maps.Map(document.getElementById("map"), {
+	    center: {lat:23.0444775, lng: 72.5488501}
+	  });
+	   let service = new google.maps.places.PlacesService(map);
+	   service.getDetails({
+	    placeId: 'ChIJR1mA8PyEXjkRuNlaxp48bVo'
+	}, (place, status) => {
+	    if (status === google.maps.places.PlacesServiceStatus.OK) {
+	      console.log(place.reviews);
+	      this.setState({places: place.reviews})
+	    }
+	  })
+	   
    }
 	
-	submitForm() {
-	   const payload = {
-			  first_name: "",
-			 
-			}
-    axios({
-              url: 'https://admin.qltech.com.au/test.php',
-              method: 'post',
-	    data: payload, // you are sending body instead
-              }).then(function(response) {
-                console.log('shi',response);
-            });
-	}
+	
             render (){
     return(
 		<>
        <div>
+	    <div id="map"></div>
        <footer data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400">
     <div class="top_footer pt pb">
         <div class="container">
