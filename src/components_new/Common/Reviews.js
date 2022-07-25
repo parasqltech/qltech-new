@@ -33,7 +33,11 @@ constructor(props){
   }
 
  handleScriptLoad() {
-	 loadScript(
+	 
+}
+componentDidMount(){
+
+loadScript(
       `https://maps.googleapis.com/maps/api/js?key=AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI=places`
     );
  let map = new window.google.maps.Map(document.getElementById("map"), {
@@ -50,10 +54,6 @@ service.getDetails({
       // Intended behavior is to set this.setState({places.place.reviews})
     }
   })
-}
-componentDidMount(){
-
-handleScriptLoad();
 
 
 }
