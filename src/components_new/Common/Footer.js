@@ -4,6 +4,7 @@ import FooterM1 from './FooterMenu_1'
 import FooterM2 from './FooterMenu_2'
 import FooterM3 from './FooterMenu_3'
 import FooterM4 from './FooterMenu_4'
+import Reviews from './Reviews'
 import FooterSocial from './FooterSocial'
 import ReactWOW from 'react-wow'
 import logo from '../../img/logo.png'
@@ -31,7 +32,7 @@ class Footer extends React.Component{
     return(
 		<>
        <div>
-	    <div id="map"></div>
+	    <Reviews />
        <footer data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400">
     <div class="top_footer pt pb">
         <div class="container">
