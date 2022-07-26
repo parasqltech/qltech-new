@@ -32,7 +32,7 @@ class Footer extends React.Component{
     return(
 		<>
        <div>
-	    <Reviews />
+	   
        <footer data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400">
     <div class="top_footer pt pb">
         <div class="container">
@@ -48,6 +48,7 @@ class Footer extends React.Component{
                         <div class="list_social pb_20">
                            <FooterSocial />
                         </div>
+			 <Reviews />	
                         <div class="google_logo">
                             <div class="google_img">
                                 <a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
