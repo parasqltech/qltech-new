@@ -1,7 +1,7 @@
 import React from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-class Example extends React.Component {
+class Review extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -76,3 +76,5 @@ service.getDetails({
     );
   }
 }
+}
+export default Review
