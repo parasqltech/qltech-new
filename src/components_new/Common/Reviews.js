@@ -11,7 +11,7 @@ const center = {
   lng: -38.523
 };
 
-function MyComponent() {
+function Reviews() {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI"
@@ -43,4 +43,4 @@ function MyComponent() {
   ) : <></>
 }
 
-export default MyComponent;
+export default Reviews;
