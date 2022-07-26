@@ -6,10 +6,7 @@ const containerStyle = {
   height: '400px'
 };
 
-const center = {
-  lat: -3.745,
-  lng: -38.523
-};
+const center = {lat:40.7575285, lng: -73.9884469};
 
 function Reviews() {
   const { isLoaded } = useJsApiLoader({
