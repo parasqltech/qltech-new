@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
@@ -14,8 +14,9 @@ function MyComponent() {
     googleMapsApiKey: "AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI",
     libraries: ["places"]
   })
-
-  const [map, setMap, rating, setRating, urt, setUrt] = React.useState(null)
+  const [rating, setRating] = useState(0);
+  const [urt, setUrt] = useState(0);
+  const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
