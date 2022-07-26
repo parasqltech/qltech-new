@@ -48,7 +48,14 @@ class Footer extends React.Component{
                         <div class="list_social pb_20">
                            <FooterSocial />
                         </div>
+                        <div class="google_logo">
+                            <div class="google_img">
+                                <a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
+                                    <img src={google} alt="google" />
+                                </a>
 			 <Reviews />	
+              </div>
+                        </div>
                        
                         <div class="parner_ship_wirh pt_20 pb_20">
                             <h2 class=" pb_20">Partnership with</h2>
