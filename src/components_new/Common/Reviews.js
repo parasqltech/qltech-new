@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import google from '../../img/google.png'
 
 const containerStyle = {
   width: '4px',
@@ -58,7 +57,8 @@ service.getDetails({
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
-      <div class="google_logo">
+	
+   <div class="google_logo">
                             <div class="google_img">
                                 <a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
                                     <img src={google} alt="google" />
