@@ -49,21 +49,7 @@ class Footer extends React.Component{
                            <FooterSocial />
                         </div>
 			 <Reviews />	
-                        // <div class="google_logo">
-                        //     <div class="google_img">
-                        //         <a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
-                        //             <img src={google} alt="google" />
-                        //         </a>
-                        //         <div class="rating_">
-                        //             <div class="rat_text">40 Reviews</div>
-                        //             <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        //             <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        //             <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        //             <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        //             <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
-                        //         </div>
-                        //     </div>
-                        // </div>
+                       
                         <div class="parner_ship_wirh pt_20 pb_20">
                             <h2 class=" pb_20">Partnership with</h2>
                             <ul>
