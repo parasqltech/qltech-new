@@ -14,7 +14,7 @@ function MyComponent() {
     googleMapsApiKey: "AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI",
     libraries: ["places"]
   })
-const [count, setCount] = useState(0);
+
   const [map, setMap, rating, setRating, urt, setUrt] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
