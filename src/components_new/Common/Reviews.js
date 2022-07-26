@@ -30,8 +30,8 @@ service.getDetails({
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       console.log(place.user_ratings_total);
        console.log(place.rating);
-	    setRating(place.user_ratings_total)
-	    setUrt(place.rating)
+	    setRating(place.rating)
+	    setUrt(place.user_ratings_total)
      
       
       
