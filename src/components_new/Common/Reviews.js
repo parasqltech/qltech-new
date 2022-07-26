@@ -73,7 +73,6 @@ service.getDetails({
                                 </div>
                             </div>
                         </div>
-	{rating}
 	</>
   ) : <></>
 }
