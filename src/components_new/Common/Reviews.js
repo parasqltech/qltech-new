@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import google from '../../img/google.png'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 const containerStyle = {
