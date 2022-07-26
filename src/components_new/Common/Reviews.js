@@ -14,8 +14,8 @@ function MyComponent() {
     googleMapsApiKey: "AIzaSyBddDWmrtLkRhg0HqWI6mACm6zSRc66HPI",
     libraries: ["places"]
   })
-
-  const [map, setMap] = React.useState(null)
+const [count, setCount] = useState(0);
+  const [map, setMap, rating, setRating, urt, setUrt] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
     const bounds = new window.google.maps.LatLngBounds(center);
@@ -29,6 +29,8 @@ service.getDetails({
     if (status === google.maps.places.PlacesServiceStatus.OK) {
       console.log(place.user_ratings_total);
        console.log(place.rating);
+	    setRating(place.user_ratings_total)
+	    setUrt(place.rating)
      
       
       
@@ -43,7 +45,8 @@ service.getDetails({
   }, [])
 
   return isLoaded ? (
-      <GoogleMap
+      <>
+	<GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
         zoom={10}
@@ -53,6 +56,8 @@ service.getDetails({
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
+	<p>rating {rating} ratings total {urt}</p>
+	</>
   ) : <></>
 }
 export default MyComponent;
