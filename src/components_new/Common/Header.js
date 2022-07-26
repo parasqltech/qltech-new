@@ -82,6 +82,7 @@ class Header extends Component {
       }
     }
     }
+    }
     `}
     render={data => (
 		<div>
