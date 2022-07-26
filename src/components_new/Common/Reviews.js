@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
-import google from '../../img/google.png'
 
 const containerStyle = {
   width: '4px',
@@ -58,22 +57,7 @@ service.getDetails({
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
-     <p>rating {rating} ratings total {urt}</p>
-      <div className="google_logo">
-                            <div className="google_img">
-                                <a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
-                                    <img src={google} alt="google" />
-                                </a>
-                                <div className="rating_">
-                                    <div className="rat_text">{rating} Reviews total {urt}</div>
-                                    <div className="rat_star"><i className="fa fa-star" aria-hidden="true"></i></div>
-                                    <div className="rat_star"><i className="fa fa-star" aria-hidden="true"></i></div>
-                                    <div className="rat_star"><i className="fa fa-star" aria-hidden="true"></i></div>
-                                    <div className="rat_star"><i className="fa fa-star" aria-hidden="true"></i></div>
-                                    <div className="rat_star"><i className="fa fa-star" aria-hidden="true"></i></div>
-                                </div>
-                            </div>
-                        </div>
+	<p>rating {rating} ratings total {urt}</p>
 	</>
   ) : <></>
 }
