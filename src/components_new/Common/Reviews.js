@@ -57,7 +57,22 @@ service.getDetails({
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>
-	<p>rating {rating} ratings total {urt}</p>
+      <div class="google_logo">
+                            <div class="google_img">
+                                <a href="https://www.google.com/partners/agency?id=2934919306" target="_blank">
+                                    <img src={google} alt="google" />
+                                </a>
+                                <div class="rating_">
+                                    <div class="rat_text">{rating} Reviews total {urt}</div>
+                                    <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                    <div class="rat_star"><i class="fa fa-star" aria-hidden="true"></i></div>
+                                </div>
+                            </div>
+                        </div>
+	
 	</>
   ) : <></>
 }
