@@ -3,6 +3,10 @@
 @import url('./font-awesome.css');
 @import url('./flaticon.css');
 
+.footer-contant-us-area{
+	padding-top: 15%;
+}
+
 @media(max-width: 576px){
 		.subnavbar .resource-menu .nav-item .nav-link{
 			padding: 8px 10px!important;
