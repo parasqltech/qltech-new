@@ -23,7 +23,7 @@ function MyComponent() {
 	 let service = new window.google.maps.places.PlacesService(map);
 
 service.getDetails({
-    placeId: 'ChIJAUKRDWz2wokRxngAavG2TD8'
+    placeId: 'ChIJswUP4ym7MioRUFI2E6S8V0w'
   }, function(place, status) {
     console.log(place);
   console.log(status);
