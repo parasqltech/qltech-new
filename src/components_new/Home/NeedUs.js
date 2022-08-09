@@ -54,7 +54,7 @@ const NeedUs = () => (
 
             </div>
             <h4>{prop.node.whyDoYouNeedUs.title}</h4>
-            <p>{prop.node.whyDoYouNeedUs.title}</p>
+            <p>{prop.node.whyDoYouNeedUs.descripition}</p>
           </div>
         </div>
         )
