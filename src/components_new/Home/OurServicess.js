@@ -27,7 +27,7 @@ const OurServicess = () => (
      render={data => {
       return (
         <>
-      <section class="sec04 pt_20 pb_20" data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400" >
+      <section class="sec04 pt_20 pb_20 san_cls" data-aos="fade-down" data-aos-duration="2000" ata-aos-offset="400" >
       <div class="container">
         <div class="row  pb">
         <div class="col-md-12">
