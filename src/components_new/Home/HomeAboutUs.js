@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import { Link, StaticQuery, graphql } from 'gatsby'
 import {Helmet} from "react-helmet";
 import img from '../../img/about-us.png';
-import about from '../../img/about.png';
+import about from '../../img/new_about.png';
 import ReactModal from 'react-modal'
 import ReactWOW from 'react-wow'
 
@@ -50,7 +50,7 @@ render() {
         <div class="col-md-6">
           <div class="title_wrap_uh pb_20">
             <h2 class="had_ti pb_20"><span>About Us </span> </h2>
-            <p class="pb_20">{prop.node.homeAbout.shortDescprition}</p>
+            <p class="pb_20">We are a full-service digital solutions provider specialising in CRM & CDP implementation and customisation, as well as developing automated utility apps. We help businesses to develop, automate and grow their ideas and make them sell.</p>
 
                          <p class="pb_20">In collaboration with our clients, we’ve successfully managed to help businesses increase productivity, reduce costs, enhance agility & performance.</p>
                          <div class="btn_form ">
