@@ -1413,3 +1413,19 @@ h1.heading-main.fadeInUp {
 .img_s {
     width: auto;
 }
+
+
+.need_wrap p {
+    margin-bottom: 0;
+    min-height: 120px;
+}
+.list_terms ul li a {
+    font-size: 18px;
+}
+.list_terms .resrved p {
+    margin-bottom: 0;
+}
+
+.list_terms ul {
+    margin-bottom: 0;
+}
