@@ -73,19 +73,6 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                           ZOHO Authorised Partners
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                       Aug 2020
-                                                   </div>
-                                               </div>
-                                           </div>
                                             <div className="col-md-6  history-block-single">
                                            
                                                <div className="thumbnial p-3">
@@ -118,6 +105,19 @@ const AboutPage = () => (
                                            <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                           Went on to become Keap certified Preferred service partner APAC 
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       Dec 2018
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
                                                       
                                                        <p className="details">
                                                             We pivoted again and went deeper into our core value - A Customer-Centric Organisation driven with Systems thinking. This along with SOSTAC helped us in Identifying business Challenges. Which in return provided the uptick in revenue and efficiency for our customers 
@@ -129,34 +129,7 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                            <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                           Went on to become Keap certified Preferred service partner APAC 
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                       Dec 2018
-                                                   </div>
-                                               </div>
-                                           </div>
-                                            <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                           We pivoted to re-defined our fundamental core value. A Customer-Centric agency with Framework-based approach in the form of SOSTAC
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                       July 2017
-
-                                                   </div>
-                                               </div>
-                                           </div>
-                                            <div className="col-md-6  history-block-single">
+                                           <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
                                                      
@@ -170,7 +143,34 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                            <div className="col-md-6  history-block-single">
+                                           <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                           We pivoted to re-defined our fundamental core value. A Customer-Centric agency with Framework-based approach in the form of SOSTAC
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       July 2017
+
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                            Keap / Infusionsoft Partners
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                      Dec 2016 
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
                                                        
@@ -183,16 +183,16 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                            <div className="col-md-6  history-block-single">
+                                           <div className="col-md-6  history-block-single">
                                                 <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
                                                        
                                                        <p className="details">
-                                                            Keap / Infusionsoft Partners
+                                                           Proudly became Google partners &amp; Hubspot Inbound Certified 
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                      Dec 2016 
+                                                      Dec 2015 
                                                    </div>
                                                </div>
                                            </div>
@@ -207,19 +207,6 @@ const AboutPage = () => (
                                                    </div>
                                                    <div className="year-and-month">
                                                       July 2015
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                           Proudly became Google partners &amp; Hubspot Inbound Certified 
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                      Dec 2015 
                                                    </div>
                                                </div>
                                            </div>
