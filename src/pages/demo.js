@@ -86,7 +86,7 @@ const IndexPage = () => (
                     </ReactWOW>
                         
                         <div className="cont_wrap pt_20 pb_20">
-                            <p>Boost your customer relationships with the power of highly contextual emails by implementing customised <b>CRM and CDP platforms</b>. Make your products or services easier to sell and enhance your business's outreach with <b>automated utility Apps</b> designed as per your requirements.</p>
+                            <p>Boost your customer relationships with the power of highly contextual emails by implementing customised <b>CRM and CDP platforms.</b> Make your products or services easier to sell by enhancing your customer engagements with <b>Android and iOS Apps</b> designed as per your business requirements</p>
                             <div className="btn_form ">
                             <Link to={"https://www.qltech.com.au/schedule-a-call/"} className="main_btn">Book Your Session</Link>
                             </div>
