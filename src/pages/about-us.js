@@ -58,24 +58,118 @@ const AboutPage = () => (
                     <div className=" col-lg-10">
                             <div className="history-block ">
                                     <div className="row middle-line position-relative">
-                                           
-                                           <div className="col-md-6  history-block-single">
+                                           <div className="col-md-6 history-block-single">
                                                <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
                                                       
                                                        <p className="details">
-                                                           Cannot wait to solve the challenges this year brings 
+                                                           We opened our doors as a workflow and marketing automation agency following inbound methodology 
 
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                      July 2020 
+                                                      July 2015
+                                                   </div>
+                                               </div>
+                                           </div>
+                                           <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                           Proudly became Google partners &amp; Hubspot Inbound Certified 
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                      Dec 2015 
                                                    </div>
                                                </div>
                                            </div>
                                             <div className="col-md-6  history-block-single">
-                                           
-                                               <div className="thumbnial p-3">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                            Identified our buyer personas and shifted our business model  from project-based work to retainer clients
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                      July 2016
+                                                   </div>
+                                               </div>
+                                           </div>
+                                            <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                            Keap / Infusionsoft Partners
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                      Dec 2016 
+                                                   </div>
+                                               </div>
+                                           </div>
+                                            <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                           We pivoted to re-defined our fundamental core value. A Customer-Centric agency with Framework-based approach in the form of SOSTAC
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       July 2017
+
+                                                   </div>
+                                               </div>
+                                           </div>
+                                            <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                     
+                                                       <p className="details">
+                                                            As the organisation grew we shifted to a larger facility
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       Sep 2017
+
+                                                   </div>
+                                               </div>
+                                           </div>
+                                            <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                      
+                                                       <p className="details">
+                                                            We pivoted again and went deeper into our core value - A Customer-Centric Organisation driven with Systems thinking. This along with SOSTAC helped us in Identifying business Challenges. Which in return provided the uptick in revenue and efficiency for our customers 
+
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       July 2018 
+                                                   </div>
+                                               </div>
+                                           </div>
+                                            <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                           Went on to become Keap certified Preferred service partner APAC 
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       Dec 2018
+                                                   </div>
+                                               </div>
+                                           </div>
+										   
+										   <div className="col-md-6  history-block-single">
+										   
+										       <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
                                                       
                                                        <p className="details">
@@ -102,115 +196,21 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                           Went on to become Keap certified Preferred service partner APAC 
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                       Dec 2018
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
+										   <div className="col-md-6  history-block-single">
+										       <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
                                                       
                                                        <p className="details">
-                                                            We pivoted again and went deeper into our core value - A Customer-Centric Organisation driven with Systems thinking. This along with SOSTAC helped us in Identifying business Challenges. Which in return provided the uptick in revenue and efficiency for our customers 
+                                                           Cannot wait to solve the challenges this year brings 
 
                                                        </p>
                                                    </div>
                                                    <div className="year-and-month">
-                                                       July 2018 
+                                                      July 2020 
                                                    </div>
                                                </div>
                                            </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                     
-                                                       <p className="details">
-                                                            As the organisation grew we shifted to a larger facility
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                       Sep 2017
-
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                           We pivoted to re-defined our fundamental core value. A Customer-Centric agency with Framework-based approach in the form of SOSTAC
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                       July 2017
-
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                            Keap / Infusionsoft Partners
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                      Dec 2016 
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                            Identified our buyer personas and shifted our business model  from project-based work to retainer clients
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                      July 2016
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div className="col-md-6  history-block-single">
-                                                <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                       
-                                                       <p className="details">
-                                                           Proudly became Google partners &amp; Hubspot Inbound Certified 
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                      Dec 2015 
-                                                   </div>
-                                               </div>
-                                           </div>
-                                           <div className="col-md-6 history-block-single">
-                                               <div className="thumbnial p-3">
-                                                   <div className="thumbnial-body ">
-                                                      
-                                                       <p className="details">
-                                                           We opened our doors as a workflow and marketing automation agency following inbound methodology 
-
-                                                       </p>
-                                                   </div>
-                                                   <div className="year-and-month">
-                                                      July 2015
-                                                   </div>
-                                               </div>
-                                           </div>
-                                         </div>
+                                       </div>
                                </div>
                             </div>
                     </div>
