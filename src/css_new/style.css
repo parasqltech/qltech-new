@@ -1396,3 +1396,20 @@ h1.heading-main.fadeInUp {
     line-height: 33px!important;
 }
 }
+
+
+
+.sec02 {
+    position: relative;
+    z-index: 9;
+}
+.sev_cont h4 {
+    font-size: 19px;
+    font-weight: 700;
+}
+.sev_cont p {
+    min-height: 180px;
+}
+.img_s {
+    width: auto;
+}
