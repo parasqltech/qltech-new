@@ -57,7 +57,8 @@ const AboutPage = () => (
                 <div className="row justify-content-center">
                     <div className=" col-lg-10">
                             <div className="history-block ">
-                                      
+                                    <div className="row middle-line position-relative">
+                                           
                                            <div className="col-md-6  history-block-single">
                                                <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
@@ -209,6 +210,7 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
+                                         </div>
                                </div>
                             </div>
                     </div>
