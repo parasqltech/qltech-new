@@ -73,6 +73,19 @@ const AboutPage = () => (
                                                    </div>
                                                </div>
                                            </div>
+                                           <div className="col-md-6  history-block-single">
+                                                <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                       
+                                                       <p className="details">
+                                                           ZOHO Authorised Partners
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       Aug 2020
+                                                   </div>
+                                               </div>
+                                           </div>
                                             <div className="col-md-6  history-block-single">
                                            
                                                <div className="thumbnial p-3">
