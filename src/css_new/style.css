@@ -1433,3 +1433,63 @@ h1.heading-main.fadeInUp {
 .sec04.san_cls {
     background: #fff;
 }
+
+.sec02 {
+    position: relative;
+    z-index: 9;
+}
+.sev_cont h4 {
+    font-size: 19px;
+    font-weight: 700;
+}
+.sev_cont p {
+    min-height: 180px;
+}
+.img_s {
+    width: auto;
+}
+
+
+.need_wrap p {
+    margin-bottom: 0;
+    min-height: 120px;
+}
+.list_terms ul li a {
+    font-size: 18px;
+}
+.list_terms .resrved p {
+    margin-bottom: 0;
+}
+
+.list_terms ul {
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) and(max-width: 991px){
+.need_wrap h4 {
+    min-height: 90px;
+}
+.need_wrap p {
+    min-height: 215px;
+}
+.sev_cont p {
+    min-height: 240px;
+}   
+.sev_cont {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+.servi_gt .sev_img {
+    width: 100%;
+    text-align: center;
+}
+.servi_gt .sev_img img {
+    width: 130px;
+    height: 80px;
+    object-fit: contain;
+}
+.servi_gt {
+    display: block;
+}
+}
