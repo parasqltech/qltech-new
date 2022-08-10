@@ -12,18 +12,11 @@ const settings = {
       speed: 500,
       arrows : false,
       slidesToShow: 1,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      autoplaySpeed: 2000
 };
 
 class WorkDefineUsData extends React.Component {
-   render() {
-    var settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
     constructor(props) {
       super(props);
       this.state = {
