@@ -16,6 +16,14 @@ const settings = {
 };
 
 class WorkDefineUsData extends React.Component {
+   render() {
+    var settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
     constructor(props) {
       super(props);
       this.state = {
@@ -51,7 +59,7 @@ render() {
           </div>
         </div>
       </div>
-      <Slider {...settings, autoplaySpeed: 1000} className="testiomonial-slider" >
+      <Slider {...settings} className="testiomonial-slider" >
                 {Testimonials && Testimonials && Testimonials.edges.map(
        
                   
