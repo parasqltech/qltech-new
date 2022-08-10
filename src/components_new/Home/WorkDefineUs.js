@@ -51,7 +51,7 @@ render() {
           </div>
         </div>
       </div>
-      <Slider {...settings} className="testiomonial-slider" >
+      <Slider {this.slider.slickPlay()} className="testiomonial-slider" >
                 {Testimonials && Testimonials && Testimonials.edges.map(
        
                   
