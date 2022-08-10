@@ -58,6 +58,52 @@ const AboutPage = () => (
                     <div className=" col-lg-10">
                             <div className="history-block ">
                                     <div className="row middle-line position-relative">
+                                    <div className="col-md-6  history-block-single">
+                                           
+                                               <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                      
+                                                       <p className="details">
+                                                           Microsoft Advertising Certified Professional
+
+
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       June 2022 
+                                                   </div>
+                                               </div>
+                                           </div>
+                                    <div className="col-md-6  history-block-single">
+                                               <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                      
+                                                       <p className="details">
+                                                           Became Facebook (Meta) Business Partner
+
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                      January 2021 
+                                                   </div>
+                                               </div>
+                                           </div>
+                                    <div className="col-md-6  history-block-single">
+                                           
+                                               <div className="thumbnial p-3">
+                                                   <div className="thumbnial-body ">
+                                                      
+                                                       <p className="details">
+                                                           Segment Implementation & Analytics Certified Expert
+
+
+                                                       </p>
+                                                   </div>
+                                                   <div className="year-and-month">
+                                                       August 2020 
+                                                   </div>
+                                               </div>
+                                           </div>
                                         <div className="col-md-6  history-block-single">
                                                <div className="thumbnial p-3">
                                                    <div className="thumbnial-body ">
