@@ -1518,3 +1518,16 @@ section.about-history-section .history-block .thumbnial:after {
     top: -25px;
     width: 15px;
 }
+
+section.about-history-section .history-block .middle-line:after {
+    background: #fff;
+    border: 2px solid #55c2f3;
+    bottom: unset !important;
+    content: "";
+    display: block;
+    height: 15px;
+    left: calc(50% - 8px);
+    position: absolute;
+    width: 15px;
+    top: -61px !important;
+}
