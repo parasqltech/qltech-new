@@ -9,9 +9,9 @@ import FooterSocial from './FooterSocial'
 import ReactWOW from 'react-wow'
 import logo from '../../img/logo.png'
 import google from '../../img/google.png'
-import meta from '../../img/meta.png'
-import certi from '../../img/certi.png'
-import googleicon from '../../img/googleicon.png'
+import meta from '../../img_new/aa.png'
+import certi from '../../img_new/cc.png'
+import googleicon from '../../img_new/bb.png'
 import axios from 'axios'
 
 
@@ -61,8 +61,8 @@ class Footer extends React.Component{
                             <h2 class=" pb_20">Partnership with</h2>
                             <ul>
                                 <li><a href="#"><img src={meta} alt="meta" /></a></li>
-                                <li><a href="https://www.credly.com/badges/a89e6d0c-c31f-4f98-88c1-e4ea7239e85d" target="_blank"><img src={certi} alt="certi" /></a></li>
                                 <li><a href="https://www.google.com/partners/agency?id=2934919306" target="_blank"><img src={googleicon} alt="googleicon" /></a></li>
+                                <li><a href="https://www.credly.com/badges/a89e6d0c-c31f-4f98-88c1-e4ea7239e85d" target="_blank"><img src={certi} alt="certi" /></a></li>
                             </ul>
                         </div>
                         

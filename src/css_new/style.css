@@ -1493,3 +1493,28 @@ h1.heading-main.fadeInUp {
     display: block;
 }
 }
+
+
+
+
+section.about-history-section .history-block .middle-line:before {
+    background: #1692c7;
+    content: "";
+    display: block;
+    height: 100%;
+    left: calc(50% - 1px);
+    position: absolute;
+    top: -60px;
+    width: 2px;
+}
+section.about-history-section .history-block .thumbnial:after {
+    background: #fff;
+    border: 2px solid #55c2f3;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    right: -63px;
+    top: -25px;
+    width: 15px;
+}
