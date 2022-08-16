@@ -184,7 +184,7 @@ class ContactPlatform extends React.Component{
 										<p  className={"text-danger er-msg "+this.state.shown} >Invalid Message.</p>
 										<p  className={"text-danger er-msg "+this.state.shown_new} >First name last name are must be different.</p>
 										<div className="col-md-12  mb-4 ">
-										<button type="button" onClick={this.submitForm} className="btn-default border-0 btn-sub" value="Submit">Submit</button>
+										<button type="button" onClick={this.submitForm} id="plat1" className="btn-default border-0 btn-sub" value="Submit">Submit</button>
 											
 										</div>
 									</div>

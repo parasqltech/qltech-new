@@ -1531,3 +1531,9 @@ section.about-history-section .history-block .middle-line:after {
     width: 15px;
     top: -61px !important;
 }
+
+
+section.about-us-section-2 .about-us-data-show .about-us-data-show-single:nth-child(odd) {
+    position: relative;
+    top: -50px;
+}
