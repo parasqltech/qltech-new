@@ -243,7 +243,7 @@ console.log(payload);
                                                 <div className="col-md-12  mb-4">
                                                     <label className="label-text">Resume Upload</label>
                                                     <div className="input-group ">
-                                                        <input type="file"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
+                                                        <input type="text"  className="form-control" placeholder="Upload only pdf, docx, doc and Max file size: up to 3 MB" readOnly=""/>
                                                              <label className="input-group-btn">
                                                             <span className="btn btn-outline-secondary uploadBtn">
                                                                 Browse<input type="file" id="careerfile" value={this.state.resume} onChange={this.resume} accept="application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document" className="d-none" required name="resume"/>  
