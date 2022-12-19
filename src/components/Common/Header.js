@@ -8,20 +8,51 @@ import ProcessHeader from './ProcessHeader'
 import Cookies from 'universal-cookie';
 import { init } from '@amplitude/analytics-browser';
 import { track } from '@amplitude/analytics-browser';
+import Cookies from 'universal-cookie';
 class Header extends Component {
 	
 	    constructor(props) {
 		super(props);
-		
-		
-		
-		
-		
-		
+		this.state = {
+			isTop: true,
+			cart: '',
+			show:false,
+			query_code:"",
+			code:"",
+			shown: "d-none",
+			isOpen:false,
+			iscookie:0
+		};
+		 this.modalOpen = this.modalOpen.bind(this);
+        	this.modalClose = this.modalClose.bind(this);
+		this.CheckModel = this.CheckModel.bind(this);
 		this.createUUID = this.createUUID.bind(this);	
 	}
-	
-	
+	CheckModel(){
+		
+		const cookies = new Cookies();
+		if(cookies.get("Popup") == undefined){
+			console.log("here");
+			var expi = (new Date(Date.now()+ 86400*1000)).toUTCString();
+			cookies.set('Popup', "1", { domain: '.qltech.com.au' , path: '/' , maxAge: 1000000});
+			this.setState({
+				isOpen:true,
+			})
+		}
+		else{
+			
+		}
+	}
+	modalOpen(){
+        this.setState({
+            isOpen:true,
+        })
+    }
+    modalClose(){
+        this.setState({
+            isOpen:false,
+        })
+    }
 	 createUUID(){
     		var dt = new Date().getTime();
     		var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
