@@ -9,7 +9,6 @@ import ProcessHeader from './ProcessHeader'
 import Cookies from 'universal-cookie';
 import { init } from '@amplitude/analytics-browser';
 import { track } from '@amplitude/analytics-browser';
-import Cookies from 'universal-cookie';
 class Header extends Component {
 	
 	    constructor(props) {
