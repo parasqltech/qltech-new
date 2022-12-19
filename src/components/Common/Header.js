@@ -82,7 +82,7 @@ class Header extends Component {
 		};
 		console.log(eventProperties);
 		track('Page Viewed', eventProperties);
-		CheckModel();
+		this.CheckModel();
     }
 	
 	render() {
