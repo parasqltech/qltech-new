@@ -29,7 +29,7 @@ class Header extends Component {
 		this.createUUID = this.createUUID.bind(this);	
 	}
 	CheckModel(){
-		
+		console.log("main");
 		const cookies = new Cookies();
 		if(cookies.get("Popup") == undefined){
 			console.log("here");
@@ -40,7 +40,7 @@ class Header extends Component {
 			})
 		}
 		else{
-			
+			console.log("there");
 		}
 	}
 	modalOpen(){
