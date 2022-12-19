@@ -36,7 +36,7 @@ class Header extends Component {
 			var expi = (new Date(Date.now()+ 86400*1000)).toUTCString();
 			cookies.set('Popup', "1", { domain: '.qltech.com.au' , path: '/' , maxAge: 1000000});
 			this.setState({
-				isOpen:true,
+				//isOpen:true,
 			})
 		}
 		else{
