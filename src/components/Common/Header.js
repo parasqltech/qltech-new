@@ -95,9 +95,7 @@ class Header extends Component {
 	}
 	componentDidMount() {
 		
-		document.getElementById("btnnb").addEventListener("click", function() {
-			alert("hereee");
-		}); 
+		
 		
 	const cookies = new Cookies();
 		var aid =  cookies.get('aid');
