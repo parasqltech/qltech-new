@@ -107,7 +107,7 @@ class Header extends Component {
 		return (
 			<>
 			
-			<Modal  show={this.state.isOpen} onHide={this.modalClose} size="lg" className="video-modal model-custom"
+			<Modal animation={false} fullscreen={true} keyboard={false} backdrop="static"  show={this.state.isOpen} onHide={this.modalClose} size="lg" className="video-modal model-custom"
             aria-labelledby="contained-modal-title-vcenter"
             centered >
                 <Modal.Body className="p-0">
