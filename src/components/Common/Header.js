@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby'
-import {  Image,ListGroup,Navbar,Container,Modal } from 'react-bootstrap'
+import { Button,Form,Image,ListGroup,Navbar,Container,Modal } from 'react-bootstrap'
 import logo from '../../img/logo.png'
 import ServiceHeader from './ServiceHeader'
 import IndustriesHeader from './IndustriesHeader'
@@ -27,21 +27,36 @@ class Header extends Component {
         	this.modalClose = this.modalClose.bind(this);
 		this.CheckModel = this.CheckModel.bind(this);
 		this.createUUID = this.createUUID.bind(this);	
+		    this.handleClick = this.handleClick.bind(this);
 	}
 	CheckModel(){
-		console.log("main");
+		
 		const cookies = new Cookies();
 		if(cookies.get("Popup") == undefined){
-			console.log("here");
-			var expi = (new Date(Date.now()+ 86400*1000)).toUTCString();
-			cookies.set('Popup', "1", { domain: '.qltech.com.au' , path: '/' , maxAge: 1000000});
-			//this.setState({
-				//isOpen:true,
-			//})
+			this.setState({
+				isOpen:true,
+			})
 		}
 		else{
-			console.log("there");
+			if(cookies.get("Popup") == 0){
+				this.setState({
+					isOpen:true,
+				})
+			}
+			
 		}
+	}
+	handleClick() {    
+		 var checkBox = document.getElementById("disabledSelect");
+		 var btnn = document.getElementById("btnn");
+		 const cookies = new Cookies();
+		 if (checkBox.checked == true){
+			 cookies.set('Popup', "1", { domain: '.qltech.com.au' , path: '/' , maxAge: 1000000});
+			this.setState({
+				isOpen:false,
+			})
+		  }
+
 	}
 	modalOpen(){
         this.setState({
@@ -92,19 +107,23 @@ class Header extends Component {
 		return (
 			<>
 			
-			<Modal show={this.state.isOpen} onHide={this.modalClose} size="lg" className="video-modal"
+			<Modal  show={this.state.isOpen} onHide={this.modalClose} size="lg" className="video-modal model-custom"
             aria-labelledby="contained-modal-title-vcenter"
             centered >
                 <Modal.Body className="p-0">
-                    <button type="button" onClick={this.modalClose} class="close">
-                        <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
-                    </button>
+                    
 					
 					
 					<p className="sub_sub_title" >QL Tech is headquartered on Whadjuk Nyoongar Boodjar. We acknowledge the Whadjuk people as the traditional owners and custodians of these lands, waterways and skies and pay our respects to their Elders, past and present.</p>
 					
 			<p className="sub_sub_title" >We also offer our heartfelt gratitude to Aboriginal and Torres Strait Islander people and communities across all lands in which QL Tech operates. QL Tech recognizes their generosity and wisdom in how they continue to care for Country and share their knowledge, which in turn helps us to understand and navigate Country safely and respectfully.</p>		
                 </Modal.Body>
+				<Modal.Footer>
+				  <Form.Group className="mb-3" controlId="formBasicCheckbox">
+					<Form.Check id="disabledSelect" type="checkbox" label="I acknowledge" />
+				  </Form.Group>
+				  <Button onClick={this.handleClick} id="btnn" variant="primary">Continue</Button>
+				</Modal.Footer>
             </Modal>
 			
 			
