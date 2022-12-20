@@ -140,7 +140,7 @@ class Header extends Component {
 				  <Form.Group className="mb-3" controlId="formBasicCheckbox">
 					<Form.Check onChange={this.handleChange} id="disabledSelect" type="checkbox" label="I acknowledge" />
 				  </Form.Group>
-				  <Button  id="btnnb" disabled="true" variant="primary">Continue</Button>
+				  <Button  id="btnn" onChange={this.handleClick} variant="primary">Continue</Button>
 				</Modal.Footer>
             </Modal>
 			
