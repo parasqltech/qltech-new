@@ -3,6 +3,15 @@
 @import url('./font-awesome.css');
 @import url('./flaticon.css');
 
+
+.model-custom .modal-dialog {
+  width: 100vw;
+  max-width: none;
+  height: 100%;
+  margin: 0;
+}
+
+
 .footer-contant-us-area{
 	padding-top: 15%;
 }
