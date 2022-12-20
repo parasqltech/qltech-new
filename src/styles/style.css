@@ -5,7 +5,7 @@
 
 
 .video-modal.model-custom.modal {
-    background-image: url(http://steamlinedesign.com/suchi/qlspace/wp-content/uploads/2022/12/imgpsh_fullsize_anim-7-scaled.jpg);
+    background-image: url('../img/imgpsh_fullsize_anim-7-scaled.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -15,7 +15,7 @@
 }
 
 .video-modal.model-custom.modal {
-    background-image: url("https://steamlinedesign.com/suchi/qlspace/wp-content/uploads/2022/12/imgpsh_fullsize_anim-7-scaled.jpg");
+    background-image: url('../img/imgpsh_fullsize_anim-7-scaled.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
