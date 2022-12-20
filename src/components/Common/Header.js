@@ -64,12 +64,15 @@ class Header extends Component {
 		 var btnn = document.getElementById("btnn");
 		 const cookies = new Cookies();
 		 if (checkBox.checked == true){
-			 
+			 console.log("here");	
 			 cookies.set('Popup', "1", { domain: '.qltech.com.au' , path: '/' , maxAge: 1000000});
 			this.setState({
 				isOpen:false,
 			})
 		  }
+		else{
+			console.log("there");	
+		}
 	}
 	modalOpen(){
         this.setState({
