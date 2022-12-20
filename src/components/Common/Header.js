@@ -95,6 +95,21 @@ class Header extends Component {
 	}
 	componentDidMount() {
 		
+		document.getElementById("btnn").addEventListener("click", function(){ 
+			var checkBox = document.getElementById("disabledSelect");
+			const cookies = new Cookies();
+		 if (checkBox.checked == true){
+			 console.log("here");	
+			 cookies.set('Popup', "1", { domain: '.qltech.com.au' , path: '/' , maxAge: 1000000});
+			this.setState({
+				isOpen:false,
+			})
+		  }
+		else{
+			console.log("there");	
+		}
+		}); 
+		
 	const cookies = new Cookies();
 		var aid =  cookies.get('aid');
 		if(aid == undefined){
@@ -138,7 +153,7 @@ class Header extends Component {
 				  <Form.Group className="mb-3" controlId="formBasicCheckbox">
 					<Form.Check onChange={this.handleChange} id="disabledSelect" type="checkbox" label="I acknowledge" />
 				  </Form.Group>
-				  <Button onClick={this.handleClick} id="btnn" disabled="true" variant="primary">Continue</Button>
+				  <Button  id="btnn" disabled="true" variant="primary">Continue</Button>
 				</Modal.Footer>
             </Modal>
 			
