@@ -21,7 +21,8 @@ class Header extends Component {
 			code:"",
 			shown: "d-none",
 			isOpen:false,
-			iscookie:0
+			iscookie:0,
+			isBoxVisible:"opa"
 		};
 		 this.modalOpen = this.modalOpen.bind(this);
         	this.modalClose = this.modalClose.bind(this);
@@ -52,10 +53,14 @@ class Header extends Component {
 	handleChange() {
 		 var checkBox = document.getElementById("disabledSelect");
 		if (checkBox.checked == true){
-			 document.getElementById('btnn').disabled = false;
+			 this.setState({
+				isBoxVisible:"",
+			})
 		}
 		else{
-			 document.getElementById('btnn').disabled = true;
+			this.setState({
+				isBoxVisible:"opa",
+			}) 
 		}
 	}
 	
@@ -140,7 +145,7 @@ class Header extends Component {
 				  <Form.Group className="mb-3" controlId="formBasicCheckbox">
 					<Form.Check onChange={this.handleChange} id="disabledSelect" type="checkbox" label="I acknowledge" />
 				  </Form.Group>
-				  <Button  id="btnn" onClick={this.handleClick} variant="primary">Continue</Button>
+				  <Button  id="btnn" className={this.state.isBoxVisible} onClick={this.handleClick} variant="primary">Continue</Button>
 				</Modal.Footer>
             </Modal>
 			
