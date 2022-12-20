@@ -28,6 +28,8 @@ class Header extends Component {
 		this.CheckModel = this.CheckModel.bind(this);
 		this.createUUID = this.createUUID.bind(this);	
 		    this.handleClick = this.handleClick.bind(this);
+		    this.handleChange = this.handleChange.bind(this);
+		    
 	}
 	CheckModel(){
 		
@@ -46,6 +48,17 @@ class Header extends Component {
 			
 		}
 	}
+	
+	handleChange() {
+		 var checkBox = document.getElementById("disabledSelect");
+		if (checkBox.checked == true){
+			 document.getElementById('btnn').disabled = false;
+		}
+		else{
+			 document.getElementById('btnn').disabled = true;
+		}
+	}
+	
 	handleClick() {    
 		 var checkBox = document.getElementById("disabledSelect");
 		 var btnn = document.getElementById("btnn");
@@ -120,7 +133,7 @@ class Header extends Component {
                 </Modal.Body>
 				<Modal.Footer>
 				  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-					<Form.Check id="disabledSelect" type="checkbox" label="I acknowledge" />
+					<Form.Check onChange={handleChange} id="disabledSelect" type="checkbox" label="I acknowledge" />
 				  </Form.Group>
 				  <Button onClick={this.handleClick} id="btnn" disabled variant="primary">Continue</Button>
 				</Modal.Footer>
