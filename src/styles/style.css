@@ -8,6 +8,9 @@
     justify-content: start !important;
 }
 
+.l-50 {
+  width: 50%;
+}
 .card-header.bg-white.row.justify-content-between.m-0 p.mb-0.d-inline {
     max-width: 25% !important;
     width: 100%;
