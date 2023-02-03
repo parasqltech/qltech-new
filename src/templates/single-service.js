@@ -396,7 +396,7 @@ class Singleservice extends Component {
                     <div class="col-xl-12">
                         <div class="author-content">
                             <div class="quote">
-                                <img src={quote} class="img-fluid" alt=""/>
+                                <img src={quote} class="img-fluid l-50" alt=""/>
                             </div>
                             <p class="label-text testimonialDetail"></p>
                             <div class="author-info">
