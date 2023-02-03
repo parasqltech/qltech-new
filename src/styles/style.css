@@ -7,7 +7,9 @@
     display: flex !important;
     justify-content: start !important;
 }
-
+.quote img{
+	width: auto;		
+}
 .l-50 {
   width: auto;
 }
