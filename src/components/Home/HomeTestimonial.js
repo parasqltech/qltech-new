@@ -76,7 +76,7 @@ render() {
                                   <div className="col-xl-6 col-lg-6 col-md-8 col-sm-8">
                                       <div className="author-content">
                                           <div className="quote">
-                                              <img src={quote} className="img-fluid" alt=""/>
+                                              <img src={quote} className="img-fluid l-50" alt=""/>
                                           </div>
                                           <p className="label-text">
                                               <span>{(prop.node.testimonial.descprition).substring(0, 400)}</span>
