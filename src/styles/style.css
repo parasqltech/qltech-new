@@ -8,7 +8,7 @@
     justify-content: start !important;
 }
 .quote img{
-	width: auto;		
+	width: auto !important;		
 }
 .l-50 {
   width: auto;
