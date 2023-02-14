@@ -32,6 +32,9 @@ module.exports = {
       resolve: `gatsby-source-wordpress`,
       options: {
         // the only required plugin option for WordPress is the GraphQL url.
+	schema: {
+      		timeout: 300000,
+    	},      
         url:
           process.env.WPGRAPHQL_URL ||
           `https://admin.qltech.com.au/graphql`,
