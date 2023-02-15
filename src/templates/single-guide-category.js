@@ -96,7 +96,7 @@ class Singlecategory extends Component {
                                             <div className="thumbnial-footer">
                                                 <div className="author pull-left">
                                                     <div className="image"><img src={author} alt=""/></div>
-                                                    By <b>{prop.node.acf.posted_by}</b>  
+                                                    By <b>Admin</b>  
                                                 </div>
                                                 <div className="social-links pull-right">
                                                     <ul className="post-info ">
