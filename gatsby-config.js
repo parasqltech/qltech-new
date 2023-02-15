@@ -34,7 +34,14 @@ module.exports = {
         // the only required plugin option for WordPress is the GraphQL url.
 	schema: {
       		timeout: 6000000,
-    	},      
+    	},  
+	 html: {
+            createStaticFiles: false,
+            useGatsbyImage: false,
+        },
+        type: {
+            MediaItem: { createFileNodes: false },
+        },     
         url:
           process.env.WPGRAPHQL_URL ||
           `https://admin.qltech.com.au/graphql`,
