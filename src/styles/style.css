@@ -9555,3 +9555,16 @@ section.resource-section-1 .thumbnial.thumbnial1 .img-thumbnial img {
         max-width: 260px;
     }
 }
+
+/* 13 april */
+.author-details-block {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    column-gap: 15px;
+}
+
+.author-details-block .author-info p {
+    margin-bottom: 0 !important;
+    padding: 0 !important;
+}
